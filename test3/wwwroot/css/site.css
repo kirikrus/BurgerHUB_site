@@ -76,16 +76,25 @@ div.menu_block {
     left: 50%;
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(7, auto);
 }
-a.padding_left_180{
-    padding-left: 180px;
+span.not {
+    height: 70px;
+    width: 10px;
+}
+a.icon_user {
+    position: fixed;
+    left: 92%;
+}
+a.icon_shop{
+    position:fixed;
+    left: 90%;
 }
 img.menu_icon {
     place-items: center;
     padding-top: 10px;
 }
-a.padding25 {
+.pd25 {
     padding-left: 25px;
 }
 
