@@ -1,0 +1,124 @@
+
+
+html {
+    background: #141414;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+a.menu_ref:hover {
+    color: #FF710B;
+    transform: scale(1.2);
+    transition: .5s;
+}
+img.icon_shop:hover {
+    transform: scale(1.2);
+    transition: .5s;
+}
+img.icon_user:hover {
+    transform: scale(1.2);
+    transition: .5s;
+}
+a.menu_ref {
+    text-decoration: none;
+    color: white;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 200;
+    padding: 20px 25px;
+}
+div.menu {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10.2px);
+}
+div.container {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+b.lable_hub {
+    color: #FF710B;
+}
+a.lable {
+    color: white;
+}
+a.lable, b.lable_hub {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+}
+div.lable_block {
+    position: absolute;
+    height: 56px;
+    left: 108px;
+    right: 79.9%;
+    top: 10%;
+    place-items: center;
+    display:inherit;
+}
+
+div.menu_block {
+    position: absolute;
+    width: max-content;
+    height: 70px;
+    left: 50%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(6, auto);
+}
+a.padding_left_180{
+    padding-left: 180px;
+}
+img.menu_icon {
+    place-items: center;
+    padding-top: 10px;
+}
+a.padding25 {
+    padding-left: 25px;
+}
+
+div.desc_Black_classic {
+    position: absolute;
+    width: 838px;
+    height: 159px;
+    left: 108px;
+    top: 230px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    align-items: center;
+}
+span.name {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 53px;
+    display: flex;
+}
+span.desc {
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+}
+img.home_img {
+    position: fixed;
+    left: 56.2%;
+    right: 3.23%;
+    bottom: 4.72%;
+    height: 622px;
+    width: 579px;
+    left: 1079px;
+    top: 150px;
+}
