@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BY3\\сайт\\sajt-burger-hu-bfinal\\test3\\test3.csproj": {}
+    "D:\\вуз\\сайт\\sajt-burger-hu-bfinal\\test3\\test3.csproj": {}
   },
   "projects": {
-    "D:\\BY3\\сайт\\sajt-burger-hu-bfinal\\test3\\test3.csproj": {
+    "D:\\вуз\\сайт\\sajt-burger-hu-bfinal\\test3\\test3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BY3\\сайт\\sajt-burger-hu-bfinal\\test3\\test3.csproj",
+        "projectUniqueName": "D:\\вуз\\сайт\\sajt-burger-hu-bfinal\\test3\\test3.csproj",
         "projectName": "test3",
-        "projectPath": "D:\\BY3\\сайт\\sajt-burger-hu-bfinal\\test3\\test3.csproj",
-        "packagesPath": "C:\\Users\\kiril\\.nuget\\packages\\",
-        "outputPath": "D:\\BY3\\сайт\\sajt-burger-hu-bfinal\\test3\\obj\\",
+        "projectPath": "D:\\вуз\\сайт\\sajt-burger-hu-bfinal\\test3\\test3.csproj",
+        "packagesPath": "C:\\Users\\Кирик\\.nuget\\packages\\",
+        "outputPath": "D:\\вуз\\сайт\\sajt-burger-hu-bfinal\\test3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kiril\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Кирик\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,8 +45,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -58,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

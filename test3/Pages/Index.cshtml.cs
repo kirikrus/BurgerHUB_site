@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace test3.Pages
+namespace BurgerHUB.Pages
 {
     public class IndexModel : PageModel
     {
