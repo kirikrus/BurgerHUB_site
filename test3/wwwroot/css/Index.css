@@ -13,7 +13,30 @@
     margin-top: 15%;
 }
 
-span.glow {
+span.glow_p {
+    grid-area: burger_desc;
+    height: 220px;
+    width: 220px;
+    background-color: #A82E86;
+    border-radius: 50%;
+    place-items: center;
+    filter: blur(100px) opacity(50%);
+    z-index: -1;
+    margin-left: 129px;
+}
+
+span.glow_o {
+    grid-area: burger_name;
+    height: 220px;
+    width: 220px;
+    background-color: #FF710B;
+    border-radius: 50%;
+    place-items: center;
+    filter: blur(100px) opacity(50%);
+    z-index: -1;
+}
+
+span.glow_w {
     grid-area: burger_photo;
     height: 420px;
     width: 420px;
