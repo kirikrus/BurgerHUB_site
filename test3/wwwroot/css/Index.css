@@ -15,14 +15,15 @@
 
 span.glow_p {
     grid-area: burger_desc;
-    height: 220px;
-    width: 220px;
+    height: 320px;
+    width: 320px;
     background-color: #A82E86;
     border-radius: 50%;
     place-items: center;
-    filter: blur(100px) opacity(50%);
+    filter: blur(200px) opacity(50%);
     z-index: -1;
-    margin-left: 129px;
+    margin-top: 300px;
+    margin-left: 529px;
 }
 
 span.glow_o {
