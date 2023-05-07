@@ -1,36 +1,35 @@
 ﻿div.desc_Black_classic {
-    position: absolute;
-    width: 838px;
-    height: 159px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 200px 200px;
+    grid-template-areas: 'burger_name burger_photo'
+                         'burger_desc burger_photo';
     left: 108px;
     top: 230px;
     color: #FFFFFF;
     font-family: 'Roboto';
     align-items: center;
+    margin-top: 15%;
 }
 
 span.name {
+    grid-area: burger_name;
     font-weight: 500;
     font-size: 64px;
     line-height: 53px;
-    display: flex;
 }
 
 span.desc {
-    margin-top: 30px;
+    grid-area: burger_desc;
     font-weight: 300;
     font-size: 24px;
     line-height: 28px;
-    display: flex;
 }
 
 img.home_img {
-    position: fixed;
-    left: 56.2%;
-    right: 3.23%;
-    bottom: 4.72%;
+    grid-area: burger_photo;
     height: 622px;
     width: 579px;
-    left: 1079px;
-    top: 150px;
+    align-items: end;
 }
