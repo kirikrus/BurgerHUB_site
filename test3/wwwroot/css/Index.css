@@ -13,6 +13,18 @@
     margin-top: 15%;
 }
 
+span.glow {
+    grid-area: burger_photo;
+    height: 420px;
+    width: 420px;
+    background-color: white;
+    border-radius: 50%;
+    place-items: center;
+    filter: blur(85px) opacity(50%);
+    margin-left: 129px;
+    z-index:-1;
+}
+
 span.name {
     grid-area: burger_name;
     font-weight: 500;
