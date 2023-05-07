@@ -29,7 +29,7 @@ span.desc {
 
 img.home_img {
     grid-area: burger_photo;
-    height: 622px;
-    width: 579px;
-    align-items: end;
+    height: 722px;
+    width: 679px;
+    padding-top: 100px;
 }

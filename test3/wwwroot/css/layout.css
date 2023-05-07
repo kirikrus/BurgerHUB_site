@@ -4,11 +4,11 @@ html {
     background: #141414;
     position: relative;
 }
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 a.menu_ref:hover {
     color: #FF710B;
