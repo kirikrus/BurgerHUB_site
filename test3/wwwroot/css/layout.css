@@ -1,4 +1,10 @@
-
+.roboto {
+    color: white;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 200;
+    text-decoration: none;
+}
 
 html {
     background: #141414;
@@ -21,10 +27,6 @@ a.menu_ref {
     -webkit-text-stroke-width: 0px;
     -webkit-text-stroke-color: #FF710B;
     text-decoration: none;
-    color: white;
-    font-family: Roboto;
-    font-size: 22px;
-    font-weight: 200;
     padding: 20px 25px;
     transition: .5s linear;
 }
@@ -49,8 +51,6 @@ a.lable {
     color: white;
 }
 a.lable, b.lable_hub {
-    text-decoration: none;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 800;
     font-size: 48px;

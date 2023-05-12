@@ -1,16 +1,15 @@
 ﻿div.desc_Black_classic {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: 200px 200px;
+    grid-template-columns: auto;
+    grid-template-rows: 200px 200px auto;
     grid-template-areas: 'burger_name burger_photo'
-                         'burger_desc burger_photo';
-    left: 108px;
-    top: 230px;
+                         'burger_desc burger_photo'
+                         'button counter';
     color: #FFFFFF;
     font-family: 'Roboto';
     align-items: center;
-    margin-top: 15%;
+    margin-top: 12%;
 }
 
 span.glow_p {
@@ -67,5 +66,23 @@ img.home_img {
     grid-area: burger_photo;
     height: 722px;
     width: 679px;
-    padding-top: 100px;
+    padding-top: 150px;
+}
+
+.more_inf {
+    grid-area: button;
+    background-color: transparent;
+    border: 2px solid #FF710B;
+    border-radius: 66px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    width: 216px;
+    height: 80px;
+    margin-top: 30px;
+    transition: .5s linear;
+}
+.more_inf:hover {
+    background-color: rgb(255, 113, 11, 0.2);
+    transition: .5s linear;
 }
