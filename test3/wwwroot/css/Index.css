@@ -2,10 +2,13 @@
     display: grid;
     width: 100%;
     grid-template-columns: auto;
-    grid-template-rows: 200px 200px auto;
-    grid-template-areas: 'burger_name burger_photo'
-                         'burger_desc burger_photo'
-                         'button counter';
+    grid-template-rows: 200px 200px;
+    grid-template-areas: 
+        'burger_name burger_photo'
+        'burger_desc burger_photo'
+        'button counter'
+        'line line'
+        'why why';
     align-items: center;
     margin-top: 12%;
 }
@@ -110,4 +113,94 @@ button.arr_left_right {
     background-color: transparent;
     border: none;
     margin-top: 30px;
+}
+
+.line {
+    width: 112%;
+    margin-left: -7%;
+}
+
+.orange {
+    background-color: #FF710B;
+}
+
+span.line {
+    grid-area: line;
+    height: 160px;
+    margin-top: 170px;
+    padding-left: 7%;
+    display: grid;
+    grid-template-columns: 458px auto;
+    grid-template-areas:
+        'why linetag';
+}
+
+b.why {
+    grid-area: why;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 83.19%;
+    width: 458px;
+    display: flex;
+    align-items: center;
+}
+
+b.tagline {
+    grid-area: linetag;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 85px;
+    line-height: 83.19%;
+    color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+div.crop {
+    grid-area: why;
+    height: 566px;
+    overflow: hidden;
+}
+
+img.backgroug {
+    margin-top: -500px;
+    opacity: 0.03;
+}
+
+div.why_grid {
+    grid-area: why;
+    display: grid;
+    place-items: center;
+    grid-template-areas:
+        'meat constr eco';
+}
+
+.glass_box {
+    background: rgba(217, 217, 217, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    border-radius: 40px;
+}
+
+div.box_why {
+    height: 231px;
+    width: 300px;
+    text-align: center;
+}
+p.why_name {
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+img.icon_why{
+    display: flex;
+    top: -44px;
+    left: -50px;
+
+}
+b {
+    font-weight: 400;
 }

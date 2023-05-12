@@ -9,6 +9,7 @@
 html {
     background: #141414;
     position: relative;
+    overflow-x: hidden;
 }
 header {
     position: fixed;
