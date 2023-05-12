@@ -6,8 +6,6 @@
     grid-template-areas: 'burger_name burger_photo'
                          'burger_desc burger_photo'
                          'button counter';
-    color: #FFFFFF;
-    font-family: 'Roboto';
     align-items: center;
     margin-top: 12%;
 }
@@ -80,9 +78,36 @@ img.home_img {
     width: 216px;
     height: 80px;
     margin-top: 30px;
-    transition: .5s linear;
+    transition: .3s linear;
 }
+
 .more_inf:hover {
     background-color: rgb(255, 113, 11, 0.2);
-    transition: .5s linear;
+    transition: .3s linear;
+    transform: scale(0.95);
+}
+
+div.counter {
+    grid-area: counter;
+    font-weight: 900;
+    color: #FF710B;
+    font-size: 40px;
+    margin-left: 60%;
+    margin-top: 30px;
+}
+
+b.counter_curent {
+    grid-area: counter;
+    color: white;
+    font-size: 64px;
+}
+
+button.arr_left_right {
+    grid-area: counter;
+    height: 60px;
+    width: 60px;
+    margin-left: 80%;
+    background-color: transparent;
+    border: none;
+    margin-top: 30px;
 }

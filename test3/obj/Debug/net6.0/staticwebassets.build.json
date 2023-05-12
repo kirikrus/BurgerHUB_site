@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Fw1URJ0+KLvPcUuQnsNzbuOBz/7O/ppNmQKLGLUcSfI=",
+  "Hash": "zYQCmNSN5A6Qxe0/Gv0w3Dw2N3dLKfBiVWpDveNvuQc=",
   "Source": "BurgerHUB",
   "BasePath": "_content/BurgerHUB",
   "Mode": "Default",
@@ -100,6 +100,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\icons\\arr_left.png",
+      "SourceId": "BurgerHUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\",
+      "BasePath": "_content/BurgerHUB",
+      "RelativePath": "icons/arr_left.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\arr_left.png"
+    },
+    {
+      "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\icons\\arr_right.png",
+      "SourceId": "BurgerHUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\",
+      "BasePath": "_content/BurgerHUB",
+      "RelativePath": "icons/arr_right.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\arr_right.png"
     },
     {
       "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\icons\\ShoppingBag.png",
