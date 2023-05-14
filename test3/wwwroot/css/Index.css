@@ -9,7 +9,7 @@
         'button counter'
         'line line'
         'why why'
-;
+        'about_delivery about_delivery';
     align-items: center;
     margin-top: 12%;
 }
@@ -140,6 +140,22 @@ b {
     backdrop-filter: blur(12.5px);
     border-radius: 40px;
 }
+
+.name_zone {
+    grid-area: why;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 83.19%;
+    width: 458px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.mg-b0{
+    margin-bottom: 0;
+}
 /*#endregion */
 
 /*#region Почему именно мы*/
@@ -152,17 +168,6 @@ span.line {
     grid-template-columns: 458px auto;
     grid-template-areas:
         'why linetag';
-}
-
-b.why {
-    grid-area: why;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 64px;
-    line-height: 83.19%;
-    width: 458px;
-    display: flex;
-    align-items: center;
 }
 
 b.tagline {
@@ -216,4 +221,57 @@ img.icon_why{
 
 /*#region Меню*/
 
+/*#endregion */
+
+/*#region о доставке*/
+div.about_delivery {
+    grid-area: about_delivery;
+    display: grid;
+    place-items: left;
+    grid-template-areas:
+        'about about'
+        'map_inf map_inf';
+}
+div.background_delivery {
+    grid-area: map_inf;
+    display: grid;
+    place-items: left;
+    grid-template-areas:
+        'map inf';
+    background: rgba(217, 217, 217, 0.06);
+}
+b.delivery_name_zone {
+    grid-area: about;
+}
+
+div.delivery_inf_block {
+    grid-area: inf;
+    display: grid;
+    grid-template-areas:
+        'free free'
+        'adres times';
+}
+
+b.free_delivery {
+    grid-area: free;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 36px;
+    align-self: center;
+}
+
+p.where_delivery{
+    margin: 0;
+}
+
+b.where_delivery {
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
+div.times {
+    align-self: center;
+    text-align: center;
+}
 /*#endregion */
