@@ -50,6 +50,33 @@ span.glow_w {
     margin-left: 129px;
     z-index:-1;
 }
+
+span.delivery1 {
+    position: absolute;
+    width: 327px;
+    height: 244px;
+    left: 871px;
+    top: 1717px;
+    background: rgba(219, 0, 255, 0.56);
+}
+
+span.delivery2 {
+    position: absolute;
+    width: 327px;
+    height: 244px;
+    left: 871px;
+    top: 1717px;
+    background: rgba(239, 100, 0, 0.32);
+}
+
+span.delivery3 {
+    position: absolute;
+    width: 635px;
+    height: 589px;
+    left: 456px;
+    top: 1977px;
+    background: rgb(161, 255, 0, 0.06);
+}
 /*#endregion */
 
 /*#region Бургеры*/
