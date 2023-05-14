@@ -268,10 +268,18 @@ div.background_delivery {
     grid-area: map_inf;
     display: grid;
     place-items: left;
+    grid-template-columns: 850px auto;
     grid-template-areas:
         'map inf';
     background: rgba(217, 217, 217, 0.06);
+    transform: scaleY(0.9);
 }
+
+img.map{
+    transform: scaleX(0.9);
+    margin-left: -50px;
+}
+
 b.delivery_name_zone {
     grid-area: about;
 }
@@ -305,5 +313,6 @@ b.where_delivery {
 div.times {
     align-self: center;
     text-align: center;
+    width: 150px;
 }
 /*#endregion */
