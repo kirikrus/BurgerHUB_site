@@ -186,6 +186,11 @@ b {
 /*#endregion */
 
 /*#region Почему именно мы*/
+#delivery {
+    position: absolute;
+    top: 1516px;
+}
+
 span.line {
     grid-area: line;
     height: 160px;

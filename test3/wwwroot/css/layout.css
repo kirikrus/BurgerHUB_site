@@ -10,7 +10,14 @@ html {
     background: #141414;
     position: relative;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
+
+#home{
+    position:absolute;
+    top:0;
+}
+
 header {
     position: fixed;
     top: 0;
