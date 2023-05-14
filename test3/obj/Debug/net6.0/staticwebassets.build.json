@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qqZzifQXOt7kGK/D7RN1wFJbcnrMAzpYyzEdFCNVxeg=",
+  "Hash": "FKeBr7sxALh/unqhHCZ3DY6EkmzWbUCe9XrFTVPi0vE=",
   "Source": "BurgerHUB",
   "BasePath": "_content/BurgerHUB",
   "Mode": "Default",
@@ -136,6 +136,40 @@
       "OriginalItemSpec": "wwwroot\\icons\\arr_right.png"
     },
     {
+      "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\icons\\ClockClockwise.png",
+      "SourceId": "BurgerHUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\",
+      "BasePath": "_content/BurgerHUB",
+      "RelativePath": "icons/ClockClockwise.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\ClockClockwise.png"
+    },
+    {
+      "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\icons\\FacebookLogo.png",
+      "SourceId": "BurgerHUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\",
+      "BasePath": "_content/BurgerHUB",
+      "RelativePath": "icons/FacebookLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\FacebookLogo.png"
+    },
+    {
       "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\icons\\ic_sharp-eco.png",
       "SourceId": "BurgerHUB",
       "SourceType": "Discovered",
@@ -151,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icons\\ic_sharp-eco.png"
+    },
+    {
+      "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\icons\\InstagramLogo.png",
+      "SourceId": "BurgerHUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\",
+      "BasePath": "_content/BurgerHUB",
+      "RelativePath": "icons/InstagramLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\InstagramLogo.png"
     },
     {
       "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\icons\\mdi_food-steak.png",
@@ -187,6 +238,23 @@
       "OriginalItemSpec": "wwwroot\\icons\\ph_hamburger-fill.png"
     },
     {
+      "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\icons\\settings.png",
+      "SourceId": "BurgerHUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\",
+      "BasePath": "_content/BurgerHUB",
+      "RelativePath": "icons/settings.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\settings.png"
+    },
+    {
       "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\icons\\ShoppingBag.png",
       "SourceId": "BurgerHUB",
       "SourceType": "Discovered",
@@ -219,6 +287,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icons\\ShoppingBag_hover.png"
+    },
+    {
+      "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\icons\\TelegramLogo.png",
+      "SourceId": "BurgerHUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\",
+      "BasePath": "_content/BurgerHUB",
+      "RelativePath": "icons/TelegramLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\TelegramLogo.png"
     },
     {
       "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\icons\\User.png",
@@ -255,6 +340,23 @@
       "OriginalItemSpec": "wwwroot\\icons\\User_hover.png"
     },
     {
+      "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\icons\\YoutubeLogo.png",
+      "SourceId": "BurgerHUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\",
+      "BasePath": "_content/BurgerHUB",
+      "RelativePath": "icons/YoutubeLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\YoutubeLogo.png"
+    },
+    {
       "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\img\\1670364312_51-kartinkin-net-p-burger-kartinka-vkontakte-52.jpg",
       "SourceId": "BurgerHUB",
       "SourceType": "Discovered",
@@ -287,6 +389,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Black_Classic.png"
+    },
+    {
+      "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\img\\map.png",
+      "SourceId": "BurgerHUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\",
+      "BasePath": "_content/BurgerHUB",
+      "RelativePath": "img/map.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\map.png"
     },
     {
       "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\js\\site.js",

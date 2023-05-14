@@ -1,18 +1,20 @@
-﻿div.desc_Black_classic {
+﻿div.home {
     display: grid;
     width: 100%;
     grid-template-columns: auto;
     grid-template-rows: 200px 200px;
-    grid-template-areas: 
+    grid-template-areas:
         'burger_name burger_photo'
         'burger_desc burger_photo'
         'button counter'
         'line line'
-        'why why';
+        'why why'
+;
     align-items: center;
     margin-top: 12%;
 }
 
+/*#region Фон*/
 span.glow_p {
     grid-area: burger_desc;
     height: 320px;
@@ -48,7 +50,9 @@ span.glow_w {
     margin-left: 129px;
     z-index:-1;
 }
+/*#endregion */
 
+/*#region Бургеры*/
 span.name {
     grid-area: burger_name;
     font-weight: 500;
@@ -68,26 +72,6 @@ img.home_img {
     height: 722px;
     width: 679px;
     padding-top: 150px;
-}
-
-.more_inf {
-    grid-area: button;
-    background-color: transparent;
-    border: 2px solid #FF710B;
-    border-radius: 66px;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
-    width: 216px;
-    height: 80px;
-    margin-top: 30px;
-    transition: .3s linear;
-}
-
-.more_inf:hover {
-    background-color: rgb(255, 113, 11, 0.2);
-    transition: .3s linear;
-    transform: scale(0.95);
 }
 
 div.counter {
@@ -114,6 +98,31 @@ button.arr_left_right {
     border: none;
     margin-top: 30px;
 }
+/*#endregion */
+
+/*#region Общие фичи*/
+b {
+    font-weight: 400;
+}
+.more_inf {
+    grid-area: button;
+    background-color: transparent;
+    border: 2px solid #FF710B;
+    border-radius: 66px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    width: 216px;
+    height: 80px;
+    margin-top: 30px;
+    transition: .3s linear;
+}
+
+.more_inf:hover {
+    background-color: rgb(255, 113, 11, 0.2);
+    transition: .3s linear;
+    transform: scale(0.95);
+}
 
 .line {
     width: 112%;
@@ -124,6 +133,16 @@ button.arr_left_right {
     background-color: #FF710B;
 }
 
+.glass_box {
+    background: rgba(217, 217, 217, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12.5px);
+    border-radius: 40px;
+}
+/*#endregion */
+
+/*#region Почему именно мы*/
 span.line {
     grid-area: line;
     height: 160px;
@@ -177,14 +196,6 @@ div.why_grid {
         'meat constr eco';
 }
 
-.glass_box {
-    background: rgba(217, 217, 217, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(12.5px);
-    border-radius: 40px;
-}
-
 div.box_why {
     height: 231px;
     width: 300px;
@@ -199,8 +210,10 @@ img.icon_why{
     display: flex;
     top: -44px;
     left: -50px;
+    position: absolute;
+}
+/*#endregion */
 
-}
-b {
-    font-weight: 400;
-}
+/*#region Меню*/
+
+/*#endregion */
