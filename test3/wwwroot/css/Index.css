@@ -269,15 +269,18 @@ div.background_delivery {
     display: grid;
     place-items: left;
     grid-template-columns: 850px auto;
+    grid-template-rows: 700px;
     grid-template-areas:
         'map inf';
     background: rgba(217, 217, 217, 0.06);
     transform: scaleY(0.9);
 }
 
-img.map{
+img.map {
     transform: scaleX(0.9);
     margin-left: -50px;
+    height: 700px;
+    padding-left: 135px;
 }
 
 b.delivery_name_zone {
@@ -300,8 +303,9 @@ b.free_delivery {
     align-self: center;
 }
 
-p.where_delivery{
+p.where_delivery {
     margin: 0;
+    font-size: 26px;
 }
 
 b.where_delivery {
@@ -310,7 +314,7 @@ b.where_delivery {
     margin-bottom: 80px;
 }
 
-div.times {
+p.times {
     align-self: center;
     text-align: center;
     width: 150px;
