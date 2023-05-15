@@ -102,9 +102,3 @@ img.menu_icon:hover {
     transform: scale(1.2);
     transition: .3s linear;
 }
-.pd25 {
-    padding-left: 25px;
-}
-.pd50 {
-    padding-left: 50px;
-}

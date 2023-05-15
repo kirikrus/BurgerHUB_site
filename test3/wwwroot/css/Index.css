@@ -9,7 +9,8 @@
         'button counter'
         'line line'
         'why why'
-        'about_delivery about_delivery';
+        'about_delivery about_delivery'
+        'about_us about_us';
     align-items: center;
     margin-top: 12%;
 }
@@ -160,6 +161,10 @@ b {
     background-color: #FF710B;
 }
 
+.orange_color {
+    color: #FF710B;
+}
+
 .glass_box {
     background: rgba(217, 217, 217, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -182,6 +187,13 @@ b {
 
 .mg-b0{
     margin-bottom: 0;
+}
+.pd25 {
+    padding-left: 25px;
+}
+
+.pd50 {
+    padding-left: 50px;
 }
 /*#endregion */
 
@@ -305,7 +317,7 @@ b.free_delivery {
 
 p.where_delivery {
     margin: 0;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 b.where_delivery {
@@ -320,3 +332,81 @@ p.times {
     width: 150px;
 }
 /*#endregion */
+
+/*#region о доставке*/
+div.about_us {
+    grid-area: about_us;
+    display: grid;
+    align-items: center;
+    grid-template-areas:
+        'about'
+        'description'
+        'contact_icons'
+        'contact_phone'
+        'tagline_down';
+}
+
+b.us_name_zone {
+    grid-area: about;
+}
+
+b.us_description {
+    grid-area: description;
+    width: 1000px;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    justify-self: center;
+}
+
+div.contact_icons {
+    grid-area: contact_icons;
+    justify-self: center;
+    margin-top: 50px;
+    z-index: 2;
+}
+
+img.contact_icons {
+    height: 50px;
+    transition: .3s linear;
+}
+
+img.contact_icons:hover {
+    transform: scale(0.8);
+    transition: .3s linear;
+}
+
+b.contact_phone {
+    grid-area: contact_phone;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+}
+
+div.tagline_down {
+    grid-area: tagline_down;
+    font-weight: 700;
+    font-size: 200px;
+    margin-top: 100px;
+}
+
+p.burgerhub_down {
+    position: absolute;
+    margin-top: 0;
+    transform: scale3d(0.7,2.5,1);
+    left: -75px;
+    z-index: 1;
+}
+
+p.juicygrub_down {
+    position: absolute;
+    margin-top: 60px;
+    transform: scale3d(0.7,2.5,1);
+    left: 706px;
+}
+
+#about {
+    position: absolute;
+    top: 2300px;
+}
+/*#endregion*/
