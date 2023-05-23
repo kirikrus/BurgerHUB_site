@@ -5,7 +5,7 @@
 -- Dumped from database version 15.3
 -- Dumped by pg_dump version 15.3
 
--- Started on 2023-05-22 14:49:23
+-- Started on 2023-05-23 17:33:07
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -24,7 +24,6 @@ SET row_security = off;
 --
 
 CREATE EXTENSION IF NOT EXISTS adminpack WITH SCHEMA pg_catalog;
-
 
 --
 -- TOC entry 3447 (class 0 OID 0)
@@ -46,15 +45,15 @@ SET default_table_access_method = heap;
 
 CREATE TABLE public.burger (
     id_burger bigint NOT NULL,
-    price numeric NOT NULL,
-    photo text NOT NULL,
+    price_burger numeric NOT NULL,
+    photo_burger text NOT NULL,
     cooking_time numeric NOT NULL,
-    weight integer NOT NULL,
+    weight_burger integer NOT NULL,
     hit_or_not integer NOT NULL,
     eco_or_not integer NOT NULL,
-    description text NOT NULL,
-    name text NOT NULL,
-    composition text NOT NULL,
+    description_ text NOT NULL,
+    name_burger text NOT NULL,
+    composition_burger text NOT NULL,
     id_calories_burger bigint NOT NULL
 );
 
@@ -68,11 +67,11 @@ ALTER TABLE public.burger OWNER TO postgres;
 
 CREATE TABLE public.burger_constructor (
     id_burger_constructor bigint NOT NULL,
-    price numeric NOT NULL,
-    weight integer NOT NULL,
-    name text NOT NULL,
-    id_ingredients bigint,
-    id_calories_constructor bigint
+    price_constructor numeric NOT NULL,
+    weight_constructor integer NOT NULL,
+    name_constructor text NOT NULL,
+    id_ingredients bigint NOT NULL,
+    id_calories_constructor bigint NOT NULL
 );
 
 
@@ -115,10 +114,10 @@ ALTER TABLE public.burger ALTER COLUMN id_burger ADD GENERATED ALWAYS AS IDENTIT
 
 CREATE TABLE public.calories_burger (
     id_calories_burger bigint NOT NULL,
-    proteins integer NOT NULL,
-    fasts integer NOT NULL,
-    carbohydrates integer NOT NULL,
-    calories integer NOT NULL
+    proteins_burger integer NOT NULL,
+    fasts_burger integer NOT NULL,
+    carbohydrates_burger integer NOT NULL,
+    calories_burger integer NOT NULL
 );
 
 
@@ -146,10 +145,10 @@ ALTER TABLE public.calories_burger ALTER COLUMN id_calories_burger ADD GENERATED
 
 CREATE TABLE public.calories_constructor (
     id_calories_constructor bigint NOT NULL,
-    proteins integer NOT NULL,
-    fasts integer NOT NULL,
-    carbohydrates integer NOT NULL,
-    calories integer NOT NULL
+    proteins_constructor integer NOT NULL,
+    fasts_constructor integer NOT NULL,
+    carbohydrates_constructor integer NOT NULL,
+    calories_constructor integer NOT NULL
 );
 
 
@@ -177,10 +176,10 @@ ALTER TABLE public.calories_constructor ALTER COLUMN id_calories_constructor ADD
 
 CREATE TABLE public.calories_ingredients (
     id_calories_ingredients bigint NOT NULL,
-    proteins integer NOT NULL,
-    fasts integer NOT NULL,
-    carbohydrates integer NOT NULL,
-    calories integer NOT NULL
+    proteins_ingredients integer NOT NULL,
+    fasts_ingredients integer NOT NULL,
+    carbohydrates_ingredients integer NOT NULL,
+    calories_ingredients integer NOT NULL
 );
 
 
@@ -209,9 +208,9 @@ ALTER TABLE public.calories_ingredients ALTER COLUMN id_calories_ingredients ADD
 CREATE TABLE public.delivery (
     id_delivery bigint NOT NULL,
     name_delivery text NOT NULL,
-    surname text NOT NULL,
-    patronymic text NOT NULL,
-    phone_number text NOT NULL
+    surname_delivery text NOT NULL,
+    patronymic_delivery text NOT NULL,
+    phone_number_delivery text NOT NULL
 );
 
 
@@ -240,8 +239,8 @@ ALTER TABLE public.delivery ALTER COLUMN id_delivery ADD GENERATED ALWAYS AS IDE
 CREATE TABLE public.history_of_orders (
     id_history bigint NOT NULL,
     date_of_order timestamp without time zone NOT NULL,
-    address text NOT NULL,
-    "time" timestamp without time zone NOT NULL,
+    address_of_order text NOT NULL,
+    time_order timestamp without time zone NOT NULL,
     sum_of_order numeric NOT NULL,
     id_positions_of_history bigint NOT NULL
 );
@@ -272,11 +271,11 @@ ALTER TABLE public.history_of_orders ALTER COLUMN id_history ADD GENERATED ALWAY
 CREATE TABLE public.ingredients (
     id_ingredients bigint NOT NULL,
     ingredient text NOT NULL,
-    quantity integer NOT NULL,
-    price numeric NOT NULL,
+    quantity_ingredient integer NOT NULL,
+    price_ingredient numeric NOT NULL,
     photo_above text NOT NULL,
     photo_side text NOT NULL,
-    weight integer NOT NULL,
+    weight_ingredient integer NOT NULL,
     id_calories_ingredients bigint NOT NULL
 );
 
@@ -300,10 +299,10 @@ ALTER TABLE public.ingredients ALTER COLUMN id_ingredients ADD GENERATED ALWAYS 
 
 --
 -- TOC entry 215 (class 1259 OID 16421)
--- Name: order; Type: TABLE; Schema: public; Owner: postgres
+-- Name: order_; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE TABLE public."order" (
+CREATE TABLE public.order_ (
     id_order bigint NOT NULL,
     id_user bigint NOT NULL,
     order_data timestamp without time zone NOT NULL,
@@ -313,14 +312,14 @@ CREATE TABLE public."order" (
 );
 
 
-ALTER TABLE public."order" OWNER TO postgres;
+ALTER TABLE public.order_ OWNER TO postgres;
 
 --
 -- TOC entry 219 (class 1259 OID 16435)
 -- Name: order_id_order_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
-ALTER TABLE public."order" ALTER COLUMN id_order ADD GENERATED ALWAYS AS IDENTITY (
+ALTER TABLE public.order_ ALTER COLUMN id_order ADD GENERATED ALWAYS AS IDENTITY (
     SEQUENCE NAME public.order_id_order_seq
     START WITH 1
     INCREMENT BY 1
@@ -429,16 +428,16 @@ ALTER TABLE public.positions_order ALTER COLUMN id_positions_order ADD GENERATED
 
 CREATE TABLE public.user_ (
     id_user bigint NOT NULL,
-    "user_name " text NOT NULL,
-    surname text NOT NULL,
-    patronymic text NOT NULL,
-    email text NOT NULL,
-    password text NOT NULL,
-    phone_number text NOT NULL,
-    address text NOT NULL,
-    burgers text NOT NULL,
-    rank text NOT NULL,
-    photo text NOT NULL,
+    name_of_user text NOT NULL,
+    surname_user text NOT NULL,
+    patronymic_user text NOT NULL,
+    email_user text NOT NULL,
+    parole_user text NOT NULL,
+    phone_number_user text NOT NULL,
+    address_user text NOT NULL,
+    burgers_user text NOT NULL,
+    rating_user text NOT NULL,
+    photo_user text NOT NULL,
     id_history_of_orders bigint NOT NULL
 );
 
@@ -466,6 +465,8 @@ ALTER TABLE public.user_ ALTER COLUMN id_user ADD GENERATED ALWAYS AS IDENTITY (
 -- Data for Name: burger; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+COPY public.burger (id_burger, price_burger, photo_burger, cooking_time, weight_burger, hit_or_not, eco_or_not, description_, name_burger, composition_burger, id_calories_burger) FROM stdin;
+\.
 
 
 --
@@ -474,6 +475,8 @@ ALTER TABLE public.user_ ALTER COLUMN id_user ADD GENERATED ALWAYS AS IDENTITY (
 -- Data for Name: burger_constructor; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+COPY public.burger_constructor (id_burger_constructor, price_constructor, weight_constructor, name_constructor, id_ingredients, id_calories_constructor) FROM stdin;
+\.
 
 
 --
@@ -482,6 +485,8 @@ ALTER TABLE public.user_ ALTER COLUMN id_user ADD GENERATED ALWAYS AS IDENTITY (
 -- Data for Name: calories_burger; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+COPY public.calories_burger (id_calories_burger, proteins_burger, fasts_burger, carbohydrates_burger, calories_burger) FROM stdin;
+\.
 
 
 --
@@ -490,6 +495,8 @@ ALTER TABLE public.user_ ALTER COLUMN id_user ADD GENERATED ALWAYS AS IDENTITY (
 -- Data for Name: calories_constructor; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+COPY public.calories_constructor (id_calories_constructor, proteins_constructor, fasts_constructor, carbohydrates_constructor, calories_constructor) FROM stdin;
+\.
 
 
 --
@@ -498,6 +505,8 @@ ALTER TABLE public.user_ ALTER COLUMN id_user ADD GENERATED ALWAYS AS IDENTITY (
 -- Data for Name: calories_ingredients; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+COPY public.calories_ingredients (id_calories_ingredients, proteins_ingredients, fasts_ingredients, carbohydrates_ingredients, calories_ingredients) FROM stdin;
+\.
 
 
 --
@@ -506,6 +515,8 @@ ALTER TABLE public.user_ ALTER COLUMN id_user ADD GENERATED ALWAYS AS IDENTITY (
 -- Data for Name: delivery; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+COPY public.delivery (id_delivery, name_delivery, surname_delivery, patronymic_delivery, phone_number_delivery) FROM stdin;
+\.
 
 
 --
@@ -514,6 +525,8 @@ ALTER TABLE public.user_ ALTER COLUMN id_user ADD GENERATED ALWAYS AS IDENTITY (
 -- Data for Name: history_of_orders; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+COPY public.history_of_orders (id_history, date_of_order, address_of_order, time_order, sum_of_order, id_positions_of_history) FROM stdin;
+\.
 
 
 --
@@ -522,14 +535,18 @@ ALTER TABLE public.user_ ALTER COLUMN id_user ADD GENERATED ALWAYS AS IDENTITY (
 -- Data for Name: ingredients; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+COPY public.ingredients (id_ingredients, ingredient, quantity_ingredient, price_ingredient, photo_above, photo_side, weight_ingredient, id_calories_ingredients) FROM stdin;
+\.
 
 
 --
 -- TOC entry 3416 (class 0 OID 16421)
 -- Dependencies: 215
--- Data for Name: order; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: order_; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+COPY public.order_ (id_order, id_user, order_data, id_delivery, id_payment, id_positions_order) FROM stdin;
+\.
 
 
 --
@@ -538,6 +555,8 @@ ALTER TABLE public.user_ ALTER COLUMN id_user ADD GENERATED ALWAYS AS IDENTITY (
 -- Data for Name: payment; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+COPY public.payment (id_payment, number_card, cvv, validity_period) FROM stdin;
+\.
 
 
 --
@@ -546,6 +565,8 @@ ALTER TABLE public.user_ ALTER COLUMN id_user ADD GENERATED ALWAYS AS IDENTITY (
 -- Data for Name: positions_of_history; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+COPY public.positions_of_history (id_positions, quantity_burger, quantity_burger_constructor, id_burger, id_burger_constructor) FROM stdin;
+\.
 
 
 --
@@ -554,6 +575,8 @@ ALTER TABLE public.user_ ALTER COLUMN id_user ADD GENERATED ALWAYS AS IDENTITY (
 -- Data for Name: positions_order; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+COPY public.positions_order (id_positions_order, quantity_burger, quantity_burger_constructor, id_burger, id_burger_constructor) FROM stdin;
+\.
 
 
 --
@@ -562,6 +585,8 @@ ALTER TABLE public.user_ ALTER COLUMN id_user ADD GENERATED ALWAYS AS IDENTITY (
 -- Data for Name: user_; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+COPY public.user_ (id_user, name_of_user, surname_user, patronymic_user, email_user, parole_user, phone_number_user, address_user, burgers_user, rating_user, photo_user, id_history_of_orders) FROM stdin;
+\.
 
 
 --
@@ -755,10 +780,10 @@ ALTER TABLE ONLY public.ingredients
 
 --
 -- TOC entry 3235 (class 2606 OID 16440)
--- Name: order order_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: order_ order_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."order"
+ALTER TABLE ONLY public.order_
     ADD CONSTRAINT order_pkey PRIMARY KEY (id_order);
 
 
@@ -863,10 +888,10 @@ ALTER TABLE ONLY public.ingredients
 
 --
 -- TOC entry 3260 (class 2606 OID 16575)
--- Name: order id_delivery; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: order_ id_delivery; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."order"
+ALTER TABLE ONLY public.order_
     ADD CONSTRAINT id_delivery FOREIGN KEY (id_delivery) REFERENCES public.delivery(id_delivery) NOT VALID;
 
 
@@ -890,10 +915,10 @@ ALTER TABLE ONLY public.burger_constructor
 
 --
 -- TOC entry 3261 (class 2606 OID 16580)
--- Name: order id_payment; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: order_ id_payment; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."order"
+ALTER TABLE ONLY public.order_
     ADD CONSTRAINT id_payment FOREIGN KEY (id_payment) REFERENCES public.payment(id_payment) NOT VALID;
 
 
@@ -908,23 +933,23 @@ ALTER TABLE ONLY public.history_of_orders
 
 --
 -- TOC entry 3262 (class 2606 OID 16585)
--- Name: order id_positions_order; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: order_ id_positions_order; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."order"
+ALTER TABLE ONLY public.order_
     ADD CONSTRAINT id_positions_order FOREIGN KEY (id_positions_order) REFERENCES public.positions_order(id_positions_order) NOT VALID;
 
 
 --
 -- TOC entry 3263 (class 2606 OID 16441)
--- Name: order id_user; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: order_ id_user; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."order"
+ALTER TABLE ONLY public.order_
     ADD CONSTRAINT id_user FOREIGN KEY (id_user) REFERENCES public.user_(id_user) NOT VALID;
 
 
--- Completed on 2023-05-22 14:49:23
+-- Completed on 2023-05-23 17:33:07
 
 --
 -- PostgreSQL database dump complete
