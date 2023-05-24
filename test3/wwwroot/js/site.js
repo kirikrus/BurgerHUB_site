@@ -1,4 +1,15 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿function openModal() {
+    var modal = document.getElementById("login_window");
+    var back_ = document.getElementById("backdrop");
+    modal.classList.add("open");
+    back_.classList.add("open");
+    document.body.classList.add("modal-open");
+}
 
-// Write your JavaScript code.
+function closeModal() {
+    var modal = document.getElementById("login_window");
+    var back_ = document.getElementById("backdrop");
+    modal.classList.remove("open");
+    back_.classList.remove("open");
+    document.body.classList.remove("modal-open");
+}
