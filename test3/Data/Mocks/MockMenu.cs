@@ -1,5 +1,5 @@
 ﻿using BurgerHUB.Models;
-using BurgerHUB.Interfaces;
+using BurgerHUB.Data.Interfaces;
 
 namespace BurgerHUB.Mocks
 {
