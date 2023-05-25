@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uCNnGn8Id3dR5A3DSXntnC3Ea8vYTFqD3R56Ke7NnDI=",
+  "Hash": "DSZ6V+pDHPklZT6HYSPYRLWKQ+Wnx3k9D1hDGN5qIPY=",
   "Source": "BurgerHUB",
   "BasePath": "_content/BurgerHUB",
   "Mode": "Default",
@@ -338,6 +338,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icons\\User_hover.png"
+    },
+    {
+      "Identity": "X:\\BurgerHUB_site\\test3\\wwwroot\\icons\\User_hover_.png",
+      "SourceId": "BurgerHUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "X:\\BurgerHUB_site\\test3\\wwwroot\\",
+      "BasePath": "_content/BurgerHUB",
+      "RelativePath": "icons/User_hover_.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\User_hover_.png"
     },
     {
       "Identity": "X:\\BurgerHUB_site\\test3\\wwwroot\\icons\\YoutubeLogo.png",
