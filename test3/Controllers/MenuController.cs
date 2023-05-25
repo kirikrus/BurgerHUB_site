@@ -15,8 +15,7 @@ namespace BurgerHUB.Controllers
         public ViewResult ShowMenu()
         {
             MenuViewModel obj = new MenuViewModel();
-            obj.Menu = _burgers.BurgersMenu;
-            return View(); 
+            return View(obj); 
         }
 
     }
