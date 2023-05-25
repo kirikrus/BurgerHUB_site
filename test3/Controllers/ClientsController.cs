@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BurgerHUB.Controllers
 {
-    public class ClientsController : Controller
+    public class ClientsConroller : Controller
     {
         private readonly IClients _Clients;
 
-        public ClientsController(IClients _clients) 
+        public ClientsConroller(IClients _clients) 
         { 
             _Clients = _clients;
         }
