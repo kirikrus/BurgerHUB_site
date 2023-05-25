@@ -33,8 +33,12 @@
         </nav>
     </header>
 
+    <!--#region вход в профиль -->
     <form id="login_window" method="post" action="" onclose="closeModal">
-        <img class="icon_user login_icon" src="~/icons/User_hover_.png"/>
+        <div class="login_window_head">
+            <button class="left_arr" onclick="closeModal();"><img src="~/icons/arr_left.png"/></button>
+            <img class="icon_user login_icon" src="~/icons/User_hover_.png"/>
+        </div>
         <div class="login_field">
             <input type="email" placeholder="email@email.ru"/>
         </div>
@@ -45,6 +49,7 @@
         <input class="login_button" type="submit" value="Вход"/>
         <a href="" class="login_reg"><b class="underline roboto">Зарегестрироваться</b></a>
     </form>
+    <!--#endregion -->
 
     <span id="home"></span>
     <div class="container">

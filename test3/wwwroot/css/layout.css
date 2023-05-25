@@ -122,7 +122,7 @@ img.menu_icon:hover {
     z-index: 11;
     align-items: center;
     grid-template-areas:
-        'icon'
+        'head'
         'email'
         'password'
         'forget'
@@ -170,6 +170,12 @@ a{
     text-decoration: none;
 }
 
+button{
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+}
+
 .underline, :focus-visible {
     text-decoration: underline;
     color: white;
@@ -180,6 +186,26 @@ a{
 a.login_reg {
     justify-self: center;
     align-self: start;
+}
+
+.login_window_head{
+    display: grid;
+    grid-template-areas: 'exit icon';
+    grid-template-columns: 100px;
+    width: 350px;
+}
+
+button.left_arr {
+    height: 50px;
+    width: 50px;
+    place-self: center;
+    transition: .3s linear;
+}
+
+button.left_arr:hover {
+    transform: scale(0.9);
+    filter: brightness(0.8);
+    transition: .3s linear;
 }
 
 img.login_icon {
