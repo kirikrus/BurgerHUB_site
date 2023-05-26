@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SRLazI4ayyehEwOZvuouOUedZi8H6BIh9cv2q9Dtok4=",
+  "Hash": "xJFzdUvo7jmTG1DeXFoft4M+fZy1R+YoBhHOtWuxuX4=",
   "Source": "BurgerHUB",
   "BasePath": "_content/BurgerHUB",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BurgerHUB.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\css\\common.css",
+      "SourceId": "BurgerHUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\",
+      "BasePath": "_content/BurgerHUB",
+      "RelativePath": "css/common.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\common.css"
     },
     {
       "Identity": "D:\\вуз\\сайт\\BurgerHUB_site\\test3\\wwwroot\\css\\Index.css",
