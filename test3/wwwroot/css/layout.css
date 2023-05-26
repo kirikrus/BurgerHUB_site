@@ -9,7 +9,7 @@
 html {
     background: #141414;
     position: relative;
-
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
