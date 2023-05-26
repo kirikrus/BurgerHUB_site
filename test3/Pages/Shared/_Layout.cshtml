@@ -17,6 +17,7 @@
 
 <body>
     <span id="backdrop"></span>
+    <span id="backdrop_err"></span>
 
     <header>
         <nav>
@@ -28,16 +29,16 @@
 		            <a href="#delivery" class="menu_ref roboto">Доставка</a>
                     <a href="#about" class="menu_ref roboto">О нас</a>
                     <a href="shopping_bag" class="icon_shop"><img class="menu_icon" src="~/icons/ShoppingBag_hover.png"/></a>
-                    <button onclick="openModal();" class="icon_user pd25"><img class="menu_icon" src="~/icons/User_hover.png"/></button>
+                    <button onclick="openModal('login_window');" class="icon_user pd25"><img class="menu_icon" src="~/icons/User_hover.png"/></button>
                 </div>
             </div>
         </nav>
     </header>
 
     <!--#region вход в профиль -->
-    <form id="login_window" class="glass_box" method="post" onsubmit="submitForm(event)" onclose="closeModal">
+    <form id="login_window" class="glass_box" method="post" onsubmit="submitForm(event)" onclose="closeModal(login_window);">
         <div class="login_window_head">
-            <button class="left_arr" onclick="closeModal();"><img src="~/icons/arr_left.png"/></button>
+            <button class="left_arr" onclick="closeModal('login_window');"><img src="~/icons/arr_left.png"/></button>
             <img class="icon_user login_icon" src="~/icons/User_hover_.png"/>
         </div>
         <div class="login_field">
@@ -46,10 +47,23 @@
         <div class="login_field">
             <input type="password" placeholder="пароль"/>
         </div>
-        <a href="" class="login_reg"><b class="underline roboto">Забыли пароль?</b></a>
+        <button onclick="openModal('Error_1', 1);" type="button" class="login_reg"><b class="underline roboto">Забыли пароль?</b></button>
         <input class="login_button" type="submit" value="Вход"/>
         <a href="" class="login_reg"><b class="underline roboto">Зарегестрироваться</b></a>
     </form>
+    <!--#endregion -->
+
+    <!--#region вход в профиль -->
+        <div id="Error_1" class="Error glass_box">
+            <p class="Error_text roboto">Хмммм...</p>
+            <b class="Error_desc roboto">
+                Вы думаете это сработает? <br/>
+                Так как у сайта нет домена, то и нет возможности подключить 
+                SMTP клиент для отправки сообщений, как следствие, нет возможности
+                реализовать надежную проедуру восстановления пароля...
+            </b>
+            <button class="base_button" onclick="closeModal('Error_1', 1);">Ок</button>
+        </div>
     <!--#endregion -->
 
     <span id="home"></span>

@@ -55,4 +55,53 @@ b {
 .pd50 {
     padding-left: 50px;
 }
+
+.Error {
+    display: grid;
+    place-items: center;
+    background-color: rgb(255, 255, 255, 0.20);
+    height: 250px;
+    width: 500px;
+    z-index: 100;
+    position: fixed;
+    left: calc(50% - 500px/2);
+    top: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s linear, visibility 0s linear 1s;
+}
+
+.Error_text {
+    color: rgb(203, 60, 60);
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.Error_desc {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    width: 400px;
+}
+
+.base_button {
+    width: 150px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.79);
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 32px;
+    color: #4E4E4E;
+    transition: .3s linear;
+    margin: 10px 0 10px 0;
+}
+
+.base_button:hover {
+    transform: scale(0.9);
+    opacity: 0.6;
+    transition: .3s linear;
+}
 /*#endregion */

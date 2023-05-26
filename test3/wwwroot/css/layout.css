@@ -117,7 +117,6 @@ img.menu_icon:hover {
     left: calc(50% - 457px/2 - 0.5px);
     top: 100px;
     background: rgba(217, 217, 217, 0.19);
-    border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 80px;
     z-index: 11;
     align-items: center;
@@ -188,6 +187,12 @@ a.login_reg {
     align-self: start;
 }
 
+button.login_reg {
+    justify-self: center;
+    align-self: start;
+    width: 150px;
+}
+
 .login_window_head{
     display: grid;
     grid-template-areas: 'exit icon';
@@ -226,7 +231,7 @@ input, input:focus-visible {
     text-align: center;
 }
 
-#backdrop {
+#backdrop, #backdrop_err {
     display: block;
     position: fixed;
     z-index: 10;
@@ -241,7 +246,11 @@ input, input:focus-visible {
     transition: opacity 1s linear, visibility 0s linear 1s;
 }
 
-#backdrop.open {
+#backdrop_err{
+    z-index: 99;
+}
+
+#backdrop.open, #backdrop_err.open {
     opacity: 1;
     visibility: visible;
     transition-delay: 0s;
@@ -249,4 +258,10 @@ input, input:focus-visible {
 
 body.modal-open {
     overflow: hidden;
+}
+
+#Error_1.open {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
 }

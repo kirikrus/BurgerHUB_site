@@ -1,17 +1,30 @@
-﻿function openModal() {
-    var modal = document.getElementById("login_window");
+﻿function openModal(modal_name, err = 0) {
+    var modal = document.getElementById(modal_name);
     var back_ = document.getElementById("backdrop");
     modal.classList.add("open");
     back_.classList.add("open");
     document.body.classList.add("modal-open");
+    if (err) {
+        var err_back_ = document.getElementById("backdrop_err");
+        err_back_.classList.add("open");
+    }
 }
 
-function closeModal() {
-    var modal = document.getElementById("login_window");
+function closeModal(modal_name, err = 0) {
+    var modal = document.getElementById(modal_name);
     var back_ = document.getElementById("backdrop");
+    var err_back_ = document.getElementById("backdrop_err");
+
     modal.classList.remove("open");
-    back_.classList.remove("open");
-    document.body.classList.remove("modal-open");
+
+    if (err) {
+        err_back_.classList.remove("open");
+    }
+    else {
+        back_.classList.remove("open");
+        document.body.classList.remove("modal-open");
+    }
+
 }
 
 function submitForm(event) {

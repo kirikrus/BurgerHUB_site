@@ -276,7 +276,7 @@ p.times {
 }
 /*#endregion */
 
-/*#region о доставке*/
+/*#region о нас*/
 div.about_us {
     grid-area: about_us;
     display: grid;
