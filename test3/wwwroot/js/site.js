@@ -51,3 +51,28 @@ function submitForm(event) {
             // Обработка ошибок
         });
 }
+
+// Анимации и стили
+function menu_filter_button_color(bt_name) {
+    var BT_all = document.getElementById("bt_all");
+    var BT_eco = document.getElementById("bt_eco");
+    var BT_hit = document.getElementById("bt_hit");
+
+    switch (bt_name) {
+        case "bt_all":
+            bt_all.classList.add("white");
+            bt_eco.classList.remove("white");
+            bt_hit.classList.remove("white");
+            break;
+        case "bt_eco":
+            bt_all.classList.remove("white");
+            bt_eco.classList.add("white");
+            bt_hit.classList.remove("white");
+            break;
+        case "bt_hit":
+            bt_all.classList.remove("white");
+            bt_eco.classList.remove("white");
+            bt_hit.classList.add("white");
+            break;
+    }
+}

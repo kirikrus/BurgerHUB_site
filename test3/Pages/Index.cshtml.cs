@@ -22,11 +22,11 @@ namespace BurgerHUB.Pages
                         Composition = "Соевый стейк, соус тайская сальса, соус гуакамолле, свежий редис, " +
                         "специя фурикаки, огурец свежий, красный лук, кинза,булочка для гамбургера с кунжутом, " +
                         "соус Бешамель",
-                        IMG = "~/wwwroot/Black_Classic.png",
+                        IMG = "/img/Black_Classic.png",
                         Price = 400,
                         IsEco = false,
                         IsHit = true,
-                        CookTime_sec = 1500,
+                        CookTime_sec = 25,
                         Weight_gram = 487,
                         Supplement = 706,
                     },
@@ -39,11 +39,11 @@ namespace BurgerHUB.Pages
                         "кинза...\r\nИ лучше описания не придумать.",
                         Composition = "Копченый сыр сулугуни, лук конфи, говяжья котлета, " +
                         "пивной соус, булочка для гамбургера с кунжутом",
-                        IMG = "~/wwwroot/Gurmyau.png",
+                        IMG = "/img/Gurmyau.png",
                         Price = 900,
                         IsEco = true,
                         IsHit = true,
-                        CookTime_sec = 900,
+                        CookTime_sec = 20,
                         Weight_gram = 400,
                         Supplement = 200,
                     },

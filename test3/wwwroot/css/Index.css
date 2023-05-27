@@ -9,6 +9,7 @@
         'button counter'
         'line line'
         'why why'
+        'menu menu'
         'about_delivery about_delivery'
         'about_us about_us';
     align-items: center;
@@ -131,7 +132,7 @@ button.arr_left_right {
 /*#region Почему именно мы*/
 #delivery {
     position: absolute;
-    top: 1516px;
+    top: 2328px;
 }
 
 span.line {
@@ -143,18 +144,6 @@ span.line {
     grid-template-columns: 458px auto;
     grid-template-areas:
         'why linetag';
-}
-
-.name_zone {
-    grid-area: why;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 64px;
-    line-height: 83.19%;
-    width: 458px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 45px;
 }
 
 b.tagline {
@@ -177,7 +166,7 @@ div.crop {
 
 img.backgroug {
     margin-top: -500px;
-    opacity: 0.03;
+    opacity: 0.15;
 }
 
 div.why_grid {
@@ -207,9 +196,102 @@ img.icon_why{
 /*#endregion */
 
 /*#region Меню*/
+div.burger_menu {
+    margin-top: 50px;
+    grid-area: menu;
+    display: grid;
+    place-items: left;
+    grid-template-areas:
+        'why'
+        'filter'
+        'lines'
+        'menu';
+}
 
+div.menu_filters {
+    grid-area: filter;
+    display: grid;
+    place-items: center;
+    grid-template-areas: 'all eco hit';
+}
+
+div.menu-area{
+    grid-area: menu;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 0 50px 0;
+    justify-content: space-evenly;
+}
+
+div.burger_block {
+    height: 399px;
+    width: 388px;
+}
+
+div.burger_grid {
+    display: grid;
+    place-items: center;
+    grid-template-areas:
+        'img img'
+        'name name'
+        'time cost'
+        'button button';
+    grid-template-rows: 180px auto auto auto;
+}
+
+button.burger_menu_bt {
+    width: 287px;
+    height: 57px;
+    border: 1px solid #FFFFFF;
+    border-radius: 39px;
+    font-weight: 400;
+    font-size: 36px;
+    margin: 0;
+}
+
+img.burger_menu_img {
+    height: 363px;
+    width: 347px;
+}
+
+b.burger_cook_time {
+    grid-area: time;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+b.burger_name {
+    margin-top: -20px;
+    grid-area: name;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+b.burger_price {
+    grid-area: cost;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+div.burger_time_block {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-areas: 'icon time';
+    place-items: center;
+}
+
+span.menu_line {
+    grid-area: lines;
+    position: absolute;
+    height: 49px;
+    top: 2272px;
+    margin-left: -7%;
+    width: 110%;
+}
 /*#endregion */
-
 /*#region о доставке*/
 div.about_delivery {
     grid-area: about_delivery;
@@ -360,6 +442,6 @@ p.juicygrub_down {
 
 #about {
     position: absolute;
-    top: 2300px;
+    top: 3120px;
 }
 /*#endregion*/

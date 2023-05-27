@@ -3,26 +3,6 @@ b {
     font-weight: 400;
 }
 
-.more_inf {
-    grid-area: button;
-    background-color: transparent;
-    border: 2px solid #FF710B;
-    border-radius: 66px;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
-    width: 216px;
-    height: 80px;
-    margin-top: 30px;
-    transition: .3s linear;
-}
-
-.more_inf:hover {
-    background-color: rgb(255, 113, 11, 0.2);
-    transition: .3s linear;
-    transform: scale(0.95);
-}
-
 .line {
     width: 112%;
     margin-left: -7%;
@@ -87,6 +67,70 @@ b {
     width: 400px;
 }
 
+.name_zone {
+    grid-area: why;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 83.19%;
+    width: 458px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.underline, :focus-visible {
+    text-decoration: underline;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/*#region Кнопки*/
+.white_button {
+    border: 2px solid white;
+    grid-area: button;
+    background-color: transparent;
+    border-radius: 66px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    width: 216px;
+    height: 80px;
+    margin-top: 30px;
+    transition: .3s linear;
+}
+
+.white_button:hover{
+    background-color: rgb(255, 255, 255, 0.30);
+    transition: .3s linear;
+    transform: scale(0.95);
+}
+
+.white {
+    background-color: rgb(255, 255, 255, 0.30);
+}
+
+.more_inf {
+    grid-area: button;
+    background-color: transparent;
+    border: 2px solid #FF710B;
+    border-radius: 66px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    width: 216px;
+    height: 80px;
+    margin-top: 30px;
+    transition: .3s linear;
+}
+
+.more_inf:hover {
+    background-color: rgb(255, 113, 11, 0.2);
+    transition: .3s linear;
+    transform: scale(0.95);
+}
+
 .base_button {
     width: 150px;
     height: 50px;
@@ -104,4 +148,5 @@ b {
     opacity: 0.6;
     transition: .3s linear;
 }
+/*#endregion */
 /*#endregion */

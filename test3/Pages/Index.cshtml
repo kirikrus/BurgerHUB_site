@@ -18,7 +18,7 @@
 
     <!--#region почему именно мы  -->
     <span class="line orange">
-        <b class="name_zone mg-b0">Почему именно мы?</b>
+        <b class="name_zone mg-b0" style="margin-top: 25px">Почему именно мы?</b>
         <b class="tagline">BURGER HUB - JUICY GRUB</b>
     </span>
 
@@ -44,7 +44,39 @@
         </div>
     </div>
     <!--#endregion -->
-    
+
+    <!--#region меню  -->
+    <span id="menu"></span>
+    <div class="burger_menu">
+        <b class="name_zone">Меню</b>
+        <div class="menu_filters">
+            <button id="bt_all" class="roboto white_button" style="grid-area: all" onclick="menu_filter_button_color('bt_all');">Все</button>
+            <button id="bt_eco" class="roboto white_button" style="grid-area: eco" onclick="menu_filter_button_color('bt_eco');">Eco</button>
+            <button id="bt_hit" class="roboto white_button" style="grid-area: hit" onclick="menu_filter_button_color('bt_hit');">Hit</button>
+        </div>
+        <span class="menu_line orange"></span>
+        <div class="menu-area">
+            @{
+                foreach (var burger in Model.Menu)
+                {
+                    <div class="burger_block glass_box">
+                        <div class="burger_grid">
+                            <img class="burger_menu_img" style="grid-area: img" src=@burger.IMG />
+                            <b class="burger_name">@burger.Name</b>
+                            <div class="burger_time_block">
+                                <img style="grid-area: icon; transform: scale(0.9);"  src="~/icons/ClockClockwise.png"/>
+                                <b class="burger_cook_time">@burger.CookTime_sec м</b>
+                            </div>
+                            <b class="burger_price"> @burger.Price ₽</b>
+                            <button class="white_button roboto burger_menu_bt" style="grid-area: button">Подробнее</button>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    <!--#endregion -->
+
     <!--#region о доставке  -->
     <span id="delivery"></span>
     <div class="about_delivery">
