@@ -15,7 +15,7 @@ namespace BurgerHUB.Mocks
                     {
                         Name = "Black classic",
                         Description = "very nice",
-                        IGM = "https://static.tildacdn.com/tild3733-3364-4438-b435-313535653861/6041e3c391768.png",
+                        IMG = "https://static.tildacdn.com/tild3733-3364-4438-b435-313535653861/6041e3c391768.png",
                         Price = 600,
                         IsEco = false,
                         IsHit = true,
@@ -27,7 +27,7 @@ namespace BurgerHUB.Mocks
                     {
                         Name = "Eco burger",
                         Description = "vegan",
-                        IGM = "https://img.povar.ru/uploads/53/21/e4/29/veganskii_burger-578529.jpg",
+                        IMG = "https://img.povar.ru/uploads/53/21/e4/29/veganskii_burger-578529.jpg",
                         Price = 900,
                         IsEco = false,
                         IsHit = true,

@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\Index.css"
     },
     {
+      "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\css\\common.css",
+      "PackagePath": "staticwebassets\\css\\common.css"
+    },
+    {
       "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\css\\layout.css",
       "PackagePath": "staticwebassets\\css\\layout.css"
     },
@@ -87,6 +91,10 @@
     {
       "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\img\\Black_Classic.png",
       "PackagePath": "staticwebassets\\img\\Black_Classic.png"
+    },
+    {
+      "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\img\\Gurmyau.png",
+      "PackagePath": "staticwebassets\\img\\Gurmyau.png"
     },
     {
       "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\img\\map.png",

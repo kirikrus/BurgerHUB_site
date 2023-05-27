@@ -5,7 +5,7 @@
         public string Name { get; set; }
         public string Description { get; set; }
         public string Composition { get; set; }
-        public string IGM { get; set; } // URL image
+        public string IMG { get; set; } // URL image
         public ulong Price { get; set; }
         public bool IsEco { get; set; }
         public bool IsHit { get; set; }

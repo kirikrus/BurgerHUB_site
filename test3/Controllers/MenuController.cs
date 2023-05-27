@@ -1,5 +1,4 @@
 ﻿using BurgerHUB.Data.Interfaces;
-using BurgerHUB.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BurgerHUB.Controllers
@@ -14,8 +13,8 @@ namespace BurgerHUB.Controllers
         }
         public ViewResult ShowMenu()
         {
-            MenuViewModel obj = new MenuViewModel();
-            return View(obj); 
+            //MenuViewModel obj = new MenuViewModel();
+            return View(); 
         }
 
     }
