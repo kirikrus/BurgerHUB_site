@@ -281,5 +281,5 @@ body.modal-open {
 #Error_1.open {
     opacity: 1;
     visibility: visible;
-    transition-delay: 0s;
+    transition: .3s ;
 }

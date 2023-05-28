@@ -295,6 +295,166 @@ span.menu_line {
     width: 110%;
 }
 /*#endregion */
+
+/*#region страница бургера*/
+div.burger_model_page {
+    display: grid;
+    position: fixed;
+    width: 385px;
+    height: 650px;
+    left: calc(50% - 385px/2);
+    top: calc(50% - 650px/2);
+    z-index: 10;
+    place-items: left;
+    grid-template-areas:
+        'back'
+        'img'
+        'name'
+        'desc'
+        'compose'
+        'down';
+    grid-template-rows: auto 250px 60px;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s linear, visibility 0s linear 1s;
+}
+
+img.burger_page_back{
+    grid-area: back;
+}
+
+img.burger_page_img {
+    grid-area: img;
+    height: 399px;
+    width: 385px;
+    margin-top: -50px;
+}
+
+b.burger_page_name {
+    grid-area: name;
+    font-size: 46px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    margin-top: -10px;
+}
+
+b.burger_page_desc {
+    grid-area: desc;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+button.burger_page_compose_bt {
+    grid-area: compose;
+    height: 37px;
+    width: 125px;
+    border-radius: 18px;
+    border: none;
+    background: rgba(255, 255, 255, 0.06);
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;    
+}
+
+div.burger_page_down_section {
+    display: grid;
+    grid-area: down;
+    place-items: center;
+    grid-template-areas:
+        'text text price'
+        'icon time price';
+    width: inherit;
+    grid-template-columns: 31px 140px;
+    grid-template-rows: 10px 70px;
+}
+
+b.burger_page_cook_time{
+    grid-area: time;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+b.burger_page_cook_text {
+    grid-area: text;
+    font-size: 16px;
+    font-weight: 400;
+    place-self: self-start;
+}
+
+div.burger_page_price_section {
+    display: grid;
+    height: 100px;
+    width: 150px;
+    grid-area: price;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 18px;
+    place-self: end;
+    place-items: center;
+    grid-template-areas: 'price_text' 'price';
+    grid-template-rows: 50px 50px;
+}
+/*#endregion */
+
+/*#region состав бургера*/
+div.burger_page_kbgu {
+    display: grid;
+    position: fixed;
+    height: 305px;
+    width: 305px;
+    border-radius: 49px;
+    left: calc(80% - 305px/2);
+    top: calc(50% - 305px/2);
+    background: rgba(255, 255, 255, 0.02);
+    grid-template-areas:
+        'back'
+        'text'
+        'desc'
+        'table';
+    place-items: center;
+    grid-template-rows: 0 60px 80px;
+    padding: 20px;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s linear, visibility 0s linear 1s;
+}
+
+b.burger_page_kbgu_text {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+b.burger_page_kbgu_desc {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+div.burger_page_kbgu_table {
+    display: grid;
+    grid-template-areas:
+        'kkal   kkal_   gramm'
+        'belki  belki_  gramm'
+        'ziri   ziri_   gramm'
+        'ugl    ugl_    gramm';
+    grid-template-columns: 120px 50px 120px;
+    grid-template-rows: repeat(4,30px);
+}
+
+b.kbju {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+b.gramm {
+    grid-area: gramm;
+    place-self: center;
+    font-weight: 400;
+    font-size: 32px;
+    justify-self: end;
+}
+/*#endregion */
 /*#region о доставке*/
 div.about_delivery {
     grid-area: about_delivery;

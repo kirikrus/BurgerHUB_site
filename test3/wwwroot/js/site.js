@@ -11,12 +11,16 @@ function openModal(modal_name, err = 0) {
     }
 }
 
-function closeModal(modal_name, err = 0) {
+function closeModal(modal_name, err = 0, double_modal_name) {
     var modal = document.getElementById(modal_name);
     var back_ = document.getElementById("backdrop");
     var err_back_ = document.getElementById("backdrop_err");
+    var double_modal = document.getElementById(double_modal_name);
 
     modal.classList.remove("open");
+
+    if (double_modal != null)
+        double_modal.classList.remove("open");
 
     if (err) {
         err_back_.classList.remove("open");
