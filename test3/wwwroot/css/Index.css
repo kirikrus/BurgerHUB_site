@@ -118,14 +118,18 @@ b.counter_curent {
     font-size: 64px;
 }
 
-button.arr_left_right {
+div.arr_block {
     grid-area: counter;
+    display: grid;
+    margin-top: 30px;
+    margin-left: 80%;
+    grid-template-areas: 'left right';
+    grid-template-columns: 40px 40px;
+}
+
+img.arr_left_right {
     height: 60px;
     width: 60px;
-    margin-left: 80%;
-    background-color: transparent;
-    border: none;
-    margin-top: 30px;
 }
 /*#endregion */
 

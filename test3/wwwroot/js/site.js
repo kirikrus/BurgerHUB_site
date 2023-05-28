@@ -1,4 +1,5 @@
-﻿function openModal(modal_name, err = 0) {
+﻿//Модальные окна
+function openModal(modal_name, err = 0) {
     var modal = document.getElementById(modal_name);
     var back_ = document.getElementById("backdrop");
     modal.classList.add("open");
@@ -26,52 +27,8 @@ function closeModal(modal_name, err = 0) {
     }
 
 }
-
-function submitForm(event) {
-    event.preventDefault(); // Предотвращаем обычное поведение формы (перезагрузку страницы)
-
-    // Получаем данные из формы
-    var form = document.getElementById("login_window");
-    var formData = new FormData(form);
-
-    // Преобразуем данные в JSON
-    var jsonData = {};
-    formData.forEach(function (value, key) {
-        jsonData[key] = value;
-    });
-
-    // Отправляем данные на бэкэнд AJAX
-    fetch("https://localhost:7026/Clients/ProcessLoginForm", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(jsonData)
-    })
-        .then(function (response) {
-            if (response.ok) {
-                // Действия при успешной обработке данных
-                return response.json(); // Преобразуем ответ в JSON
-            } else {
-                // Действия при ошибке обработки данных
-                throw new Error("Ошибка при обработке данных");
-            }
-        })
-        .then(function (data) {
-            // Обработка данных из успешного ответа
-            console.log(data);
-        })
-        .catch(function (error) {
-            // Обработка ошибок
-            console.error(error);
-        });
-}
-
 // Анимации и стили
 function menu_filter_button_color(bt_name) {
-    var BT_all = document.getElementById("bt_all");
-    var BT_eco = document.getElementById("bt_eco");
-    var BT_hit = document.getElementById("bt_hit");
 
     switch (bt_name) {
         case "bt_all":
@@ -90,4 +47,22 @@ function menu_filter_button_color(bt_name) {
             bt_hit.classList.add("white");
             break;
     }
+}
+
+// Главная страница прокрутка бургеров-предложений
+function burger_change(action) {
+    var counter = document.getElementById("counter");
+    var currentCount = counter.innerText.toString();
+    var num = currentCount.substr(1);
+    switch (action) {
+        case 1:
+            if (num <= 3 && num > 1)
+                num--;
+            break;
+        case 2:
+            if (num < 3 && num >= 1)
+                num++;
+            break;
+    }
+    counter.innerHTML = "/" + num;
 }
