@@ -34,21 +34,36 @@ function submitForm(event) {
     var form = document.getElementById("login_window");
     var formData = new FormData(form);
 
+    // Преобразуем данные в JSON
+    var jsonData = {};
+    formData.forEach(function (value, key) {
+        jsonData[key] = value;
+    });
+
     // Отправляем данные на бэкэнд AJAX
-    fetch("url_обработчика", {
+    fetch("https://localhost:7026/Clients/ProcessLoginForm", {
         method: "POST",
-        body: formData
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(jsonData)
     })
         .then(function (response) {
-            // Обработка ответа от бэка
             if (response.ok) {
                 // Действия при успешной обработке данных
+                return response.json(); // Преобразуем ответ в JSON
             } else {
                 // Действия при ошибке обработки данных
+                throw new Error("Ошибка при обработке данных");
             }
+        })
+        .then(function (data) {
+            // Обработка данных из успешного ответа
+            console.log(data);
         })
         .catch(function (error) {
             // Обработка ошибок
+            console.error(error);
         });
 }
 
