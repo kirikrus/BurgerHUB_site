@@ -13,27 +13,38 @@ namespace BurgerHUB.Mocks
                 {
                     new BurgerIDMenu
                     {
-                        Name = "Black classic",
-                        Description = "very nice",
-                        IMG = "https://static.tildacdn.com/tild3733-3364-4438-b435-313535653861/6041e3c391768.png",
-                        Price = 600,
+                        Name = "Black Classic",
+                        Description = "Это бургер, которому нет равных. " +
+                        "Неожиданное сочетание вишни и мраморной говядины " +
+                        "не оставляет равнодушными даже самых скептически" +
+                        " настроеннных гостей.",
+                        Composition = "Соевый стейк, соус тайская сальса, соус гуакамолле, свежий редис, " +
+                        "специя фурикаки, огурец свежий, красный лук, кинза,булочка для гамбургера с кунжутом, " +
+                        "соус Бешамель",
+                        IMG = "/img/Black_Classic.png",
+                        Price = 400,
                         IsEco = false,
                         IsHit = true,
-                        CookTime_sec = 600,
-                        Weight_gram = 250,
-                        Supplement = 1200,
+                        CookTime_sec = 25,
+                        Weight_gram = 487,
+                        Supplement = 706,
                     },
                     new BurgerIDMenu
                     {
-                        Name = "Eco burger",
-                        Description = "vegan",
-                        IMG = "https://img.povar.ru/uploads/53/21/e4/29/veganskii_burger-578529.jpg",
+                        Name = "Гурмяу",
+                        Description = "Соевый стейк, соус тайская сальса, " +
+                        "соус гуакамолле, свежий редис, специя " +
+                        "фурикаки, огурец свежий, красный лук, " +
+                        "кинза...\r\nИ лучше описания не придумать.",
+                        Composition = "Копченый сыр сулугуни, лук конфи, говяжья котлета, " +
+                        "пивной соус, булочка для гамбургера с кунжутом",
+                        IMG = "/img/Gurmyau.png",
                         Price = 900,
-                        IsEco = false,
+                        IsEco = true,
                         IsHit = true,
                         CookTime_sec = 20,
-                        Weight_gram = 200,
-                        Supplement = 900,
+                        Weight_gram = 400,
+                        Supplement = 200,
                     },
                 };
             }

@@ -97,8 +97,20 @@
       "PackagePath": "staticwebassets\\img\\Gurmyau.png"
     },
     {
+      "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\img\\Miton.png",
+      "PackagePath": "staticwebassets\\img\\Miton.png"
+    },
+    {
       "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\img\\map.png",
       "PackagePath": "staticwebassets\\img\\map.png"
+    },
+    {
+      "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\js\\index_burger_blocks.js",
+      "PackagePath": "staticwebassets\\js\\index_burger_blocks.js"
+    },
+    {
+      "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\js\\requests.js",
+      "PackagePath": "staticwebassets\\js\\requests.js"
     },
     {
       "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\js\\site.js",
