@@ -148,5 +148,23 @@ b {
     opacity: 0.6;
     transition: .3s linear;
 }
+
 /*#endregion */
+
+.arr_blocked, .scale:hover {
+    transform: scale(0.9);
+    opacity: 0.6;
+    transition: .2s linear;
+}
+
+.arr_left_right {
+    height: 60px;
+    width: 60px;
+    transition: .2s linear;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
 /*#endregion */

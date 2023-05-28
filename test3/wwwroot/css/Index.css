@@ -87,6 +87,7 @@ span.name {
     font-weight: 500;
     font-size: 64px;
     line-height: 53px;
+    transition: .3s linear;
 }
 
 span.desc {
@@ -127,12 +128,10 @@ div.arr_block {
     grid-template-columns: 40px 40px;
 }
 
-img.arr_left_right {
-    height: 60px;
-    width: 60px;
+span.name,span.desc,img.home_img {
+    transition: opacity 0.5s linear;
 }
 /*#endregion */
-
 /*#region Почему именно мы*/
 #delivery {
     position: absolute;

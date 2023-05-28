@@ -49,20 +49,3 @@ function menu_filter_button_color(bt_name) {
     }
 }
 
-// Главная страница прокрутка бургеров-предложений
-function burger_change(action) {
-    var counter = document.getElementById("counter");
-    var currentCount = counter.innerText.toString();
-    var num = currentCount.substr(1);
-    switch (action) {
-        case 1:
-            if (num <= 3 && num > 1)
-                num--;
-            break;
-        case 2:
-            if (num < 3 && num >= 1)
-                num++;
-            break;
-    }
-    counter.innerHTML = "/" + num;
-}

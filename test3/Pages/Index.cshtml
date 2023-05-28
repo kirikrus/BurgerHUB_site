@@ -6,19 +6,16 @@
 
 <div class="home roboto">
     <!--#region Бургеры  -->
-    <span class="name">Black Classic: <br/>вкус, который заставит вас вернуться!</span>
-    <span class="desc">Откройте для себя наш новый черный бургер из мраморной говядины, который покорит вас своим необычным и глубоким вкусом. Мы используем только свежую мраморную говядину, что обеспечивает сочность и невероятную мягкость каждого куска мяса. А соус из свежих брусничных ягод добавляет нежную кислинку, что идеально сочетается с глубоким ароматом мраморной говядины...</span>
-    <img class = "home_img" src="~/img/Black_Classic.png"/>
+    <span id="offer_burger_name" class="name ">Black Classic: <br />вкус, который заставит вас вернуться!</span>
+    <span id="offer_burger_desc" class="desc ">Откройте для себя наш новый черный бургер из мраморной говядины, который покорит вас своим необычным и глубоким вкусом. Мы используем только свежую мраморную говядину, что обеспечивает сочность и невероятную мягкость каждого куска мяса. А соус из свежих брусничных ягод добавляет нежную кислинку, что идеально сочетается с глубоким ароматом мраморной говядины...</span>
+    <img id="offer_burger_img" class = "home_img " src="~/img/Black_Classic.png"/>
     <button class="more_inf roboto">Подробнее</button>
-    <div class="counter roboto">03<b id="counter" class="counter_curent"></b></div>
-    <script>
-        var counter = document.getElementById("counter");
-        counter.innerHTML = "/1";
-    </script>
+    <div class="counter roboto">03<b id="counter" class="counter_curent">/1</b></div>
     <div class="arr_block">
-        <img onclick="burger_change(1);" class="arr_left_right" src="~/icons/arr_left.png"/>
-        <img onclick="burger_change(2);" class="arr_left_right" src="~/icons/arr_right.png"/>
+        <img id="offer_arr_left" onclick="burger_change(1);" class="arr_left_right scale" src="~/icons/arr_left.png"/>
+        <img id="offer_arr_right" onclick="burger_change(2);" class="arr_left_right scale" src="~/icons/arr_right.png"/>
     </div>
+
     <!--#endregion -->
 
     <!--#region почему именно мы  -->
@@ -64,18 +61,18 @@
             @{
                 foreach (var burger in Model.Menu)
                 {
-                                    <div class="burger_block glass_box">
-                                        <div class="burger_grid">
-                                            <img class="burger_menu_img" style="grid-area: img" src=@burger.IMG />
-                                            <b class="burger_name">@burger.Name</b>
-                                            <div class="burger_time_block">
-                                                <img style="grid-area: icon; transform: scale(0.9);"  src="~/icons/ClockClockwise.png"/>
-                                                <b class="burger_cook_time">@burger.CookTime_sec м</b>
-                                            </div>
-                                            <b class="burger_price"> @burger.Price ₽</b>
-                                            <button class="white_button roboto burger_menu_bt" style="grid-area: button">Подробнее</button>
-                                        </div>
-                                    </div>
+                    <div class="burger_block glass_box">
+                        <div class="burger_grid">
+                            <img class="burger_menu_img" style="grid-area: img" src=@burger.IMG />
+                            <b class="burger_name">@burger.Name</b>
+                            <div class="burger_time_block">
+                                <img style="grid-area: icon; transform: scale(0.9);"  src="~/icons/ClockClockwise.png"/>
+                                <b class="burger_cook_time">@burger.CookTime_sec м</b>
+                            </div>
+                            <b class="burger_price"> @burger.Price ₽</b>
+                            <button class="white_button roboto burger_menu_bt" style="grid-area: button">Подробнее</button>
+                        </div>
+                    </div>
                 }
             }
         </div>
