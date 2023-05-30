@@ -1,0 +1,35 @@
+﻿@page
+@model BurgerHUB.Pages.ProfileModel
+@{
+	ViewData["Title"] = "Welcome";
+}
+
+<div class="profile roboto">
+	<div class="profile_side">
+		<img src="~/icons/settings.png" class="arr_left_right scale profile_up"/>
+		<img class="ava" src="~/img/map.png"/>
+		<b class="profile_name">Кирилл</b>
+		<div class="profile_rating">
+			<b>Ваш рейтинг</b>
+			<div class="rating_block">
+				<b>SS</b>
+			</div>
+			<img class="about_rating arr_left_right scale" src="~/icons/about.png"/>
+		</div>
+		<button class="white_button roboto profile_bt" style="grid-area:bag">Корзина</button>
+
+		<button class="white_button roboto profile_bt" style="grid-area:this_order">Текущий заказ</button>
+
+		<button class="white_button roboto profile_bt" style="grid-area:story_order">История заказов</button>
+
+		<button class="white_button roboto profile_bt" style="grid-area:my_burgers">Мои бургеры</button>
+
+	</div>
+	<div class="pages_side">
+
+	</div>
+</div>
+    <span class="glow_w profile1"></span>
+    <span class="glow_o profile2"></span>
+    <span class="glow_p profile3"></span>
+    <span class="glow_p profile4"></span>

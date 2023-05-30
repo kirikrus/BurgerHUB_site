@@ -1,0 +1,119 @@
+﻿div.profile {
+    position: fixed;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 500px;
+    grid-template-areas:
+        'profile status'
+        'profile pages';
+    align-items: center;
+    margin-top: -30px;
+}
+
+div.profile_side {
+    grid-area: profile;
+    display: grid;
+    width: 500px;
+    background: rgba(217, 217, 217, 0.06);
+    backdrop-filter: blur(25px);
+    grid-template-columns: 500px;
+    grid-template-rows: 0px auto 23px 100px repeat(4,100px);
+    grid-template-areas:
+        'up'
+        'photo'
+        'name'
+        'rating'
+        'bag'
+        'this_order'
+        'story_order'
+        'my_burgers';
+    place-items: center;
+    padding: 10px;
+    margin-top: -70px;
+}
+
+img.profile_up {
+    grid-area: up;
+    place-self: start;
+    height: 40px;
+    width: 40px;
+}
+
+b.profile_name {
+    grid-area: name;
+    font-weight: 500;
+    font-size: 36px;
+    margin-top: 5px;
+}
+
+div.profile_rating {
+    grid-area: rating;
+    display: grid;
+    place-items: center;
+    grid-template-areas: 'txt rating help';
+    grid-template-columns: auto 180px 50px;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+div.rating_block {
+    display: grid;
+    background-color: green;
+    width: 126px;
+    height: 48px;
+    background: #4B9700;
+    border-radius: 110px;
+    place-items: center;
+}
+
+img.about_rating {
+    height: 40px;
+    width: 40px;
+}
+
+button.profile_bt {
+    font-weight: 400;
+    font-size: 26px;
+    width: 316px;
+    height: 80px;
+    border-width: 1px;
+    margin-top: -10px;
+}
+
+img.ava {
+    clip-path: circle(100px at center);
+    height: 200px;
+    width: 200px;
+}
+
+span.profile1 {
+    left: 607px;
+    top: 477px;
+    position: fixed;
+    background-color: #22d479;
+    filter: blur(60px) opacity(3%);
+}
+
+span.profile2 {
+    left: 50px;
+    top: 193px;
+    width: 360px;
+    height: 360px;
+    position: fixed;
+    filter: blur(100px) opacity(10%);
+}
+
+span.profile3 {
+    left: 769px;
+    top: -286px;
+    position: fixed;
+}
+
+span.profile4 {
+    left: 33px;
+    top: -280px;
+    position: fixed;
+    background-color: #9500ff;
+    filter: opacity(20%) blur(200px);
+}
