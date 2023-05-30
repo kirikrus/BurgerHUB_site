@@ -1,6 +1,6 @@
 ﻿using BurgerHUB.Models;
 
-namespace BurgerHUB.Interfaces
+namespace BurgerHUB.Data.Interfaces
 {
     public interface IClients
     {

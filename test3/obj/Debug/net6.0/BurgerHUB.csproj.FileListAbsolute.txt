@@ -107,3 +107,8 @@ D:\вуз\сайт\BurgerHUB_site\BurgerHUB_site\test3\obj\Debug\net6.0\refint\B
 D:\вуз\сайт\BurgerHUB_site\BurgerHUB_site\test3\obj\Debug\net6.0\BurgerHUB.pdb
 D:\вуз\сайт\BurgerHUB_site\BurgerHUB_site\test3\obj\Debug\net6.0\BurgerHUB.genruntimeconfig.cache
 D:\вуз\сайт\BurgerHUB_site\BurgerHUB_site\test3\obj\Debug\net6.0\ref\BurgerHUB.dll
+X:\BurgerHUB_site\test3\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+X:\BurgerHUB_site\test3\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+X:\BurgerHUB_site\test3\bin\Debug\net6.0\Newtonsoft.Json.dll
+X:\BurgerHUB_site\test3\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+X:\BurgerHUB_site\test3\obj\Debug\net6.0\BurgerHUB.csproj.CopyComplete

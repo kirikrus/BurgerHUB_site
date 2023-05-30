@@ -1,7 +1,10 @@
-﻿namespace BurgerHUB.Models
+﻿using Microsoft.AspNetCore.Mvc.TagHelpers;
+
+namespace BurgerHUB.Models
 {
     public class ClientID
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Avatar { get; set; }
         public string LastName { get; set; }

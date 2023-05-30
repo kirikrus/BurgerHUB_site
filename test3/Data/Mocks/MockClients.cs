@@ -1,4 +1,4 @@
-﻿using BurgerHUB.Interfaces;
+﻿using BurgerHUB.Data.Interfaces;
 using BurgerHUB.Models;
 
 namespace BurgerHUB.Mocks
@@ -21,14 +21,6 @@ namespace BurgerHUB.Mocks
                         PhoneNumber = 89167374222,
                         Password = "adsfe3244",
                         ClientAdress = "Shop street 28",
-                        OrderHistory = new OrderHistory
-                        {
-
-                        },
-                        MyBurgers = new List<BurgerIDCons>
-                        {
-
-                        }
                     },
                     new ClientID
                     {
@@ -40,14 +32,6 @@ namespace BurgerHUB.Mocks
                         PhoneNumber = 89127374222,
                         Password = "ad23542345",
                         ClientAdress = "Down street 45",
-                        OrderHistory = new OrderHistory
-                        {
-
-                        },
-                        MyBurgers = new List<BurgerIDCons>
-                        {
-
-                        }
                     }
                 };
             }

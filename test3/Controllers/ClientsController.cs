@@ -1,22 +1,45 @@
-﻿using BurgerHUB.Interfaces;
+﻿using BurgerHUB.Data.Interfaces;
+using BurgerHUB.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+
+public class GetLogin
+{
+    public string Email { get; set; }
+    public string Password { get; set; }
+}
 
 namespace BurgerHUB.Controllers
 {
-    public class ClientsConroller : Controller
+    [ApiController]
+    [Route("[Controller]")]
+    public class ClientsController : Controller
     {
-        private readonly IClients _Clients;
-
-        public ClientsConroller(IClients _clients) 
-        { 
-            _Clients = _clients;
-        }
-        public ViewResult Authorization()
+        private readonly IClients List;
+        public ClientsController(IClients list)
         {
-            //AuthorizationViewModel obj = new AuthorizationViewModel();
-            //obj.Clients = _Clients.Clients;
-            return View(); // твоя страница авторизации
+            List = list;
         }
-
+        [HttpPost]
+        [Route("ProcessLoginForm")]
+        public IActionResult ProcessLoginForm([FromBody] GetLogin model)
+        {
+            string NewEmail = model.Email;
+            string NewPassword = model.Password;
+            IEnumerable<ClientID> AllClients;
+            AllClients = List.Clients;
+            while (true)
+            {
+                foreach (var Client in AllClients)
+                {
+                    if (Client.Email == NewEmail || Client.Password == NewPassword)
+                    {
+                        return Json(new { success = false });
+                    }
+                }
+                break;
+            }
+            return Json(new { success = true });
+        }
     }
 }
