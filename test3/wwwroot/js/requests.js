@@ -6,10 +6,11 @@
     var formData = new FormData(form);
 
     // Преобразуем данные в JSON
-    var jsonData = {};
-    formData.forEach(function (value, key) {
-        jsonData[key] = value;
-    });
+    var jsonData = {
+        Email: form[1].value,
+        Password: form[2].value
+    };
+
 
     // Отправляем данные на бэкэнд AJAX
     fetch("https://localhost:7026/Clients/ProcessLoginForm", {
@@ -29,11 +30,11 @@
             }
         })
         .then(function (data) {
-            // Обработка данных из успешного ответа
+            // Вывод данных из успешного ответа в логе
             console.log(data);
         })
         .catch(function (error) {
-            // Обработка ошибок
+            // ВЫвод ошибок в логе
             console.error(error);
         });
 }
