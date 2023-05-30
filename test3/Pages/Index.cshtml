@@ -69,7 +69,7 @@
                             <b class="burger_name">@burger.Name</b>
                             <div class="burger_time_block">
                                 <img class="invis" style="grid-area: icon; transform: scale(0.9);"  src="~/icons/ClockClockwise.png"/>
-                                <b class="burger_cook_time">@burger.CookTime_sec м</b>
+                                <b class="burger_cook_time">@burger.CookTime_min м</b>
                             </div>
                             <b class="burger_price"> @burger.Price ₽</b>
                             <button onclick="openModal('burger_@id');" class="white_button roboto burger_menu_bt" style="grid-area: button">Подробнее</button>
@@ -89,7 +89,7 @@
                         <div class="burger_page_down_section">
                             <b class="burger_page_cook_text">Время приготовления</b>
                             <img class="invis" style="grid-area: icon; transform: scale(0.8);"  src="~/icons/ClockClockwise.png"/>
-                            <b class="burger_page_cook_time">@burger.CookTime_sec минут</b>
+                            <b class="burger_page_cook_time">@burger.CookTime_min минут</b>
                             <div class="burger_page_price_section">
                                 <b style="grid-area: price_text">Цена</b>
                                 <b style="grid-area: price" class="burger_price"> @burger.Price ₽</b>

@@ -5,13 +5,13 @@ namespace BurgerHUB.Mocks
 {
     public class MockMenu : IMenu
     {
-        public IEnumerable<BurgerIDMenu> BurgersMenu
+        public IEnumerable<BurgerMenu> BurgersMenu
         {
             get
             {
-                return new List<BurgerIDMenu>
+                return new List<BurgerMenu>
                 {
-                    new BurgerIDMenu
+                    new BurgerMenu
                     {
                         Name = "Black Classic",
                         Description = "Это бургер, которому нет равных. " +
@@ -25,11 +25,11 @@ namespace BurgerHUB.Mocks
                         Price = 400,
                         IsEco = false,
                         IsHit = true,
-                        CookTime_sec = 25,
+                        CookTime_min = 25,
                         Weight_gram = 487,
                         Supplement = 706,
                     },
-                    new BurgerIDMenu
+                    new BurgerMenu
                     {
                         Name = "Гурмяу",
                         Description = "Соевый стейк, соус тайская сальса, " +
@@ -42,7 +42,7 @@ namespace BurgerHUB.Mocks
                         Price = 900,
                         IsEco = true,
                         IsHit = true,
-                        CookTime_sec = 20,
+                        CookTime_min = 20,
                         Weight_gram = 400,
                         Supplement = 200,
                     },

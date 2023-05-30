@@ -5,13 +5,13 @@ namespace BurgerHUB.Mocks
 {
     public class MockClients : IClients
     {
-        public IEnumerable<ClientID> Clients
+        public IEnumerable<Client> Clients
         {
             get
             {
-                return new List<ClientID>
+                return new List<Client>
                 {
-                    new ClientID
+                    new Client
                     {
                         Name = "Vlad",
                         LastName = "Hom",
@@ -22,7 +22,7 @@ namespace BurgerHUB.Mocks
                         Password = "adsfe3244",
                         ClientAdress = "Shop street 28",
                     },
-                    new ClientID
+                    new Client
                     {
                         Name = "Max",
                         LastName = "Hin",

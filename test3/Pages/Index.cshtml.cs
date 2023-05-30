@@ -13,7 +13,7 @@ namespace BurgerHUB.Pages
         {
             _Menu = menu;
         }
-        public IEnumerable<BurgerIDMenu> Menu;
+        public IEnumerable<BurgerMenu> Menu;
         public PageResult OnGet()
         {
             Menu = _Menu.BurgersMenu;

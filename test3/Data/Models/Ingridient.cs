@@ -4,11 +4,4 @@
     {
 
     }
-    public enum Supplement
-    {
-        Proteins,
-        Carbohydragates,
-        Fats,
-        Callories
-    }
 }

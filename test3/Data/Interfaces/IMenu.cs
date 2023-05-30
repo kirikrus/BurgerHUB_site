@@ -4,6 +4,6 @@ namespace BurgerHUB.Data.Interfaces
 {
     public interface IMenu
     {
-        IEnumerable<BurgerIDMenu> BurgersMenu { get; }
+        IEnumerable<BurgerMenu> BurgersMenu { get; }
     }
 }

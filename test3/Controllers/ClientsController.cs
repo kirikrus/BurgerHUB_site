@@ -26,7 +26,7 @@ namespace BurgerHUB.Controllers
         {
             string NewEmail = model.Email;
             string NewPassword = model.Password;
-            IEnumerable<ClientID> AllClients;
+            IEnumerable<Client> AllClients;
             AllClients = List.Clients;
             while (true)
             {
@@ -34,12 +34,12 @@ namespace BurgerHUB.Controllers
                 {
                     if (Client.Email == NewEmail || Client.Password == NewPassword)
                     {
-                        return Json(new { success = false });
+                        return Json(new { success = true });
                     }
                 }
                 break;
             }
-            return Json(new { success = true });
+            return Json(new { success = false });
         }
     }
 }
