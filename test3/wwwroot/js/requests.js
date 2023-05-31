@@ -1,9 +1,17 @@
-﻿function submitForm(event) { //ОБРАБОТКА ВХОДА
+﻿
+function user_profile() {
+    if (sessionStorage.getItem("isLoggedIn") == "true")
+        window.location.href = 'Profile';
+    else
+        openModal('login_window');
+}
+
+function submitForm(event) { //ОБРАБОТКА ВХОДА
+
     event.preventDefault(); // Предотвращаем обычное поведение формы (перезагрузку страницы)
 
     // Получаем данные из формы
     var form = document.getElementById("login_window");
-    var formData = new FormData(form);
 
     // Преобразуем данные в JSON
     var jsonData = {
@@ -23,6 +31,7 @@
         .then(function (response) {
             if (response.ok) {
                 // Действия при успешной обработке данных
+                sessionStorage.setItem("isLoggedIn", "true");
                 window.location.href = 'Profile';
                 return response.json(); // Преобразуем ответ в JSON
             } else {
