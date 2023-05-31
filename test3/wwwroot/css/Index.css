@@ -301,9 +301,9 @@ div.burger_model_page {
     display: grid;
     position: fixed;
     width: 385px;
-    height: 650px;
+    height: 700px;
     left: calc(50% - 385px/2);
-    top: calc(50% - 650px/2);
+    top: calc(50% - 700px/2);
     z-index: 10;
     place-items: left;
     grid-template-areas:
@@ -312,8 +312,9 @@ div.burger_model_page {
         'name'
         'desc'
         'compose'
-        'down';
-    grid-template-rows: auto 250px 60px;
+        'down'
+        'buy';
+    grid-template-rows: auto 250px 60px auto 80px 100px;
     padding: 20px;
     opacity: 0;
     visibility: hidden;
@@ -355,6 +356,7 @@ button.burger_page_compose_bt {
     font-size: 20px;
     font-weight: 300;
     margin: 0;    
+    align-self: center;
 }
 
 div.burger_page_down_section {
@@ -367,6 +369,7 @@ div.burger_page_down_section {
     width: inherit;
     grid-template-columns: 31px 140px;
     grid-template-rows: 10px 70px;
+    color
 }
 
 b.burger_page_cook_time{
@@ -393,6 +396,14 @@ div.burger_page_price_section {
     place-items: center;
     grid-template-areas: 'price_text' 'price';
     grid-template-rows: 50px 50px;
+}
+
+button.buy {
+    background-color: #ff710b;
+    font-size: 26px;
+    font-weight: 400;
+    color: white;
+    place-self: center;
 }
 /*#endregion */
 
