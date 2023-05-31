@@ -13,6 +13,7 @@ namespace BurgerHUB.Mocks
                 {
                     new Client
                     {
+                        ID= 0001,
                         Name = "Vlad",
                         LastName = "Hom",
                         Raiting = 1,
@@ -24,6 +25,7 @@ namespace BurgerHUB.Mocks
                     },
                     new Client
                     {
+                        ID=0002,
                         Name = "Max",
                         LastName = "Hin",
                         Raiting = 1,
