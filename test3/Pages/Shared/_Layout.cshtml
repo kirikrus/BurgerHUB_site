@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,8 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+
 <script src="~/js/site.js" asp-append-version="true"></script>
 <script src="~/js/index_burger_blocks.js" asp-append-version="true"></script>
+<script src="~/js/requests.js" asp-append-version="true"></script>
 
 <body>
     <span id="backdrop"></span>
@@ -32,7 +33,7 @@
 		            <a href="Index#delivery" class="menu_ref roboto">Доставка</a>
                     <a href="Index#about" class="menu_ref roboto">О нас</a>
                     <a href="shopping_bag" class="icon_shop"><img class="menu_icon" src="~/icons/ShoppingBag_hover.png"/></a>
-                    <button onclick="openModal('login_window');" class="icon_user pd25"><img class="menu_icon" src="~/icons/User_hover.png"/></button>
+                    <button onclick="user_profile();" class="icon_user pd25"><img class="menu_icon" src="~/icons/User_hover.png"/></button>
                 </div>
             </div>
         </nav>
@@ -81,6 +82,5 @@
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
-<script src="~/js/requests.js" asp-append-version="true"></script>
 
 </html>
