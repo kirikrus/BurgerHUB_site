@@ -41,6 +41,7 @@ function burger_change(action) {
         var name = document.getElementById("offer_burger_name");
         var desc = document.getElementById("offer_burger_desc");
         var img = document.getElementById("offer_burger_img");
+        var button = document.getElementById("offer_burger_bt");
 
         name.classList.add("fade-in");
         desc.classList.add("fade-in");
@@ -52,6 +53,9 @@ function burger_change(action) {
                     name.innerHTML = "Black Classic: <br />вкус, который заставит вас вернуться!";
                     desc.innerHTML = "Откройте для себя наш новый черный бургер из мраморной говядины, который покорит вас своим необычным и глубоким вкусом. Мы используем только свежую мраморную говядину, что обеспечивает сочность и невероятную мягкость каждого куска мяса. А соус из свежих брусничных ягод добавляет нежную кислинку, что идеально сочетается с глубоким ароматом мраморной говядины...";
                     img.src = "img/Black_Classic.png";
+                    button.onclick = function () {
+                        openModal('burger_1');
+                    };
                     break;
                 case 2:
                     name.innerHTML = "Митон: <br />наслаждение в каждом глотке!";
@@ -62,6 +66,9 @@ function burger_change(action) {
                     name.innerHTML = "Гурмяу: <br />восточная экзотика в каждом кусочке!";
                     desc.innerHTML = "Погрузитесь в мир восточных вкусов с нашим бургером Гурмяу. Сочный соевый стейк, приправленный специей фурикаки, станет основой этого невероятно аппетитного блюда. А соус тайской сальсы и гуакамолле добавят яркие нотки пикантности и свежести. Свежий редис, хрустящий огурец и ароматный красный лук придают бургеру текстуру и яркость, а свежая кинза добавляет свою неповторимую ароматную нотку. Гурмяу - это настоящий взрыв восточных вкусов, который пробудит все ваши чувства и оставит незабываемые впечатления!...";
                     img.src = "img/Gurmyau.png";
+                    button.onclick = function () {
+                        openModal('burger_2');
+                    };
                     break;
             }
             counter.innerHTML = "/" + num;
