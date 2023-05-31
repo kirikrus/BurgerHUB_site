@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\layout.css"
     },
     {
+      "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
+    },
+    {
       "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -59,6 +63,10 @@
     {
       "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\icons\\YoutubeLogo.png",
       "PackagePath": "staticwebassets\\icons\\YoutubeLogo.png"
+    },
+    {
+      "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\icons\\about.png",
+      "PackagePath": "staticwebassets\\icons\\about.png"
     },
     {
       "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\icons\\arr_left.png",
