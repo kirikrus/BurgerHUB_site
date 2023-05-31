@@ -1,4 +1,6 @@
-﻿using BurgerHUB.Data.Enum;
+﻿
+
+using BurgerHUB.Data.Models;
 
 namespace BurgerHUB.Models
 {

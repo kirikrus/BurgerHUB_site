@@ -9,7 +9,7 @@ namespace BurgerHUB.Models
         public List<Position> Positions { get; set; }
         public string Date { get; set; }
         public string AdressDilivery { get; set; }
-        public int Time { get;}
-        public decimal Price { get;}
+        public string Time { get; set; }
+        public decimal Price { get; set; }
     }
 }

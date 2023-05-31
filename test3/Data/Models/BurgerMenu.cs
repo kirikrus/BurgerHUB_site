@@ -1,5 +1,4 @@
-﻿using BurgerHUB.Data.Enum;
-
+﻿
 namespace BurgerHUB.Models
 {
     public class BurgerMenu
@@ -10,8 +9,8 @@ namespace BurgerHUB.Models
         public string Composition { get; set; }
         public string IMG { get; set; } // URL image
         public ulong Price { get; set; }
-        public bool IsEco { get; set; }
-        public bool IsHit { get; set; }
+        public int IsEco { get; set; }
+        public int IsHit { get; set; }
         public int CookTime_min { get; set; }
         public int Weight_gram { get; set;}
         public int IDSupplement { get; set; }
