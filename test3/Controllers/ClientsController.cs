@@ -33,11 +33,11 @@ namespace BurgerHUB.Controllers
 			{
 				foreach (var Client in AllClients)
 				{
-					if (Client.Email == NewEmail || Client.Password == NewPassword)
+					if (Client.Email == NewEmail && Client.Password == NewPassword)
 					{
-						return Json(new { client = Client.ID });
+						return Json(new {success = true, client = Client.ID});
 					}
-				}
+				} 
 				break;
 			}
 			return Json(new { success = false });

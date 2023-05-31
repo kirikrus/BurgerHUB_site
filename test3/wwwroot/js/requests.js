@@ -1,8 +1,9 @@
 ﻿
 function user_profile() {
-    if (sessionStorage.getItem("isLoggedIn") == "true")
-        window.location.href = 'Profile?ID=' + clientID;
-    else
+    if (sessionStorage.getItem("isLoggedIn") == "true") {
+        var decrypted = sessionStorage.getItem("user");
+        window.location.href = 'Profile?ID=' + decrypted;
+    } else
         openModal('login_window');
 }
 
@@ -30,19 +31,21 @@ function submitForm(event) { //ОБРАБОТКА ВХОДА
         .then(function (response) {
             if (response.ok) {
                 // Действия при успешной обработке данных
-                sessionStorage.setItem("isLoggedIn", "true");
                 return response.json(); // Преобразуем ответ в JSON
             } else {
                 // Действия при ошибке обработки данных
-                sessionStorage.setItem("isLoggedIn", "false");
                 throw new Error("Ошибка при обработке данных");
             }
         })
-        .then(function (data) {
+        .then(function (data) {//это json который вернул бэк
+            if (data.success) {//обработка если есть такой пользователь
+                sessionStorage.setItem("isLoggedIn", "true");
+                sessionStorage.setItem("user", data.client);
 
-            var clientID = data.client;
-            // Выполняем перенаправление на страницу Profile с передачей ClientID
-            window.location.href = 'Profile?ID=' + clientID;
+                window.location.href = 'Profile?ID=' + data.client;
+            } else {
+                sessionStorage.setItem("isLoggedIn", "false");
+            }
         })
         .catch(function (error) {
             // ВЫвод ошибок в логе

@@ -1,18 +1,25 @@
 ﻿@page
-@model BurgerHUB.Pages.ProfileModel
+@model BurgerHUB.Pages.ProfileModel 
 @{
-	ViewData["Title"] = "Welcome";
+	ViewData["Title"] = "Рады видеть вас, "+Model.ActiveClient.Name;
 }
 
 <div class="profile roboto">
 	<div class="profile_side">
 		<img src="~/icons/settings.png" class="arr_left_right scale profile_up"/>
-		<img class="ava" src="~/img/map.png"/>
-		<b class="profile_name">Profile.Name</b>
+		<img class="ava" src="@Model.ActiveClient.Avatar"/>
+		<b class="profile_name">@Model.ActiveClient.Name</b>
 		<div class="profile_rating">
 			<b>Ваш рейтинг</b>
 			<div class="rating_block">
-				<b>Profile.Raiting</b>
+				@{
+					switch(Model.ActiveClient.Raiting) {
+						case 1: <b>B</b>; break;
+						case 2: <b>A</b>; break;
+						case 3: <b>S</b>; break;
+						case 4: <b>SS</b>; break;
+					}
+				}
 			</div>
 			<img class="about_rating arr_left_right scale" src="~/icons/about.png"/>
 		</div>
