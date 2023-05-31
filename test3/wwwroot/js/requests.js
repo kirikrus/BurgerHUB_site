@@ -23,6 +23,7 @@
         .then(function (response) {
             if (response.ok) {
                 // Действия при успешной обработке данных
+                window.location.href = 'Profile';
                 return response.json(); // Преобразуем ответ в JSON
             } else {
                 // Действия при ошибке обработки данных

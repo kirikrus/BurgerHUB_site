@@ -52,4 +52,3 @@ function menu_filter_button_color(bt_name) {
             break;
     }
 }
-
