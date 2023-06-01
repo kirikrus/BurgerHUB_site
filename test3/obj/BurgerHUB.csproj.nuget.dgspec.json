@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\вуз\\сайт\\BurgerHUB_site\\BurgerHUB_site\\test3\\BurgerHUB.csproj": {}
+    "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\BurgerHUB.csproj": {}
   },
   "projects": {
-    "D:\\вуз\\сайт\\BurgerHUB_site\\BurgerHUB_site\\test3\\BurgerHUB.csproj": {
+    "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\BurgerHUB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\вуз\\сайт\\BurgerHUB_site\\BurgerHUB_site\\test3\\BurgerHUB.csproj",
+        "projectUniqueName": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\BurgerHUB.csproj",
         "projectName": "BurgerHUB",
-        "projectPath": "D:\\вуз\\сайт\\BurgerHUB_site\\BurgerHUB_site\\test3\\BurgerHUB.csproj",
-        "packagesPath": "C:\\Users\\Кирик\\.nuget\\packages\\",
-        "outputPath": "D:\\вуз\\сайт\\BurgerHUB_site\\BurgerHUB_site\\test3\\obj\\",
+        "projectPath": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\BurgerHUB.csproj",
+        "packagesPath": "C:\\Users\\kiril\\.nuget\\packages\\",
+        "outputPath": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Кирик\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kiril\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -51,7 +51,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -63,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

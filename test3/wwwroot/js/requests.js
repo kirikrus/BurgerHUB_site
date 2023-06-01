@@ -1,7 +1,7 @@
 ﻿
 function user_profile() {
     if (sessionStorage.getItem("isLoggedIn") == "true") {
-        var decrypted = sessionStorage.getItem("user");
+        var decrypted = atob(atob(sessionStorage.getItem("user")));
         window.location.href = 'Profile?ID=' + decrypted;
     } else
         openModal('login_window');
@@ -40,7 +40,7 @@ function submitForm(event) { //ОБРАБОТКА ВХОДА
         .then(function (data) {//это json который вернул бэк
             if (data.success) {//обработка если есть такой пользователь
                 sessionStorage.setItem("isLoggedIn", "true");
-                sessionStorage.setItem("user", data.client);
+                sessionStorage.setItem("user", btoa(btoa(data.client)));
 
                 window.location.href = 'Profile?ID=' + data.client;
             } else {
