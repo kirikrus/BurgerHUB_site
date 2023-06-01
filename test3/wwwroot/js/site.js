@@ -32,7 +32,7 @@ function closeModal(modal_name, err = 0, double_modal_name) {
 
 }
 // Анимации и стили
-function menu_filter_button_color(bt_name) {
+function menu_filter_button_color(bt_name, eco, hit) {
 
     switch (bt_name) {
         case "bt_all":
@@ -51,4 +51,18 @@ function menu_filter_button_color(bt_name) {
             bt_hit.classList.add("white");
             break;
     }
+    var burgers = document.getElementsByClassName('burger_block');
+
+
+    for (var i = 0; i < burgers.length; i++) {
+        var burger = burgers[i];
+        var isEco = burger.getAttribute('data-eco');
+        var isHit = burger.getAttribute('data-hit');
+
+        if ((eco && isEco != 1) || (hit && isHit != 1)) {
+            burger.classList.add("burger_block_none")
+        } else {
+            burger.classList.remove("burger_block_none")
+            }
+        }
 }

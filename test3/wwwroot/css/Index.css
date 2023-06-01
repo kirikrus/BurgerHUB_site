@@ -231,6 +231,10 @@ div.burger_block {
     width: 388px;
 }
 
+div.burger_block_none {
+    display: none;
+}
+
 div.burger_grid {
     display: grid;
     place-items: center;
@@ -369,7 +373,6 @@ div.burger_page_down_section {
     width: inherit;
     grid-template-columns: 31px 140px;
     grid-template-rows: 10px 70px;
-    color
 }
 
 b.burger_page_cook_time{
