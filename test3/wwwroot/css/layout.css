@@ -133,7 +133,7 @@ img.menu_icon:hover {
     transform: scale(1.2);
     transition: .3s linear;
 }
-
+/*#region вход*/
 #login_window {
     display: grid;
     position: fixed;
@@ -190,25 +190,11 @@ img.menu_icon:hover {
     transition: .3s linear;
 }
 
-a{
-    text-decoration: none;
-}
-
-button{
-    text-decoration: none;
-    background-color: transparent;
-    border: none;
-}
-
-a.login_reg {
-    justify-self: center;
-    align-self: start;
-}
-
 button.login_reg {
+    width: auto;
     justify-self: center;
     align-self: start;
-    width: 150px;
+    text-align: center;
 }
 
 .login_window_head{
@@ -218,6 +204,48 @@ button.login_reg {
     width: 350px;
 }
 
+img.login_icon {
+    place-self: center;
+    width: 80px;
+    height: 80px;
+    filter: grayscale(1) brightness(5);
+}
+/*#endregion*/
+
+/*#region регистрация*/
+#reg_window {
+    display: grid;
+    position: fixed;
+    width: 457px;
+    height: auto;
+    left: calc(50% - 457px/2 - 0.5px);
+    top: 30px;
+    background: rgba(217, 217, 217, 0.19);
+    border-radius: 80px;
+    z-index: 11;
+    align-items: center;
+    grid-template-areas:
+        'back'
+        'last-name'
+        'name'
+        'otch'
+        'email'
+        'tel'
+        'adres'
+        'submit';
+    grid-template-rows: 60px;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s linear, visibility 0s linear 1s;
+    z-index: 100;
+}
+
+div.reg_filed{
+    height: 40px;
+    margin: 20px;
+}
+/*#endregion*/
 button.left_arr {
     height: 50px;
     width: 50px;
@@ -229,13 +257,6 @@ button.left_arr:hover {
     transform: scale(0.9);
     filter: brightness(0.8);
     transition: .3s linear;
-}
-
-img.login_icon {
-    place-self: center;
-    width: 80px;
-    height: 80px;
-    filter: grayscale(1) brightness(5);
 }
 
 input, input:focus-visible {

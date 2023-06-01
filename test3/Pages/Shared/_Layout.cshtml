@@ -54,7 +54,36 @@
         </div>
         <button onclick="openModal('Error_1', 1);" type="button" class="login_reg"><b class="underline roboto">Забыли пароль?</b></button>
         <input class="login_button" type="submit" value="Вход"/>
-        <a href="" class="login_reg"><b class="underline roboto">Зарегестрироваться</b></a>
+        <button onclick="openModal('reg_window', 1);" type="button" class="login_reg"><b class="underline roboto">Зарегестрироваться</b></button>
+    </form>
+    <!--#endregion -->
+
+    <!--#region регистрация -->
+    <form id="reg_window" class="glass_box" method="post" onsubmit="submitForm_reg(event)" onclose="closeModal(login_window);">
+        <div class="login_window_head">
+            <button class="left_arr" onclick="closeModal('reg_window',1);"><img src="~/icons/arr_left.png"/></button>
+        </div>
+
+        <div class="login_field reg_filed">
+            <input type="text" placeholder="Иванов"/>
+        </div>
+        <div class="login_field reg_filed">
+            <input type="text" placeholder="Иван"/>
+        </div>
+        <div class="login_field reg_filed">
+            <input type="text" placeholder="Иванович"/>
+        </div>
+        <div class="login_field reg_filed">
+            <input type="email" placeholder="email@email.ru"/>
+        </div>
+         <div class="login_field reg_filed">
+            <input type="tel" placeholder="+79773039529"/>
+        </div>
+        <div class="login_field reg_filed">
+            <input type="text" placeholder="г.Москва ул. Ленина д. 1 кв. 7"/>
+        </div>
+
+        <input class="login_button" style="width: auto;" type="submit" value="Подтвердить"/>
     </form>
     <!--#endregion -->
 
@@ -62,7 +91,6 @@
         <div id="Error_1" class="Error glass_box">
             <p class="Error_text roboto">Хмммм...</p>
             <b class="Error_desc roboto">
-                Вы думаете это сработает? <br/>
                 Так как у сайта нет домена, то и нет возможности подключить 
                 SMTP клиент для отправки сообщений, как следствие, нет возможности
                 реализовать надежную проедуру восстановления пароля...

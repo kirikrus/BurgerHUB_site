@@ -8,6 +8,16 @@ b {
     margin-left: -7%;
 }
 
+a {
+    text-decoration: none;
+}
+
+button {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+}
+
 .orange {
     background-color: #FF710B;
 }
