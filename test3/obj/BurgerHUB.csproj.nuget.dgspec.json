@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\BurgerHUB.csproj": {}
+    "X:\\BurgerHUB_site\\test3\\BurgerHUB.csproj": {}
   },
   "projects": {
-    "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\BurgerHUB.csproj": {
+    "X:\\BurgerHUB_site\\test3\\BurgerHUB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\BurgerHUB.csproj",
+        "projectUniqueName": "X:\\BurgerHUB_site\\test3\\BurgerHUB.csproj",
         "projectName": "BurgerHUB",
-        "projectPath": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\BurgerHUB.csproj",
-        "packagesPath": "C:\\Users\\kiril\\.nuget\\packages\\",
-        "outputPath": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\obj\\",
+        "projectPath": "X:\\BurgerHUB_site\\test3\\BurgerHUB.csproj",
+        "packagesPath": "C:\\Users\\nekit\\.nuget\\packages\\",
+        "outputPath": "X:\\BurgerHUB_site\\test3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kiril\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nekit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

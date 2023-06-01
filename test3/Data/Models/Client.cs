@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.TagHelpers;
+﻿using BurgerHUB.Data.Models;
+using Microsoft.AspNetCore.Mvc.TagHelpers;
 
 namespace BurgerHUB.Models
 {
@@ -14,7 +15,7 @@ namespace BurgerHUB.Models
         public string Password { get; set; }
         public string ClientAdress { get; set; }
         public int IDOrderHistiry { get; set; }
-        public OrderHistory OrderHistory { get; set; }
+        public List<Order> OrderHistory { get; set; }
         public List<BurgerCons> MyBurgers { get; set; }
 }
 }
