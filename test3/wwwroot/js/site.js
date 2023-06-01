@@ -12,6 +12,7 @@ function openModal(modal_name, err = 0) {
 }
 
 function closeModal(modal_name, err = 0, double_modal_name) {
+    event.preventDefault();
     var modal = document.getElementById(modal_name);
     var back_ = document.getElementById("backdrop");
     var err_back_ = document.getElementById("backdrop_err");
