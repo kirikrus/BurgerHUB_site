@@ -54,20 +54,66 @@ function submitForm(event) { //ОБРАБОТКА ВХОДА
 }
 
 function add_to_bag(burger_id) {
-    //var jsonData = {
-    //    BurgerID: burger_id,
-    //};
+    if (sessionStorage.getItem("isLoggedIn") == "true") {
+        var User = atob(atob(sessionStorage.getItem("user")));
+        var jsonData = {
+            BurgerID: burger_id,
+            User_id: User
+        };
 
-    //fetch("https://localhost:7026/Clients/ProcessLoginForm", {
-    //    method: "POST",
-    //    headers: {
-    //        "Content-Type": "application/json"
-    //    },
-    //    body: JSON.stringify(jsonData)
-    //})
-    //    .then(function (response) {
-    //        if (response.ok) {
+        fetch("https://localhost:7026/ShopBasket/GetPositionOrder", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(jsonData)
+        })
+            .then(function (response) {
+                if (response.ok) {
 
-    //        }
-    //    })
+                }
+            })
+    }
+}
+
+function submitForm_reg(event) {
+    event.preventDefault(); 
+    var form = document.getElementById("reg_window");
+
+    var jsonData = {
+        Surname: form[1].value,
+        Name: form[2].value,
+        Patronymic: form[3].value,
+        Email: form[4].value,
+        Tel: form[5].value,
+        Adres: form[6].value
+    };
+
+    fetch("https://localhost:7026/Clients/ProcessLoginForm", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(jsonData)
+    })
+        .then(function (response) {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error("Ошибка при обработке данных");
+            }
+        })
+        .then(function (data) {
+            if (data.success) {
+                sessionStorage.setItem("isLoggedIn", "true");
+                sessionStorage.setItem("user", btoa(btoa(data.client)));
+
+                window.location.href = 'Profile?ID=' + data.client;
+            } else {
+                sessionStorage.setItem("isLoggedIn", "false");
+            }
+        })
+        .catch(function (error) {
+            console.error(error);
+        });
 }
