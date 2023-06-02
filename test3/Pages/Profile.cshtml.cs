@@ -11,13 +11,18 @@ namespace BurgerHUB.Pages
 	public class ProfileModel : PageModel
 	{
 		public readonly IClients _Client;
-		public ProfileModel(IClients client)
+		public readonly IMenu _Menu;
+
+		public ProfileModel(IClients client, IMenu menu)
 		{
 			_Client = client;
+			_Menu = menu;
 		}
+
 		public static int activeID;
 		public Client ActiveClient;
-		//public	Order ActiveOrder;
+		public IEnumerable<BurgerMenu> Menu;
+
 		public void UpdatePositions(int burgerId)
 		{
 			Position NewPosition = new();
@@ -72,10 +77,12 @@ namespace BurgerHUB.Pages
 			ActiveClient.OrderHistory.RemoveAll(x => x.IsActive == 0);
 			ActiveClient.OrderHistory.Add(ActiveOrder);
 		}
+
 		public PageResult OnGet(int ID)
 		{
 			activeID = ID;
 			ActiveClient = _Client.Clients.FirstOrDefault(x => x.Id == ID);
+			Menu = _Menu.BurgersMenu;
 			return Page();
 		}
 	}

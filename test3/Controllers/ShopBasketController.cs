@@ -12,16 +12,18 @@ namespace BurgerHUB.Controllers
 	public class ShopBasketController : Controller
 	{
 		private readonly IClients _profileModel;
-		public ShopBasketController(IClients profileModel)
+		private readonly IMenu _M;
+		public ShopBasketController(IClients profileModel, IMenu M)
 		{
 			_profileModel = profileModel;
+			_M = M;
 		}
 		[HttpPost]
 		[Route("GetPositionOrder")]
 		public IActionResult GetPositionOrder([FromBody] GetBurgerID model)
 		{
 			int ID = model.BurgerID;
-			ProfileModel test = new(_profileModel);
+			ProfileModel test = new(_profileModel, _M);
 			test.UpdatePositions(ID);
 			return Json(new { success = true });
 		}
