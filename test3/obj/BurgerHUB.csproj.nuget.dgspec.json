@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "X:\\BurgerHUB_site\\test3\\BurgerHUB.csproj": {}
+    "E:\\BurgerHUB_site\\test3\\BurgerHUB.csproj": {}
   },
   "projects": {
-    "X:\\BurgerHUB_site\\test3\\BurgerHUB.csproj": {
+    "E:\\BurgerHUB_site\\test3\\BurgerHUB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\BurgerHUB_site\\test3\\BurgerHUB.csproj",
+        "projectUniqueName": "E:\\BurgerHUB_site\\test3\\BurgerHUB.csproj",
         "projectName": "BurgerHUB",
-        "projectPath": "X:\\BurgerHUB_site\\test3\\BurgerHUB.csproj",
-        "packagesPath": "C:\\Users\\nekit\\.nuget\\packages\\",
-        "outputPath": "X:\\BurgerHUB_site\\test3\\obj\\",
+        "projectPath": "E:\\BurgerHUB_site\\test3\\BurgerHUB.csproj",
+        "packagesPath": "C:\\Users\\Adelia\\.nuget\\packages\\",
+        "outputPath": "E:\\BurgerHUB_site\\test3\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\nekit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Adelia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -82,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,5 +1,7 @@
 using BurgerHUB.Data.Interfaces;
+using BurgerHUB.Data.Models;
 using BurgerHUB.Mocks;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +11,12 @@ builder.Services.AddTransient<IMenu, MockMenu>();
 builder.Services.AddTransient<IClients, MockClients>();
 builder.Services.AddMvc();
 builder.Services.AddControllers().AddNewtonsoftJson();
-
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddDbContext<DataContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("Myserver"));
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
