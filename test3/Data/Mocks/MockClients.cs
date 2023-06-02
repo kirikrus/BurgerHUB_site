@@ -29,6 +29,8 @@ namespace BurgerHUB.Mocks
                             {
                                 Id = 1,
                                 IsActive = 1,
+								IdPayment =1,
+								IdDeliveryMan =1,
                                 Positions = new List<Position?> ()
                                 {
                                    new Position

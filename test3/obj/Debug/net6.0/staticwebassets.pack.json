@@ -109,6 +109,18 @@
       "PackagePath": "staticwebassets\\img\\Black_Classic.png"
     },
     {
+      "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\img\\Eco_Burger.png",
+      "PackagePath": "staticwebassets\\img\\Eco_Burger.png"
+    },
+    {
+      "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\img\\Example.png",
+      "PackagePath": "staticwebassets\\img\\Example.png"
+    },
+    {
+      "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\img\\Example2.png",
+      "PackagePath": "staticwebassets\\img\\Example2.png"
+    },
+    {
       "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\img\\Gurmyau.png",
       "PackagePath": "staticwebassets\\img\\Gurmyau.png"
     },
