@@ -33,7 +33,18 @@
 
 	</div>
 	<div class="pages_side">
-
+		<b class="profile_page_name">Корзина</b>
+		@{
+			foreach (var order in Model.ActiveClient.OrderHistory)
+			{
+				if(order.IsActive == 1)
+				{
+					<div class="order_box glass_box">
+					</div>
+				}
+			}
+			
+		}
 	</div>
 </div>
     <span class="glow_w profile1"></span>

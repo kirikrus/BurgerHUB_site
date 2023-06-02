@@ -9,12 +9,12 @@
         'profile pages';
     align-items: center;
     margin-top: -30px;
+    grid-template-rows: 100px;
 }
-
+/*#region левая часть*/
 div.profile_side {
     grid-area: profile;
     display: grid;
-    width: 500px;
     background: rgba(217, 217, 217, 0.06);
     backdrop-filter: blur(25px);
     grid-template-columns: 500px;
@@ -117,3 +117,28 @@ span.profile4 {
     background-color: #9500ff;
     filter: opacity(20%) blur(200px);
 }
+/*#endregion*/
+
+/*#region правая часть*/
+div.pages_side {
+    grid-area: pages;
+    display: grid;
+    height: inherit;
+    width: inherit;
+    grid-template-areas:
+        'name'
+        'content';
+    place-items: center;
+    grid-template-rows: 50px;
+}
+
+b.profile_page_name{
+    font-size: 40px;
+    font-weight: 600;
+}
+div.order_box{
+    height: 100px;
+    width: 600px;
+}
+/*#endregion*/
+

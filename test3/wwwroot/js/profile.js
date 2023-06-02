@@ -1,10 +1,20 @@
 ﻿function pages_profile(bt_id) {
-    bt_id.classList.add("white");
+    var bt_name = document.getElementById(bt_id);
+    bt_name.classList.add("white");
+
+    var pagesSide = document.querySelector('.pages_side');
+    pagesSide.innerHTML = '';
+
     switch (bt_id) {
         case "bag":
             current_order.classList.remove("white");
             history_order.classList.remove("white");
             my_burger.classList.remove("white");
+
+            var componentHtml = '<h2>Корзина</h2>' +
+                '<p>Содержимое вашей корзины здесь...</p>';
+            pagesSide.innerHTML = componentHtml;
+
             break;
         case "current_order":
             bag.classList.remove("white");
