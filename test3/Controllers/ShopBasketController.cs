@@ -7,21 +7,22 @@ public struct GetBurgerID
 	public int BurgerID { get; set; }
 }
 namespace BurgerHUB.Controllers
-{
+{ 
 	[Route("[Controller]")]
 	public class ShopBasketController : Controller
 	{
-		private readonly ProfileModel profileModel;
-		public ShopBasketController(ProfileModel profileModel)
+		private readonly IClients _profileModel;
+		public ShopBasketController(IClients profileModel)
 		{
-			this.profileModel = profileModel;
+			_profileModel = profileModel;
 		}
 		[HttpPost]
 		[Route("GetPositionOrder")]
 		public IActionResult GetPositionOrder([FromBody] GetBurgerID model)
 		{
 			int ID = model.BurgerID;
-			profileModel.UpdatePositions(ID);
+			ProfileModel test = new(_profileModel);
+			test.UpdatePositions(ID);
 			return Json(new { success = true });
 		}
 	}

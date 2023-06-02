@@ -12,7 +12,7 @@
         public int IsActive { get; set; }
 		public int Price { get; set; }
 		public string AdressDilivery { get; set; }
-		public List<Position> Positions { get; set; }
+		public List<Position?> Positions { get; set; }
 
     }
 }

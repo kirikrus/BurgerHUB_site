@@ -15,15 +15,21 @@ namespace BurgerHUB.Pages
 		{
 			_Client = client;
 		}
+		public static int activeID;
 		public Client ActiveClient;
-		public Order ActiveOrder;
+		//public	Order ActiveOrder;
 		public void UpdatePositions(int burgerId)
 		{
-			Position newposition = new();
-			if (ActiveOrder.Positions.Count == null) 
+			Position NewPosition = new();
+			ActiveClient = _Client.Clients.FirstOrDefault(x => x.ID == activeID);
+			Order ActiveOrder = ActiveClient.OrderHistory.First();
+			if (ActiveClient.OrderHistory?.Count == 0) 
 			{
-				ActiveOrder.IsActive = 0;
 				ActiveClient.OrderHistory.Add(ActiveOrder);
+			}
+			else
+			{
+				ActiveOrder = ActiveClient.OrderHistory.FirstOrDefault(x => x.IsActive == 0);
 			}
 			if(burgerId > 0 && burgerId < 8)
 			{
@@ -39,9 +45,9 @@ namespace BurgerHUB.Pages
 				}
 				if (flag == 0)
 				{
-					newposition.BM = burgerId;
-					newposition.AmountBM = 1;
-					ActiveOrder.Positions.Add(newposition);
+					NewPosition.BM = burgerId;
+					NewPosition.AmountBM = 1;
+					ActiveOrder.Positions.Add(NewPosition);
 				}
 			}
 			else
@@ -58,16 +64,18 @@ namespace BurgerHUB.Pages
 				}
 				if (flag == 0)
 				{
-					newposition.BC = burgerId;
-					newposition.AmountBC = 1;
-					ActiveOrder.Positions.Add(newposition);
+					NewPosition.BC = burgerId;
+					NewPosition.AmountBC = 1;
+					ActiveOrder.Positions.Add(NewPosition);
 				}
 			}
+			ActiveClient.OrderHistory.RemoveAll(x => x.IsActive == 0);
+			ActiveClient.OrderHistory.Add(ActiveOrder);
 		}
 		public PageResult OnGet(int ID)
 		{
+			activeID = ID;
 			ActiveClient = _Client.Clients.FirstOrDefault(x => x.ID == ID);
-			//ActiveOrder = ActiveClient.OrderHistory.Find(x => x.IsActive == 0);
 			return Page();
 		}
 	}
