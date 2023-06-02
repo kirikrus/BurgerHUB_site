@@ -27,9 +27,50 @@ namespace BurgerHUB.Mocks
                         {
                             new Order
                             {
-                                Positions = new List<Position?> (),
-                            }
-                        },
+                                Id = 1,
+                                IsActive = 1,
+                                Positions = new List<Position?> ()
+                                {
+                                   new Position
+                                   {
+                                       BC = 0,
+                                       BM = 1,
+                                       AmountBC = 0,
+                                       AmountBM = 2,
+                                   }
+                                },
+                            },
+							new Order
+							{
+								Id = 2,
+								IsActive = 0,
+								Positions = new List<Position?> ()
+								{
+								   new Position
+								   {
+									   BC = 0,
+									   BM = 2,
+									   AmountBC = 0,
+									   AmountBM = 2,
+								   }
+								},
+							},
+							new Order
+							{
+								Id = 2,
+								IsActive = 0,
+								Positions = new List<Position?> ()
+								{
+								   new Position
+								   {
+									   BC = 0,
+									   BM = 1,
+									   AmountBC = 0,
+									   AmountBM = 4,
+								   }
+								},
+							}
+						},
                     },
                     new Client
                     {
@@ -42,7 +83,54 @@ namespace BurgerHUB.Mocks
                         PhoneNumber = 89127374222,
                         Password = "ad23542345",
                         ClientAdress = "Down street 45",
-						OrderHistory = new List<Order> (),
+						OrderHistory = new List<Order> ()
+						{
+							new Order
+							{
+								Id = 1,
+								IsActive = 1,
+								Positions = new List<Position?> ()
+								{
+								   new Position
+								   {
+									   BC = 0,
+									   BM = 2,
+									   AmountBC = 0,
+									   AmountBM = 2,
+								   }
+								},
+							},
+							new Order
+							{
+								Id = 2,
+								IsActive = 0,
+								Positions = new List<Position?> ()
+								{
+								   new Position
+								   {
+									   BC = 0,
+									   BM = 1,
+									   AmountBC = 0,
+									   AmountBM = 1,
+								   }
+								},
+							},
+							new Order
+							{
+								Id = 2,
+								IsActive = 0,
+								Positions = new List<Position?> ()
+								{
+								   new Position
+								   {
+									   BC = 0,
+									   BM = 2,
+									   AmountBC = 0,
+									   AmountBM = 2,
+								   }
+								},
+							}
+						},
 					}
                 };
             }
