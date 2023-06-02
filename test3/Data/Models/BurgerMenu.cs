@@ -1,9 +1,11 @@
 ﻿
+using BurgerHUB.Data.Models;
+
 namespace BurgerHUB.Models
 {
     public class BurgerMenu
     {
-        public long ID { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Composition { get; set; }
@@ -12,8 +14,10 @@ namespace BurgerHUB.Models
         public int IsEco { get; set; }
         public int IsHit { get; set; }
         public int CookTime_min { get; set; }
-        public int Weight_gram { get; set;}
+        public int Weight_gram { get; set; }
         public int IDSupplement { get; set; }
-        public int Supplement { get; set; } // кбжу
+        public int IdPosition { get; set; }
+        public virtual Supplement Supplement { get; set; } // кбжу
+        public virtual Position Position { get; set; }
     }
 }

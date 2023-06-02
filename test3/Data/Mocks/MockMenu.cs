@@ -1,5 +1,6 @@
 ﻿using BurgerHUB.Models;
 using BurgerHUB.Data.Interfaces;
+using BurgerHUB.Data.Models;
 
 namespace BurgerHUB.Mocks
 {
@@ -27,7 +28,7 @@ namespace BurgerHUB.Mocks
                         IsHit = 1,
                         CookTime_min = 25,
                         Weight_gram = 487,
-                        Supplement = 706,
+                        Supplement = new Supplement(100, 50, 200, 700),
                     },
                     new BurgerMenu
                     {
@@ -44,7 +45,7 @@ namespace BurgerHUB.Mocks
                         IsHit = 0,
                         CookTime_min = 20,
                         Weight_gram = 400,
-                        Supplement = 200,
+                        Supplement = new Supplement(10, 5, 20, 150),
                     },
                 };
             }

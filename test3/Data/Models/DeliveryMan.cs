@@ -1,10 +1,14 @@
-﻿namespace BurgerHUB.Models
+﻿using BurgerHUB.Data.Models;
+
+namespace BurgerHUB.Models
 {
     public class DeliveryMan
     {
-        public long ID { get; set; }
+        public int ID { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }
         public long PhoneNumber { get; set; }
+        public int IdOrder { get; set; }
+        public virtual Order Order { get; set; }
     }
 }

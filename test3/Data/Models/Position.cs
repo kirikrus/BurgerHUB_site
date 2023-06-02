@@ -9,5 +9,11 @@ namespace BurgerHUB.Data.Models
         public int BC { get; set; }
         public int AmountBM { get; set; }
         public int AmountBC { get; set; }
+        public int IdOrder { get; set; }
+        public int IdBurgerCons { get; set; }
+        public int IdBurgerMenu { get; set; }
+        public virtual Order Order { get; set; }
+        public virtual BurgerMenu BurgerMenu { get; set; }
+        public virtual BurgerCons BurgerCons { get; set; }
     }
 }

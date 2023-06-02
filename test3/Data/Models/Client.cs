@@ -1,11 +1,12 @@
 ﻿using BurgerHUB.Data.Models;
 using Microsoft.AspNetCore.Mvc.TagHelpers;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BurgerHUB.Models
 {
     public class Client
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Avatar { get; set; }
         public string LastName { get; set; }
@@ -14,8 +15,10 @@ namespace BurgerHUB.Models
         public long PhoneNumber { get; set; }
         public string Password { get; set; }
         public string ClientAdress { get; set; }
-        public int IDOrderHistiry { get; set; }
-        public List<Order> OrderHistory { get; set; }
-        public List<BurgerCons> MyBurgers { get; set; }
-}
+        public virtual List<Order> OrderHistory { get; set; }
+        public virtual List<BurgerCons> MyBurgers { get; set; }
+
+        [InverseProperty("Client")]
+        public virtual Order Order { get; set; }
+    }
 }

@@ -35,7 +35,7 @@ namespace BurgerHUB.Controllers
 				{
 					if (Client.Email == NewEmail && Client.Password == NewPassword)
 					{
-						return Json(new {success = true, client = Client.ID});
+						return Json(new {success = true, client = Client.Id});
 					}
 				} 
 				break;

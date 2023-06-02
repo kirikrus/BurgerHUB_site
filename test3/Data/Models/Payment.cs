@@ -7,5 +7,7 @@
         public string Validity { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }
+        public int IdOrder { get; set; } 
+        public virtual Order Order { get; set; }
     }
 }
