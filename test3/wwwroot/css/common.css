@@ -61,6 +61,15 @@ button {
     transition: opacity 1s linear, visibility 0s linear 1s;
 }
 
+.attention {
+    background-color: rgb(203, 60, 60, 0.73);
+    transition: .5s linear;
+}
+
+.attention_non {
+    transition: .5s linear;
+}
+
 .Error_text {
     color: rgb(203, 60, 60);
     font-weight: 600;

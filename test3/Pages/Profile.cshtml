@@ -23,13 +23,13 @@
 			</div>
 			<img class="about_rating arr_left_right scale" src="~/icons/about.png"/>
 		</div>
-		<button class="white_button roboto profile_bt" style="grid-area:bag">Корзина</button>
+		<button id="bag" onclick="pages_profile('bag');" class="white_button roboto profile_bt" style="grid-area:bag">Корзина</button>
 
-		<button class="white_button roboto profile_bt" style="grid-area:this_order">Текущий заказ</button>
+		<button id="current_order" onclick="pages_profile('current_order');" class="white_button roboto profile_bt" style="grid-area:this_order">Текущий заказ</button>
 
-		<button class="white_button roboto profile_bt" style="grid-area:story_order">История заказов</button>
+		<button id="history_order" onclick="pages_profile('history_order');" class="white_button roboto profile_bt" style="grid-area:story_order">История заказов</button>
 
-		<button class="white_button roboto profile_bt" style="grid-area:my_burgers">Мои бургеры</button>
+		<button id="my_burger" onclick="pages_profile('my_burger');" class="white_button roboto profile_bt" style="grid-area:my_burgers">Мои бургеры</button>
 
 	</div>
 	<div class="pages_side">

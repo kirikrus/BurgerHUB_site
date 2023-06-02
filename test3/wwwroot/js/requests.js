@@ -44,6 +44,16 @@ function submitForm(event) { //ОБРАБОТКА ВХОДА
 
                 window.location.href = 'Profile?ID=' + data.client;
             } else {
+                var input = document.getElementsByClassName("attention_non");
+
+                for (var i = 0; i < input.length; i++)
+                    input[i].classList.add("attention");
+
+                setTimeout(function () {
+                for (var i = 0; i < input.length; i++)
+                    input[i].classList.remove("attention");
+                }, 500);
+
                 sessionStorage.setItem("isLoggedIn", "false");
             }
         })
@@ -110,6 +120,16 @@ function submitForm_reg(event) {
 
                 window.location.href = 'Profile?ID=' + data.client;
             } else {
+                var input = document.getElementsByClassName("attention_non");
+
+                for (var i = 0; i < input.length; i++)
+                    input[i].classList.add("attention");
+
+                setTimeout(function () {
+                    for (var i = 0; i < input.length; i++)
+                        input[i].classList.remove("attention");
+                }, 500);
+
                 sessionStorage.setItem("isLoggedIn", "false");
             }
         })

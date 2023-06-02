@@ -21,7 +21,7 @@ namespace BurgerHUB.Pages
 		public void UpdatePositions(int burgerId)
 		{
 			Position NewPosition = new();
-			ActiveClient = _Client.Clients.FirstOrDefault(x => x.Id == activeID);
+			ActiveClient = _Client.Clients.FirstOrDefault(x => x.ID == activeID);
 			Order ActiveOrder = ActiveClient.OrderHistory.First();
 			if (ActiveClient.OrderHistory?.Count == 0) 
 			{
@@ -75,7 +75,7 @@ namespace BurgerHUB.Pages
 		public PageResult OnGet(int ID)
 		{
 			activeID = ID;
-			ActiveClient = _Client.Clients.FirstOrDefault(x => x.Id == ID);
+			ActiveClient = _Client.Clients.FirstOrDefault(x => x.ID == ID);
 			return Page();
 		}
 	}

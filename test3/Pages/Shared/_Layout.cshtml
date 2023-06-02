@@ -19,6 +19,7 @@
 <script src="~/js/site.js" asp-append-version="true"></script>
 <script src="~/js/index_burger_blocks.js" asp-append-version="true"></script>
 <script src="~/js/requests.js" asp-append-version="true"></script>
+<script src="~/js/profile.js" asp-append-version="true"></script>
 
 <body>
     <span id="backdrop"></span>
@@ -33,7 +34,7 @@
 		            <a href="constructor" class="menu_ref roboto">Конструктор</a>
 		            <a href="Index#delivery" class="menu_ref roboto">Доставка</a>
                     <a href="Index#about" class="menu_ref roboto">О нас</a>
-                    <a href="shopping_bag" class="icon_shop"><img class="menu_icon" src="~/icons/ShoppingBag_hover.png"/></a>
+                    <button onclick="user_profile();" class="icon_shop"><img class="menu_icon" src="~/icons/ShoppingBag_hover.png" /></button>
                     <button onclick="user_profile();" class="icon_user pd25"><img class="menu_icon" src="~/icons/User_hover.png"/></button>
                 </div>
             </div>
@@ -46,11 +47,11 @@
             <button class="left_arr" onclick="closeModal('login_window');"><img src="~/icons/arr_left.png"/></button>
             <img class="icon_user login_icon" src="~/icons/User_hover_.png"/>
         </div>
-        <div class="login_field">
+        <div class="login_field attention_non">
             <input type="email" placeholder="email@email.ru"/>
         </div>
-        <div class="login_field">
-            <input type="password" placeholder="пароль"/>
+        <div class="login_field attention_non">
+            <input type="password" placeholder="пароль" />
         </div>
         <button onclick="openModal('Error_1', 1);" type="button" class="login_reg"><b class="underline roboto">Забыли пароль?</b></button>
         <input class="login_button" type="submit" value="Вход"/>
@@ -64,22 +65,22 @@
             <button class="left_arr" onclick="closeModal('reg_window',1);"><img src="~/icons/arr_left.png"/></button>
         </div>
 
-        <div class="login_field reg_filed">
+        <div class="login_field reg_filed attention_non">
             <input type="text" placeholder="Иванов"/>
         </div>
-        <div class="login_field reg_filed">
+        <div class="login_field reg_filed attention_non">
             <input type="text" placeholder="Иван"/>
         </div>
-        <div class="login_field reg_filed">
+        <div class="login_field reg_filed attention_non">
             <input type="text" placeholder="Иванович"/>
         </div>
-        <div class="login_field reg_filed">
+        <div class="login_field reg_filed attention_non">
             <input type="email" placeholder="email@email.ru"/>
         </div>
-         <div class="login_field reg_filed">
+        <div class="login_field reg_filed attention_non">
             <input type="tel" placeholder="+79773039529"/>
         </div>
-        <div class="login_field reg_filed">
+        <div class="login_field reg_filed attention_non">
             <input type="text" placeholder="г.Москва ул. Ленина д. 1 кв. 7"/>
         </div>
 
