@@ -242,3 +242,15 @@ E:\burger\BurgerHUB_site\test3\obj\Debug\net6.0\refint\BurgerHUB.dll
 E:\burger\BurgerHUB_site\test3\obj\Debug\net6.0\BurgerHUB.pdb
 E:\burger\BurgerHUB_site\test3\obj\Debug\net6.0\BurgerHUB.genruntimeconfig.cache
 E:\burger\BurgerHUB_site\test3\obj\Debug\net6.0\ref\BurgerHUB.dll
+D:\BY3\сайт\BurgerHUB_site\test3\bin\Debug\net6.0\Castle.Core.dll
+D:\BY3\сайт\BurgerHUB_site\test3\bin\Debug\net6.0\Humanizer.dll
+D:\BY3\сайт\BurgerHUB_site\test3\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\BY3\сайт\BurgerHUB_site\test3\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\BY3\сайт\BurgerHUB_site\test3\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\BY3\сайт\BurgerHUB_site\test3\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\BY3\сайт\BurgerHUB_site\test3\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\BY3\сайт\BurgerHUB_site\test3\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\BY3\сайт\BurgerHUB_site\test3\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\BY3\сайт\BurgerHUB_site\test3\bin\Debug\net6.0\Npgsql.dll
+D:\BY3\сайт\BurgerHUB_site\test3\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\BY3\сайт\BurgerHUB_site\test3\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
