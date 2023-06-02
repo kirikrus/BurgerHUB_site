@@ -30,7 +30,24 @@ namespace BurgerHUB.Mocks
                                 Id = 1,
                                 IsActive = 1,
 								IdPayment =1,
+								Payment = new Payment()
+								{
+									Id = 1,
+									CardNumber = "4377 7278 1972 3649" ,
+									IdOrder = 1,
+									Name = "Vlad",
+									LastName = "Hom",
+									Validity = "10/28",
+								},
+
 								IdDeliveryMan =1,
+								DeliveryMan = new DeliveryMan()
+								{
+									Name = "Василий",
+									LastName = "Иванов",
+									PhoneNumber = 89926562311,
+									IdOrder = 1,
+								},
                                 Positions = new List<Position?> ()
                                 {
                                    new Position
@@ -59,7 +76,7 @@ namespace BurgerHUB.Mocks
 							},
 							new Order
 							{
-								Id = 2,
+								Id = 3,
 								IsActive = 0,
 								Positions = new List<Position?> ()
 								{
@@ -100,6 +117,24 @@ namespace BurgerHUB.Mocks
 									   AmountBC = 0,
 									   AmountBM = 2,
 								   }
+								},
+								IdPayment =2,
+								Payment = new Payment()
+								{
+									Id = 2,
+									CardNumber = "4377 7278 1972 3649" ,
+									IdOrder = 1,
+									Name = "Vlad",
+									LastName = "Hom",
+									Validity = "10/28",
+								},
+								IdDeliveryMan = 1,
+								DeliveryMan = new DeliveryMan()
+								{
+									Name = "Василий",
+									LastName = "Иванов",
+									PhoneNumber = 89926562311,
+									IdOrder = 4,
 								},
 							},
 							new Order
