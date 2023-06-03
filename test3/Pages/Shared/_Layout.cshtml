@@ -13,6 +13,7 @@
     <title>@ViewData["Title"] - BurgerHUB</title>
 
     <link rel="stylesheet" href="~/css/Layout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/constructor.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Index.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/common.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/profile.css" asp-append-version="true" />
@@ -32,7 +33,7 @@
                 <div class="lable_block"><a href="Index#home" class="lable roboto">Burger<b class="lable_hub roboto">HUB</b></a></div>
                 <div class="menu_block">
                     <a href="Index#menu" class="menu_ref roboto">Меню</a>
-		            <a href="constructor" class="menu_ref roboto">Конструктор</a>
+		            <a href="Constructor" class="menu_ref roboto">Конструктор</a>
 		            <a href="Index#delivery" class="menu_ref roboto">Доставка</a>
                     <a href="Index#about" class="menu_ref roboto">О нас</a>
                     <button onclick="user_profile();" class="icon_shop"><img class="menu_icon" src="~/icons/ShoppingBag_hover.png" /></button>
@@ -119,7 +120,7 @@
         </b>
         <div style="grid-area: ss" class="rating_block raiting_SS">SS</div>
         <b style="grid-area: text_ss">
-            - дополнительная скидка 15% на заказ от 10000Р. Также добавляется уникальный статус после имени. Теперь к вам будут обращаться через “Господин/Госпожа”  ; )
+            - дополнительная скидка 15% на заказ от 10000Р.
             Требования: совершить заказ на сумму больше 10000Р
         </b>
     </div>
@@ -127,7 +128,7 @@
 
     <!--#region настройка профиля -->
     <form id="setting_window" class="glass_box" method="post" onsubmit="submitForm_setting(event)" onclose="closeModal('setting_window');">
-        <div class="login_window_head">
+        <div class="login_window_head" style="width: inherit;place-self: start">
             <button class="left_arr" onclick="closeModal('setting_window');"><img src="~/icons/arr_left.png" /></button>
         </div>
 
@@ -138,7 +139,7 @@
             <input type="text" placeholder="Иван" />
         </div>
         <div class="login_field reg_filed attention_non">
-            <input type="text" placeholder="Иванович" />
+            <input type="password" placeholder="пароль" />
         </div>
         <div class="login_field reg_filed attention_non">
             <input type="email" placeholder="email@email.ru" />
@@ -155,17 +156,18 @@
     <!--#endregion -->
 
     <!--#region оплата  -->
-    <form id="payment" class="glass_box roboto" method="post" onsubmit="submitForm_payment(event)" onclose="closeModal('payment');">
-        <button style="grid-area: back; place-self: start" class="left_arr" onclick="closeModal('payment');"><img src="~/icons/arr_left.png" /></button>
-        <div class="card">
-            <input class="roboto card" style="grid-area: num" type="text" placeholder="0123456789" />
-            <input class="roboto card_small" style="grid-area: cvv" type="text" placeholder="123" />
-            <input class="roboto card_small" style="grid-area: date" type="text" placeholder="01/21" />
-        </div>
-        <input class="white_button scale roboto" style="width: auto; grid-area: submit" type="submit" value="Подтвердить" />
-        <!--<span id="vaves" class="vaves invis"><img class="invis" src="~/img/vaves.png" /></span>-->
-    </form>
-
+    <div id="payment">
+        <form class="glass_box roboto payment" method="post" onsubmit="submitForm_payment(event)" onclose="closeModal('payment');">
+            <button style="grid-area: back; place-self: start" class="left_arr" onclick="closeModal('payment');"><img src="~/icons/arr_left.png" /></button>
+            <div class="card">
+                <input class="roboto card" style="grid-area: num" type="text" placeholder="012345678912" />
+                <input class="roboto card_small" style="grid-area: cvv" type="text" placeholder="123" />
+                <input class="roboto card_small" style="grid-area: date" type="text" placeholder="01/21" />
+            </div>
+            <input class="white_button scale roboto" style="width: auto; grid-area: submit" type="submit" value="Подтвердить" />
+        </form>
+        <span class="vaves invis"><img class="invis" src="~/img/vaves.png" /></span>
+    </div>
     <!--#endregion -->
 
     <div class="container">

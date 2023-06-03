@@ -50,8 +50,8 @@ function submitForm(event) { //ОБРАБОТКА ВХОДА
                     input[i].classList.add("attention");
 
                 setTimeout(function () {
-                for (var i = 0; i < input.length; i++)
-                    input[i].classList.remove("attention");
+                    for (var i = 0; i < input.length; i++)
+                        input[i].classList.remove("attention");
                 }, 500);
 
                 sessionStorage.setItem("isLoggedIn", "false");
@@ -82,13 +82,13 @@ function add_to_bag(burger_id) {//добавление в корзину
 }
 
 function submitForm_reg(event) {//обработка регистрации
-    event.preventDefault(); 
+    event.preventDefault();
     var form = document.getElementById("reg_window");
 
     var jsonData = {
         Surname: form[1].value,
         Name: form[2].value,
-        Patronymic: form[3].value,
+        Password: form[3].value,
         Email: form[4].value,
         Tel: form[5].value,
         Adres: form[6].value
@@ -133,23 +133,26 @@ function submitForm_reg(event) {//обработка регистрации
         });
 }
 
-function delete_from_bag(position_id){ //удаление из корзины
-        var jsonData = {
-            Position_Id: position_id,
-            User_id: User
-        };
+function delete_from_bag(position_id) { //удаление из корзины
+    var User = atob(atob(sessionStorage.getItem("user")));
 
-        fetch("", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(jsonData)
-        })
+    var jsonData = {
+        Position_Id: position_id,
+        User_id: User
+    };
+
+    fetch("", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(jsonData)
+    })
 }
 
 function submitForm_setting(event) { // Настройки
     event.preventDefault();
+    var User = atob(atob(sessionStorage.getItem("user")));
     var form = document.getElementById("setting_window");
 
     var jsonData = {
@@ -158,7 +161,29 @@ function submitForm_setting(event) { // Настройки
         Patronymic: form[3].value,
         Email: form[4].value,
         Tel: form[5].value,
-        Adres: form[6].value
+        Adres: form[6].value,
+        User_id: User
+    };
+
+    fetch("", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(jsonData)
+    })
+}
+
+function submitForm_payment(event) { // Настройки
+    event.preventDefault();
+    var form = document.getElementById("payment");
+    var User = atob(atob(sessionStorage.getItem("user")));
+
+    var jsonData = {
+        Number: form[1].value,
+        Cvv: form[2].value,
+        Date: form[3].value,
+        User_id: User
     };
 
     fetch("", {

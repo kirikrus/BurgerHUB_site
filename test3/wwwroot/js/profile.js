@@ -30,5 +30,10 @@
             my_burger_page.classList.remove("open_grid");
 
             break;
+        case "exit": {
+            window.location.href = "/Index";
+            sessionStorage.setItem("isLoggedIn", "false");
+            sessionStorage.clear("user");
+        }
     }
 }

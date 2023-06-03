@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\common.css"
     },
     {
+      "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\css\\constructor.css",
+      "PackagePath": "staticwebassets\\css\\constructor.css"
+    },
+    {
       "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\css\\layout.css",
       "PackagePath": "staticwebassets\\css\\layout.css"
     },
@@ -85,8 +89,20 @@
       "PackagePath": "staticwebassets\\icons\\arr_right.png"
     },
     {
+      "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\icons\\bun.png",
+      "PackagePath": "staticwebassets\\icons\\bun.png"
+    },
+    {
+      "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\icons\\cheese.png",
+      "PackagePath": "staticwebassets\\icons\\cheese.png"
+    },
+    {
       "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\icons\\cross.png",
       "PackagePath": "staticwebassets\\icons\\cross.png"
+    },
+    {
+      "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\icons\\green.png",
+      "PackagePath": "staticwebassets\\icons\\green.png"
     },
     {
       "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\icons\\ic_sharp-eco.png",
@@ -103,6 +119,14 @@
     {
       "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\icons\\settings.png",
       "PackagePath": "staticwebassets\\icons\\settings.png"
+    },
+    {
+      "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\icons\\souce.png",
+      "PackagePath": "staticwebassets\\icons\\souce.png"
+    },
+    {
+      "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\icons\\steak.png",
+      "PackagePath": "staticwebassets\\icons\\steak.png"
     },
     {
       "Id": "X:\\BurgerHUB_site\\test3\\wwwroot\\img\\1670364312_51-kartinkin-net-p-burger-kartinka-vkontakte-52.jpg",
