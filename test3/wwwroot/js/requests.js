@@ -133,7 +133,7 @@ function submitForm_reg(event) {//обработка регистрации
         });
 }
 
-function delete_from_bag(position_id){//удаление из корзины
+function delete_from_bag(position_id){ //удаление из корзины
         var jsonData = {
             Position_Id: position_id,
             User_id: User
@@ -148,7 +148,7 @@ function delete_from_bag(position_id){//удаление из корзины
         })
 }
 
-function submitForm_setting(event) {
+function submitForm_setting(event) { // Настройки
     event.preventDefault();
     var form = document.getElementById("setting_window");
 
