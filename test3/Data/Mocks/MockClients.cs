@@ -62,7 +62,7 @@ namespace BurgerHUB.Mocks
 									   BC = 0,
 									   BM = 2,
 									   AmountBC = 0,
-									   AmountBM = 1,
+									   AmountBM = 15,
 								   }
 								},
 							},
@@ -117,7 +117,7 @@ namespace BurgerHUB.Mocks
 									   BC = 0,
 									   BM = 4,
 									   AmountBC = 0,
-									   AmountBM = 2,
+									   AmountBM = 20,
 								   },
 								   new Position
 								   {

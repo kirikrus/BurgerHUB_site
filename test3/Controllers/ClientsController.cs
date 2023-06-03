@@ -28,14 +28,14 @@ namespace BurgerHUB.Controllers
 			string NewEmail = model.Email;
 			string NewPassword = model.Password;
 			IEnumerable<Client> AllClients;
-			AllClients = List.Clients;
+			AllClients = List.Clients.ToList();
 			while (true)
 			{
 				foreach (var Client in AllClients)
 				{
 					if (Client.Email == NewEmail && Client.Password == NewPassword)
 					{
-						return Json(new {success = true, client = Client.Id});
+						return Json(new {success = true, client = Client.Id, });
 					}
 				} 
 				break;

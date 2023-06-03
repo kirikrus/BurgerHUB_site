@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.Design;
 using BurgerHUB.Controllers;
 using BurgerHUB.Data.Models;
+using BurgerHUB.Data.Mocks;
 
 namespace BurgerHUB.Pages
 {
@@ -12,7 +13,6 @@ namespace BurgerHUB.Pages
 	{
 		public readonly IClients _Client;
 		public readonly IMenu _Menu;
-
 		public ProfileModel(IClients client, IMenu menu)
 		{
 			_Client = client;
@@ -26,17 +26,18 @@ namespace BurgerHUB.Pages
 		public void UpdatePositions(int burgerId)
 		{
 			Position NewPosition = new();
-			ActiveClient = _Client.Clients.FirstOrDefault(x => x.Id == activeID);
+			ActiveClient = ListClass.Base.FirstOrDefault(x => x.Id == activeID);
 			Order ActiveOrder = ActiveClient.OrderHistory.First();
-			if (ActiveClient.OrderHistory?.Count == 0) 
+			if (ActiveOrder.IsActive == -1) 
 			{
-				ActiveClient.OrderHistory.Add(ActiveOrder);
+				ActiveOrder.Positions.Clear();
+				ActiveOrder.IsActive = 1;
 			}
 			else
 			{
-				ActiveOrder = ActiveClient.OrderHistory.FirstOrDefault(x => x.IsActive == 0);
+				ActiveOrder = ActiveClient.OrderHistory.FirstOrDefault(x => x.IsActive == 1);
 			}
-			if(burgerId > 0 && burgerId < 8)
+			if(burgerId > 0 && burgerId <= _Menu.BurgersMenu.Count())
 			{
 				int flag = 0;
 				foreach (var x in ActiveOrder.Positions)
@@ -74,14 +75,18 @@ namespace BurgerHUB.Pages
 					ActiveOrder.Positions.Add(NewPosition);
 				}
 			}
-			ActiveClient.OrderHistory.RemoveAll(x => x.IsActive == 0);
+			ActiveClient.OrderHistory.RemoveAll(x => x.IsActive == 1);
 			ActiveClient.OrderHistory.Add(ActiveOrder);
+			ListClass.Base.RemoveAll(x => x.Id == activeID);
+			ListClass.Base.Add(ActiveClient);
 		}
 
 		public PageResult OnGet(int ID)
 		{
 			activeID = ID;
-			ActiveClient = _Client.Clients.FirstOrDefault(x => x.Id == ID);
+			if(ListClass.Base.Count == 0) 
+				ListClass.Base = _Client.Clients.ToList();
+			ActiveClient = ListClass.Base.FirstOrDefault(x => x.Id == ID);
 			Menu = _Menu.BurgersMenu;
 			return Page();
 		}

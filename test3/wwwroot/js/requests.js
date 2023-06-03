@@ -94,7 +94,7 @@ function submitForm_reg(event) {//обработка регистрации
         Adres: form[6].value
     };
 
-    fetch("https://localhost:7026/Clients/ProcessLoginForm", {
+    fetch("https://localhost:7026/Registration/ProcessRegistrationForm", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
