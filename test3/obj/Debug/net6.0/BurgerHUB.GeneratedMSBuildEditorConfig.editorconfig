@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\BY3\сайт\BurgerHUB_site\test3
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/BY3/сайт/BurgerHUB_site/test3/Pages/Constructor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc3RydWN0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/BY3/сайт/BurgerHUB_site/test3/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
