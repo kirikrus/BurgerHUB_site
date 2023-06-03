@@ -1,52 +1,164 @@
 ﻿@page
 @model BurgerHUB.Pages.ProfileModel 
+@using BurgerHUB.Models
 @{
 	ViewData["Title"] = "Рады видеть вас, "+Model.ActiveClient.Name;
 }
 
 <div class="profile roboto">
 	<div class="profile_side">
-		<img src="~/icons/settings.png" class="arr_left_right scale profile_up"/>
-		<img class="ava" src="@Model.ActiveClient.Avatar"/>
+		<img onclick="openModal('setting_window')" src="~/icons/settings.png" class="arr_left_right scale profile_up" />
+		<img class="ava invis" src="~/img/base_avatar.png"/>
 		<b class="profile_name">@Model.ActiveClient.Name</b>
 		<div class="profile_rating">
 			<b>Ваш рейтинг</b>
-			<div class="rating_block">
-				@{
-					switch(Model.ActiveClient.Raiting) {
-						case 1: <b>B</b>; break;
-						case 2: <b>A</b>; break;
-						case 3: <b>S</b>; break;
-						case 4: <b>SS</b>; break;
+			<div id="raiting" class="rating_block">
+				<script>
+					var raiting = document.getElementById("raiting");
+					switch(@Model.ActiveClient.Raiting) {
+						case 1:
+							raiting.innerHTML = 'B';
+							raiting.classList.add("raiting_B");
+						break;
+						case 2:
+							raiting.innerHTML = 'A';
+							raiting.classList.add("raiting_A");
+						break;
+						case 3:
+							raiting.innerHTML = 'S';
+							raiting.classList.add("raiting_S");
+						break;
+						case 4:
+							raiting.innerHTML = 'SS';
+							raiting.classList.add("raiting_SS");
+						break;
 					}
-				}
+				</script>
 			</div>
-			<img class="about_rating arr_left_right scale" src="~/icons/about.png"/>
+			<img onclick="openModal('about_rating')" class="about_rating arr_left_right scale" src="~/icons/about.png" />
 		</div>
-		<button id="bag" onclick="pages_profile('bag');" class="white_button roboto profile_bt" style="grid-area:bag">Корзина</button>
 
-		<button id="current_order" onclick="pages_profile('current_order');" class="white_button roboto profile_bt" style="grid-area:this_order">Текущий заказ</button>
+		<button id="bag" onclick="pages_profile('bag');" class="white_button roboto profile_bt" style="grid-area:bag">Корзина</button>
 
 		<button id="history_order" onclick="pages_profile('history_order');" class="white_button roboto profile_bt" style="grid-area:story_order">История заказов</button>
 
 		<button id="my_burger" onclick="pages_profile('my_burger');" class="white_button roboto profile_bt" style="grid-area:my_burgers">Мои бургеры</button>
 
 	</div>
-	<div class="pages_side">
-		<b class="profile_page_name">Корзина</b>
-		@{
-			foreach (var order in Model.ActiveClient.OrderHistory)
-			{
-				if(order.IsActive == 1)
-				{
-					<div class="order_box glass_box">
 
-					</div>
+	<div id="bag_page" class="pages_side">
+		<b class="profile_page_name">Корзина</b>
+		<div class="content">
+			@{
+				double totalCost = 0;
+				foreach (var order in Model.ActiveClient.OrderHistory)
+				{
+					if(order.IsActive == 1)
+					{
+						foreach (var position in order.Positions) {
+							BurgerMenu burger = Model.Menu.ElementAt(position.BM - 1);
+							int cost = (int)burger.Price * position.AmountBM;
+							totalCost += cost;
+							<div class="order_box glass_box">
+								<img class="invis order_img invis" src=@burger.IMG />
+								<b class="order_text">@burger.Name x @position.AmountBM</b>
+								<b class="order_text">@cost ₽</b>
+								<img onclick="delete_from_bag(@position.Id)" class="arr_left_right scale cross" src="~/icons/cross.png" />
+							</div>
+						}
+					}
+				}
+
+			}
+		</div>
+		<div class="cost">
+			<b>
+				Общая стоимость: @totalCost * 
+				@{
+					switch(Model.ActiveClient.Raiting){
+						case 1: <b>1</b>
+							break;
+						case 2:
+							if (totalCost >= 2500)
+							{
+								totalCost *= 0.95;
+								<b>0.95</b>
+							}
+							else
+							{
+								<b>1</b>
+							}
+							break;
+						case 3:
+							if (totalCost >= 5000)
+							{
+								totalCost *= 0.9;
+								<b>0.9</b>
+							}
+							else
+							{
+								<b>1</b>
+							}
+							break;
+						case 4:
+							if (totalCost >= 10000)
+							{
+								totalCost *= 0.85;
+								<b>0.85</b>
+							}
+							else
+							{
+								<b>1</b>
+							}
+							break;
+					}
+				}
+				= @totalCost ₽;
+			</b>
+			<button class="base_button buy" onclick="openModal('payment')">Оплатить</button>
+		</div>
+	</div>
+
+	<div id="history_order_page" class="pages_side">
+		<b class="profile_page_name">История заказов</b>
+		<div class="content" style="align-content: center;height: calc(100% + 200px)">
+			@{
+				foreach (var order in Model.ActiveClient.OrderHistory)
+				{
+					totalCost = 0;
+					if (order.IsActive == 0)
+					{
+						<div class="order_box_more glass_box">
+						@{
+							foreach (var position in order.Positions)
+							{
+								BurgerMenu burger = Model.Menu.ElementAt(position.BM - 1);
+								int cost = (int)burger.Price * position.AmountBM;
+								totalCost += cost;
+								<div class="order_box" style="grid-template-areas: 'img name cost'; width: 600px; margin: 0">
+									<img class="invis order_img invis" src=@burger.IMG />
+									<b class="order_text">@burger.Name x @position.AmountBM</b>
+									<b class="order_text">@cost ₽</b>
+								</div>
+							}
+						}
+						<b class="order_text">@order.Date</b>
+						<b class="order_text">Сумма чека: @totalCost ₽</b>
+						</div>
+					}
 				}
 			}
-			
-		}
+		</div>
 	</div>
+
+	<div id="my_burger_page" class="pages_side">
+		
+	</div>
+
+	<script>
+		pages_profile('bag');
+	</script>
+
 </div>
     <span class="glow_w profile1"></span>
     <span class="glow_o profile2"></span>

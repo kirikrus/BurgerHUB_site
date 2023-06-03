@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "huIsp9uzsFGJO2zwIcRbKoOHaXoWIrApzVGJIqyppik=",
+  "Hash": "860yuQYNDEEz0gpoG8zhrss3DYXfjjFpy6vVoBVmUSU=",
   "Source": "BurgerHUB",
   "BasePath": "_content/BurgerHUB",
   "Mode": "Default",
@@ -202,6 +202,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icons\\ClockClockwise.png"
+    },
+    {
+      "Identity": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\wwwroot\\icons\\cross.png",
+      "SourceId": "BurgerHUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\wwwroot\\",
+      "BasePath": "_content/BurgerHUB",
+      "RelativePath": "icons/cross.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\cross.png"
     },
     {
       "Identity": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\wwwroot\\icons\\FacebookLogo.png",
@@ -476,6 +493,23 @@
       "OriginalItemSpec": "wwwroot\\img\\1670364312_51-kartinkin-net-p-burger-kartinka-vkontakte-52.jpg"
     },
     {
+      "Identity": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\wwwroot\\img\\base_avatar.png",
+      "SourceId": "BurgerHUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\wwwroot\\",
+      "BasePath": "_content/BurgerHUB",
+      "RelativePath": "img/base_avatar.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\base_avatar.png"
+    },
+    {
       "Identity": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\wwwroot\\img\\Black_Classic.png",
       "SourceId": "BurgerHUB",
       "SourceType": "Discovered",
@@ -593,6 +627,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Miton.png"
+    },
+    {
+      "Identity": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\wwwroot\\img\\vaves.png",
+      "SourceId": "BurgerHUB",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\wwwroot\\",
+      "BasePath": "_content/BurgerHUB",
+      "RelativePath": "img/vaves.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\vaves.png"
     },
     {
       "Identity": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\wwwroot\\js\\index_burger_blocks.js",

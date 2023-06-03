@@ -63,7 +63,7 @@ function submitForm(event) { //ОБРАБОТКА ВХОДА
         });
 }
 
-function add_to_bag(burger_id) {
+function add_to_bag(burger_id) {//добавление в корзину
     if (sessionStorage.getItem("isLoggedIn") == "true") {
         var User = atob(atob(sessionStorage.getItem("user")));
         var jsonData = {
@@ -78,15 +78,10 @@ function add_to_bag(burger_id) {
             },
             body: JSON.stringify(jsonData)
         })
-            .then(function (response) {
-                if (response.ok) {
-
-                }
-            })
     }
 }
 
-function submitForm_reg(event) {
+function submitForm_reg(event) {//обработка регистрации
     event.preventDefault(); 
     var form = document.getElementById("reg_window");
 
@@ -136,4 +131,41 @@ function submitForm_reg(event) {
         .catch(function (error) {
             console.error(error);
         });
+}
+
+function delete_from_bag(position_id){//удаление из корзины
+        var jsonData = {
+            Position_Id: position_id,
+            User_id: User
+        };
+
+        fetch("", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(jsonData)
+        })
+}
+
+function submitForm_setting(event) {
+    event.preventDefault();
+    var form = document.getElementById("setting_window");
+
+    var jsonData = {
+        Surname: form[1].value,
+        Name: form[2].value,
+        Patronymic: form[3].value,
+        Email: form[4].value,
+        Tel: form[5].value,
+        Adres: form[6].value
+    };
+
+    fetch("", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(jsonData)
+    })
 }

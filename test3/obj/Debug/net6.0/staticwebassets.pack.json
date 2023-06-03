@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\icons\\arr_right.png"
     },
     {
+      "Id": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\wwwroot\\icons\\cross.png",
+      "PackagePath": "staticwebassets\\icons\\cross.png"
+    },
+    {
       "Id": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\wwwroot\\icons\\ic_sharp-eco.png",
       "PackagePath": "staticwebassets\\icons\\ic_sharp-eco.png"
     },
@@ -129,8 +133,16 @@
       "PackagePath": "staticwebassets\\img\\Miton.png"
     },
     {
+      "Id": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\wwwroot\\img\\base_avatar.png",
+      "PackagePath": "staticwebassets\\img\\base_avatar.png"
+    },
+    {
       "Id": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\wwwroot\\img\\map.png",
       "PackagePath": "staticwebassets\\img\\map.png"
+    },
+    {
+      "Id": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\wwwroot\\img\\vaves.png",
+      "PackagePath": "staticwebassets\\img\\vaves.png"
     },
     {
       "Id": "D:\\BY3\\сайт\\BurgerHUB_site\\test3\\wwwroot\\js\\index_burger_blocks.js",

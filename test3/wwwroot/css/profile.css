@@ -5,7 +5,7 @@
     height: 100%;
     grid-template-columns: 500px;
     grid-template-areas:
-        'profile status'
+        'profile pages'
         'profile pages';
     align-items: center;
     margin-top: -30px;
@@ -25,7 +25,6 @@ div.profile_side {
         'name'
         'rating'
         'bag'
-        'this_order'
         'story_order'
         'my_burgers';
     place-items: center;
@@ -59,14 +58,29 @@ div.profile_rating {
 
 div.rating_block {
     display: grid;
-    background-color: green;
     width: 126px;
     height: 48px;
-    background: #4B9700;
     border-radius: 110px;
     place-items: center;
+    font-size: 30px;
+    font-weight: 400;
 }
 
+.raiting_B {
+    background: #4E4E4E;
+}
+.raiting_A {
+    background: #4B9700;
+}
+.raiting_S {
+    background: #5BA9AE;
+    border: 2px solid #FFFFFF;
+}
+.raiting_SS {
+    background: #FF710B;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(255, 113, 11, 0.3);
+}
 img.about_rating {
     height: 40px;
     width: 40px;
@@ -121,24 +135,156 @@ span.profile4 {
 
 /*#region правая часть*/
 div.pages_side {
+    position: absolute;
     grid-area: pages;
-    display: grid;
     height: inherit;
     width: inherit;
     grid-template-areas:
         'name'
-        'content';
+        'content'
+        'cost';
     place-items: center;
-    grid-template-rows: 50px;
+    grid-template-rows: 100px;
+    visibility: hidden;
+    display: none;
+    overflow-x: scroll;
 }
 
 b.profile_page_name{
     font-size: 40px;
     font-weight: 600;
 }
-div.order_box{
-    height: 100px;
+
+div.content{
+    display: grid;
+    height: inherit;
+    width: inherit;
+    place-items: center;
+}
+
+div.order_box {
+    display: grid;
+    grid-template-areas: 'img name cost delete';
+    place-items: center;
+    height: auto;
     width: 600px;
+    align-self: start;
+    margin: 20px;
+}
+
+div.order_box_more {
+    display: grid;
+    place-items: center;
+    height: auto;
+    align-self: start;
+    margin: 20px;
+}
+
+b.order_text {
+    font-size: 26px;
+}
+
+img.order_img{
+    height: 120px;
+}
+
+div.cost {
+    display: grid;
+    grid-template-areas:
+        'total'
+        'buy';
+    border-top: 1px solid #4E4E4E;
+    width: calc(100% - 500px);
+    place-items: center;
+}
+
+div.about_raiting {
+    z-index: 11;
+    padding: 20px;
+    position: fixed;
+    display: grid;
+    grid-template-areas:
+        'back back'
+        'what what'
+        'b text_b'
+        'a text_a'
+        's text_s'
+        'ss text_ss';
+    width: 800px;
+    height: auto;
+    left: calc(50% - 800px/2);
+    top: 100px;
+    grid-template-rows: 0px 50px repeat(4, 100px);
+    grid-template-columns: 150px;
+    place-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s linear, visibility 0s linear 1s;
+}
+
+#setting_window {
+    left: 700px;
+    display: grid;
+    place-items: center;
+    z-index: 11;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s linear, visibility 0s linear 1s;
+}
+
+#payment {
+    height: 300px;
+    width: 400px;
+    top: 200px;
+    left: calc(50% - 400px/2);
+    position: fixed;
+    display: grid;
+    grid-template-areas:
+        'back'
+        'card'
+        'submit';
+    place-items: start;
+    grid-template-columns: 400px;
+    padding: 20px;
+    z-index: 12;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s linear, visibility 0s linear 1s;
+}
+
+div.card {
+    display: grid;
+    grid-area: card;
+    grid-template-areas:
+        'num num'
+        'cvv date';
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 40px 70px;
+}
+
+input.card {
+    width: inherit;
+    font-size: 46px;
+    color: white;
+    justify-self: end;
+    color: white;
+}
+
+input.card_small {
+    width: 100px;
+    font-size: 36px;
+    color: white;
+    justify-self: start;
+    color: white;
+}
+
+span.vaves {
+    position: fixed;
+    z-index: -1;
+    left: 33px;
+    top: 69px;
+    transform: scale(1.5);
 }
 /*#endregion*/
 
