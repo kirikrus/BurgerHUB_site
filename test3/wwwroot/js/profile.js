@@ -2,34 +2,38 @@
     var bt_name = document.getElementById(bt_id);
     bt_name.classList.add("white");
 
-    var pagesSide = document.querySelector('.pages_side');
-    pagesSide.innerHTML = '';
-
     switch (bt_id) {
         case "bag":
-            current_order.classList.remove("white");
             history_order.classList.remove("white");
             my_burger.classList.remove("white");
 
-            var componentHtml = '<h2>Корзина</h2>' +
-                '<p>Содержимое вашей корзины здесь...</p>';
-            pagesSide.innerHTML = componentHtml;
+            history_order_page.classList.remove("open_grid");
+            my_burger_page.classList.remove("open_grid");
+            bag_page.classList.add("open_grid");
 
-            break;
-        case "current_order":
-            bag.classList.remove("white");
-            history_order.classList.remove("white");
-            my_burger.classList.remove("white");
             break;
         case "history_order":
-            current_order.classList.remove("white");
             bag.classList.remove("white");
             my_burger.classList.remove("white");
+
+            my_burger_page.classList.remove("open_grid");
+            bag_page.classList.remove("open_grid");
+            history_order_page.classList.add("open_grid");
+
             break;
         case "my_burger":
-            current_order.classList.remove("white");
             history_order.classList.remove("white");
             bag.classList.remove("white");
+
+            bag_page.classList.remove("open_grid");
+            history_order_page.classList.remove("open_grid");
+            my_burger_page.classList.remove("open_grid");
+
             break;
+        case "exit": {
+            window.location.href = "/Index";
+            sessionStorage.setItem("isLoggedIn", "false");
+            sessionStorage.clear("user");
+        }
     }
 }

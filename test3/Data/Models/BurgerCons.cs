@@ -12,6 +12,5 @@ namespace BurgerHUB.Models
         public int IdPosition { get; set; }
         public virtual Supplement Supplement { get; set; } // кбжу
         public virtual List<Ingridient> Ingridients { get; set; }
-        public virtual Position Position { get; set; }
     }
 }

@@ -1,0 +1,46 @@
+﻿div.constr_page {
+    position: fixed;
+    display: grid;
+    grid-template-areas: 'menu constr_burger elements';
+    left: 0;
+    top: 70px;
+}
+
+div.constr_menu {
+    grid-area: menu;
+    display: grid;
+    grid-template-areas: 'button page';
+    width: 580px;
+    height: 975px;
+    background: rgba(217, 217, 217, 0.06);
+    backdrop-filter: blur(25px);
+    grid-template-columns: 100px;
+}
+
+div.constr_button {
+    grid-area: button;
+    display: grid;
+    grid-template-areas:
+        'bun'
+        'souce'
+        'steak'
+        'green'
+        'cheese';
+    background-color: #161616;
+    grid-template-rows: repeat(5, 100px);
+}
+
+button.constr_bt {
+    border: none;
+    border-radius: 0;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+}
+
+div.constr_menu_page{
+    grid-area: page;
+    position: absolute;
+
+}
+

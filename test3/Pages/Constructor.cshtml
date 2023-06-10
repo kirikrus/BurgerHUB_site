@@ -1,0 +1,37 @@
+﻿@page
+@model BurgerHUB.Pages.ConstructorModel
+@{
+	ViewData["Title"] = "Рады видеть вас";
+}
+<div class="constr_page">
+	<div class="constr_menu">
+		<div class="constr_button">
+			<button id="bag" onclick="constr_menu_page('bag');" class="white_button roboto constr_bt" style="grid-area:bun">
+				<img src="~/icons/bun.png"/>
+			</button>
+			<button id="bag" onclick="constr_menu_page('souce');" class="white_button roboto constr_bt" style="grid-area:souce">
+				<img src="~/icons/souce.png" />
+			</button>
+			<button id="bag" onclick="constr_menu_page('steak');" class="white_button roboto constr_bt" style="grid-area:steak">
+				<img src="~/icons/steak.png" />
+			</button>
+			<button id="bag" onclick="constr_menu_page('green');" class="white_button roboto constr_bt" style="grid-area:green">
+				<img src="~/icons/green.png" />
+			</button>
+			<button id="bag" onclick="constr_menu_page('cheese');" class="white_button roboto constr_bt" style="grid-area:cheese">
+				<img src="~/icons/cheese.png" />
+			</button>
+		</div>
+		<div class="constr_menu_page">
+			<div id="bun">
+
+			</div>
+		</div>
+	</div>
+	<div class="constr_burger">
+
+	</div>
+	<div class="constr_elements">
+
+	</div>
+</div>

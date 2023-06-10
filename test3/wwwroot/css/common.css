@@ -196,4 +196,15 @@ button {
     visibility: visible !important;
     transition-delay: 0s !important;
 }
+
+.open_grid {
+    display: grid !important;
+    visibility: visible !important;
+    transition-delay: 0s !important;
+}
 /*#endregion */
+
+.cross{
+    height: 40px;
+    width: 40px;
+}

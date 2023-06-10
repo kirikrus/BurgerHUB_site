@@ -58,7 +58,7 @@ span.delivery1 {
     width: 327px;
     height: 244px;
     left: 871px;
-    top: 1717px;
+    top: 3017px;
     background: rgba(219, 0, 255, 0.56);
 }
 
@@ -67,7 +67,7 @@ span.delivery2 {
     width: 327px;
     height: 244px;
     left: 871px;
-    top: 1717px;
+    top: 3217px;
     background: rgba(239, 100, 0, 0.32);
 }
 
@@ -76,7 +76,7 @@ span.delivery3 {
     width: 635px;
     height: 589px;
     left: 456px;
-    top: 1977px;
+    top: 3477px;
     background: rgb(161, 255, 0, 0.06);
 }
 /*#endregion */
@@ -135,7 +135,7 @@ span.name,span.desc,img.home_img {
 /*#region Почему именно мы*/
 #delivery {
     position: absolute;
-    top: 2328px;
+    top: 2891px;
 }
 
 span.line {
@@ -229,6 +229,8 @@ div.menu-area{
 div.burger_block {
     height: 399px;
     width: 388px;
+    padding: 10px;
+    margin-bottom: 80px;
 }
 
 div.burger_block_none {
@@ -294,7 +296,7 @@ span.menu_line {
     grid-area: lines;
     position: absolute;
     height: 49px;
-    top: 2272px;
+    top: 2282px;
     margin-left: -7%;
     width: 110%;
 }
@@ -619,6 +621,6 @@ p.juicygrub_down {
 
 #about {
     position: absolute;
-    top: 3120px;
+    top: 3692px;
 }
 /*#endregion*/

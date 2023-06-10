@@ -9,6 +9,6 @@ namespace BurgerHUB.Models
         public string LastName { get; set; }
         public long PhoneNumber { get; set; }
         public int IdOrder { get; set; }
-        public virtual Order Order { get; set; }
+       public virtual List<Order> Order { get; set; }
     }
 }

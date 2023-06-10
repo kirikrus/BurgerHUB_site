@@ -19,8 +19,8 @@ namespace BurgerHUB.Data.Models
         public int IdBurgerMenu { get; set; }
         public int IdBurgerCons { get; set; }
         public int IdIngridient { get; set; }
-        public virtual BurgerMenu BurgerMenu { get; set; }
-        public virtual BurgerCons BurgerCons { get; set; }
-        public virtual Ingridient Ingridient { get; set; }
+        //public virtual BurgerMenu BurgerMenu { get; set; }
+        //public virtual BurgerCons BurgerCons { get; set; }
+        //public virtual Ingridient Ingridient { get; set; }
     }
 }

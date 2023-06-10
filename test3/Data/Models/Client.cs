@@ -18,7 +18,7 @@ namespace BurgerHUB.Models
         public virtual List<Order> OrderHistory { get; set; }
         public virtual List<BurgerCons> MyBurgers { get; set; }
 
-        [InverseProperty("Client")]
-        public virtual Order Order { get; set; }
+//        [InverseProperty("Client")]
+        //public virtual Order Order { get; set; }
     }
 }

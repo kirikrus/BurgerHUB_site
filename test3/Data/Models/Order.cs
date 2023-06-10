@@ -1,4 +1,5 @@
 ﻿using BurgerHUB.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BurgerHUB.Data.Models
 {
@@ -13,10 +14,10 @@ namespace BurgerHUB.Data.Models
         public int IdPosition { get; set; }
         public int IsActive { get; set; }
         public virtual List<Position?> Positions { get; set; }
-        public virtual Client Client { get; set; }
+       public virtual Client Client { get; set; }
         public virtual DeliveryMan DeliveryMan { get; set; }
         public virtual Payment Payment { get; set; }
-        public virtual Position Position { get; set; }
+        //public virtual Position Position { get; set; }
 
     }
 }

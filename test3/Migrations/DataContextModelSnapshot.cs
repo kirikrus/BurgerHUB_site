@@ -37,6 +37,9 @@ namespace BurgerHUB.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("DeliveryManID")
+                        .HasColumnType("integer");
+
                     b.Property<int>("IdClient")
                         .HasColumnType("integer");
 
@@ -52,6 +55,9 @@ namespace BurgerHUB.Migrations
                     b.Property<int>("IsActive")
                         .HasColumnType("integer");
 
+                    b.Property<int>("PaymentId")
+                        .HasColumnType("integer");
+
                     b.Property<string>("Time")
                         .IsRequired()
                         .HasColumnType("text");
@@ -60,11 +66,9 @@ namespace BurgerHUB.Migrations
 
                     b.HasIndex("ClientId");
 
-                    b.HasIndex("IdClient")
-                        .IsUnique();
+                    b.HasIndex("DeliveryManID");
 
-                    b.HasIndex("IdDeliveryMan")
-                        .IsUnique();
+                    b.HasIndex("PaymentId");
 
                     b.ToTable("Orders");
                 });
@@ -98,9 +102,6 @@ namespace BurgerHUB.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdOrder")
-                        .IsUnique();
-
                     b.ToTable("Payments");
                 });
 
@@ -124,6 +125,12 @@ namespace BurgerHUB.Migrations
                     b.Property<int>("BM")
                         .HasColumnType("integer");
 
+                    b.Property<int>("BurgerConsId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("BurgerMenuId")
+                        .HasColumnType("integer");
+
                     b.Property<int>("IdBurgerCons")
                         .HasColumnType("integer");
 
@@ -133,19 +140,14 @@ namespace BurgerHUB.Migrations
                     b.Property<int>("IdOrder")
                         .HasColumnType("integer");
 
-                    b.Property<int?>("OrderId")
+                    b.Property<int>("OrderId")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdBurgerCons")
-                        .IsUnique();
+                    b.HasIndex("BurgerConsId");
 
-                    b.HasIndex("IdBurgerMenu")
-                        .IsUnique();
-
-                    b.HasIndex("IdOrder")
-                        .IsUnique();
+                    b.HasIndex("BurgerMenuId");
 
                     b.HasIndex("OrderId");
 
@@ -183,15 +185,6 @@ namespace BurgerHUB.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdBurgerCons")
-                        .IsUnique();
-
-                    b.HasIndex("IdBurgerMenu")
-                        .IsUnique();
-
-                    b.HasIndex("IdIngridient")
-                        .IsUnique();
-
                     b.ToTable("Supplements");
                 });
 
@@ -219,12 +212,17 @@ namespace BurgerHUB.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("numeric(20,0)");
 
+                    b.Property<int>("SupplementId")
+                        .HasColumnType("integer");
+
                     b.Property<int>("Weight_gram")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ClientId");
+
+                    b.HasIndex("SupplementId");
 
                     b.ToTable("BurgerCons");
                 });
@@ -271,12 +269,17 @@ namespace BurgerHUB.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("numeric(20,0)");
 
+                    b.Property<int>("SupplementId")
+                        .HasColumnType("integer");
+
                     b.Property<int>("Weight_gram")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
-                    b.ToTable("burgerMenus");
+                    b.HasIndex("SupplementId");
+
+                    b.ToTable("BurgerMenus");
                 });
 
             modelBuilder.Entity("BurgerHUB.Models.Client", b =>
@@ -346,7 +349,7 @@ namespace BurgerHUB.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("deliveryMen");
+                    b.ToTable("DeliveryMen");
                 });
 
             modelBuilder.Entity("BurgerHUB.Models.Ingridient", b =>
@@ -378,12 +381,17 @@ namespace BurgerHUB.Migrations
                     b.Property<int>("Price")
                         .HasColumnType("integer");
 
+                    b.Property<int>("SupplementId")
+                        .HasColumnType("integer");
+
                     b.Property<int>("Weight_gram")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
                     b.HasIndex("BurgerConsId");
+
+                    b.HasIndex("SupplementId");
 
                     b.ToTable("Ingridients");
                 });
@@ -396,90 +404,50 @@ namespace BurgerHUB.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BurgerHUB.Models.Client", null)
-                        .WithOne("Order")
-                        .HasForeignKey("BurgerHUB.Data.Models.Order", "IdClient")
+                    b.HasOne("BurgerHUB.Models.DeliveryMan", "DeliveryMan")
+                        .WithMany("Order")
+                        .HasForeignKey("DeliveryManID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BurgerHUB.Models.DeliveryMan", "DeliveryMan")
-                        .WithOne("Order")
-                        .HasForeignKey("BurgerHUB.Data.Models.Order", "IdDeliveryMan")
+                    b.HasOne("BurgerHUB.Data.Models.Payment", "Payment")
+                        .WithMany()
+                        .HasForeignKey("PaymentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Client");
 
                     b.Navigation("DeliveryMan");
-                });
 
-            modelBuilder.Entity("BurgerHUB.Data.Models.Payment", b =>
-                {
-                    b.HasOne("BurgerHUB.Data.Models.Order", "Order")
-                        .WithOne("Payment")
-                        .HasForeignKey("BurgerHUB.Data.Models.Payment", "IdOrder")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Order");
+                    b.Navigation("Payment");
                 });
 
             modelBuilder.Entity("BurgerHUB.Data.Models.Position", b =>
                 {
                     b.HasOne("BurgerHUB.Models.BurgerCons", "BurgerCons")
-                        .WithOne("Position")
-                        .HasForeignKey("BurgerHUB.Data.Models.Position", "IdBurgerCons")
+                        .WithMany()
+                        .HasForeignKey("BurgerConsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("BurgerHUB.Models.BurgerMenu", "BurgerMenu")
-                        .WithOne("Position")
-                        .HasForeignKey("BurgerHUB.Data.Models.Position", "IdBurgerMenu")
+                        .WithMany()
+                        .HasForeignKey("BurgerMenuId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("BurgerHUB.Data.Models.Order", "Order")
-                        .WithOne("Position")
-                        .HasForeignKey("BurgerHUB.Data.Models.Position", "IdOrder")
+                        .WithMany("Positions")
+                        .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("BurgerHUB.Data.Models.Order", null)
-                        .WithMany("Positions")
-                        .HasForeignKey("OrderId");
 
                     b.Navigation("BurgerCons");
 
                     b.Navigation("BurgerMenu");
 
                     b.Navigation("Order");
-                });
-
-            modelBuilder.Entity("BurgerHUB.Data.Models.Supplement", b =>
-                {
-                    b.HasOne("BurgerHUB.Models.BurgerCons", "BurgerCons")
-                        .WithOne("Supplement")
-                        .HasForeignKey("BurgerHUB.Data.Models.Supplement", "IdBurgerCons")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("BurgerHUB.Models.BurgerMenu", "BurgerMenu")
-                        .WithOne("Supplement")
-                        .HasForeignKey("BurgerHUB.Data.Models.Supplement", "IdBurgerMenu")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("BurgerHUB.Models.Ingridient", "Ingridient")
-                        .WithOne("Supplement")
-                        .HasForeignKey("BurgerHUB.Data.Models.Supplement", "IdIngridient")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("BurgerCons");
-
-                    b.Navigation("BurgerMenu");
-
-                    b.Navigation("Ingridient");
                 });
 
             modelBuilder.Entity("BurgerHUB.Models.BurgerCons", b =>
@@ -487,6 +455,25 @@ namespace BurgerHUB.Migrations
                     b.HasOne("BurgerHUB.Models.Client", null)
                         .WithMany("MyBurgers")
                         .HasForeignKey("ClientId");
+
+                    b.HasOne("BurgerHUB.Data.Models.Supplement", "Supplement")
+                        .WithMany()
+                        .HasForeignKey("SupplementId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Supplement");
+                });
+
+            modelBuilder.Entity("BurgerHUB.Models.BurgerMenu", b =>
+                {
+                    b.HasOne("BurgerHUB.Data.Models.Supplement", "Supplement")
+                        .WithMany()
+                        .HasForeignKey("SupplementId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Supplement");
                 });
 
             modelBuilder.Entity("BurgerHUB.Models.Ingridient", b =>
@@ -497,60 +484,37 @@ namespace BurgerHUB.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("BurgerHUB.Data.Models.Supplement", "Supplement")
+                        .WithMany()
+                        .HasForeignKey("SupplementId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("BurgerCons");
+
+                    b.Navigation("Supplement");
                 });
 
             modelBuilder.Entity("BurgerHUB.Data.Models.Order", b =>
                 {
-                    b.Navigation("Payment")
-                        .IsRequired();
-
-                    b.Navigation("Position")
-                        .IsRequired();
-
                     b.Navigation("Positions");
                 });
 
             modelBuilder.Entity("BurgerHUB.Models.BurgerCons", b =>
                 {
                     b.Navigation("Ingridients");
-
-                    b.Navigation("Position")
-                        .IsRequired();
-
-                    b.Navigation("Supplement")
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("BurgerHUB.Models.BurgerMenu", b =>
-                {
-                    b.Navigation("Position")
-                        .IsRequired();
-
-                    b.Navigation("Supplement")
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("BurgerHUB.Models.Client", b =>
                 {
                     b.Navigation("MyBurgers");
 
-                    b.Navigation("Order")
-                        .IsRequired();
-
                     b.Navigation("OrderHistory");
                 });
 
             modelBuilder.Entity("BurgerHUB.Models.DeliveryMan", b =>
                 {
-                    b.Navigation("Order")
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("BurgerHUB.Models.Ingridient", b =>
-                {
-                    b.Navigation("Supplement")
-                        .IsRequired();
+                    b.Navigation("Order");
                 });
 #pragma warning restore 612, 618
         }
