@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BurgerHUB.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230611180447_Initial")]
+    [Migration("20230611204212_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

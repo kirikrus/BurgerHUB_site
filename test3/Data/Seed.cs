@@ -1,4 +1,5 @@
-﻿using BurgerHUB.Data.Models;
+﻿using BurgerHUB.Data.Interfaces;
+using BurgerHUB.Data.Models;
 using BurgerHUB.Models;
 using Microsoft.EntityFrameworkCore;
 namespace BurgerHUB.Data
@@ -13,6 +14,92 @@ namespace BurgerHUB.Data
                 return;
             }
             context.Database.EnsureCreated();
+            var Clients = new List<Client>
+            {
+                new Client
+                {
+                    Id=1,
+                    Name="Влад",
+                    Avatar="фотка",
+                    LastName="Хомс",
+                    Raiting=4,
+                    Email = "dsf@sdf.ru",
+                    PhoneNumber = 89167374222,
+                    Password = "adsfe3244",
+                    ClientAdress = "Улица Ленина, дом 28, квартира 23",
+                    //OrderHistory=new List<Order>()
+                    //{
+                    //    new Order
+                    //    {
+                    //        Id=1,
+                    //        IsActive=1,
+                    //        Payment=new Payment()
+                    //        {
+                    //            Id=1,
+                    //            CardNumber="4377 7278 1972 3649",
+                    //            Name="Влад",
+                    //            LastName="Хомс",
+                    //            Validity="10/28"
+                    //        },
+                    //    //    Positions = new List<Position?> ()
+                    //    //        {
+                    //    //           new Position
+                    //    //           {
+                    //    //               BC = 0,
+                    //    //               BM = 1,
+                    //    //               AmountBC = 0,
+                    //    //               AmountBM = 20,
+                    //    //           },
+                    //    //},
+                    //}
+                    //},
+                },
+                new Client
+                {
+                    Id=2,
+                    Name="Максим",
+                    Avatar="фотка",
+                    LastName="Ханов",
+                    Raiting=1,
+                    Email="werwer@sdf.ru",
+                    PhoneNumber = 89127374222,
+                    Password = "ad23542345",
+                    ClientAdress = "Нижня парковая, дом 24, квартира 2",
+                //    OrderHistory = new List<Order> ()
+                //        {
+                //            new Order
+                //            {
+                //                Id = 1,
+                //                IsActive = 1,
+                //                //Positions = new List<Position?> ()
+                //                //{
+                //                //   new Position
+                //                //   {
+                //                //       BC = 0,
+                //                //       BM = 2,
+                //                //       AmountBC = 0,
+                //                //       AmountBM = 2,
+                //                //   }
+                //                //},
+                //},
+                //    },
+                },
+                new Client
+                {
+                    Id=3,
+                    Name="Николай",
+                    Avatar="фотка",
+                    LastName="Абрамов",
+                    Raiting=2,
+                    Email="oiasdas@sdf.ru",
+                    PhoneNumber = 89127374112,
+                    Password = "ad4as5",
+                    ClientAdress = "Верхняя парковая, дом 2, квартира 8",
+                },
+            };
+
+            context.Clients.AddRange(Clients);
+            context.SaveChanges();
             var BurgerMenus = new List<BurgerMenu>
         {
              new BurgerMenu
@@ -34,7 +121,7 @@ namespace BurgerHUB.Data
                         Weight_gram = 487,
                         Supplement = new Supplement(40, 62, 200, 706),
                     },
-                    new BurgerMenu
+                new BurgerMenu
                     {
                         Id = 2,
                         Name = "Гурмяу",

@@ -17,7 +17,6 @@ namespace BurgerHUB.Data.Models
         public DbSet<Payment> Payments { get; set; }
         public DbSet<Position> Positions { get; set; }
         public DbSet<Supplement> Supplements { get; set; }
-        
         public DataContext(DbContextOptions<DataContext> options)
             : base(options)
         {
@@ -164,7 +163,6 @@ namespace BurgerHUB.Data.Models
           .HasForeignKey<Order>(o => o.IdDeliveryMan);
             base.OnModelCreating(modelBuilder);*/
         }
-        //partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
         
     }
 }
