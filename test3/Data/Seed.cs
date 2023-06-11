@@ -12,7 +12,7 @@ namespace BurgerHUB.Data
                 // База данных уже заполнена данными, поэтому нет необходимости в дополнительном заполнении.
                 return;
             }
-
+            context.Database.EnsureCreated();
             var BurgerMenus = new List<BurgerMenu>
         {
              new BurgerMenu

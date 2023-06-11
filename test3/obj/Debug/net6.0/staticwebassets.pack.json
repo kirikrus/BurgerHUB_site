@@ -1,415 +1,415 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BurgerHUB.bundle.scp.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BurgerHUB.bundle.scp.css",
       "PackagePath": "staticwebassets\\BurgerHUB.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\css\\Index.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\css\\Index.css",
       "PackagePath": "staticwebassets\\css\\Index.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\css\\common.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\css\\common.css",
       "PackagePath": "staticwebassets\\css\\common.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\css\\constructor.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\css\\constructor.css",
       "PackagePath": "staticwebassets\\css\\constructor.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\css\\layout.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\css\\layout.css",
       "PackagePath": "staticwebassets\\css\\layout.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\css\\profile.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\css\\profile.css",
       "PackagePath": "staticwebassets\\css\\profile.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\favicon.ico",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\ClockClockwise.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\ClockClockwise.png",
       "PackagePath": "staticwebassets\\icons\\ClockClockwise.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\FacebookLogo.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\FacebookLogo.png",
       "PackagePath": "staticwebassets\\icons\\FacebookLogo.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\Heart.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\Heart.png",
       "PackagePath": "staticwebassets\\icons\\Heart.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\Heart_fill.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\Heart_fill.png",
       "PackagePath": "staticwebassets\\icons\\Heart_fill.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\InstagramLogo.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\InstagramLogo.png",
       "PackagePath": "staticwebassets\\icons\\InstagramLogo.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\ShoppingBag.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\ShoppingBag.png",
       "PackagePath": "staticwebassets\\icons\\ShoppingBag.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\ShoppingBag_hover.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\ShoppingBag_hover.png",
       "PackagePath": "staticwebassets\\icons\\ShoppingBag_hover.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\TelegramLogo.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\TelegramLogo.png",
       "PackagePath": "staticwebassets\\icons\\TelegramLogo.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\User.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\User.png",
       "PackagePath": "staticwebassets\\icons\\User.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\User_hover.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\User_hover.png",
       "PackagePath": "staticwebassets\\icons\\User_hover.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\User_hover_.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\User_hover_.png",
       "PackagePath": "staticwebassets\\icons\\User_hover_.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\YoutubeLogo.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\YoutubeLogo.png",
       "PackagePath": "staticwebassets\\icons\\YoutubeLogo.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\about.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\about.png",
       "PackagePath": "staticwebassets\\icons\\about.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\arr_left.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\arr_left.png",
       "PackagePath": "staticwebassets\\icons\\arr_left.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\arr_right.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\arr_right.png",
       "PackagePath": "staticwebassets\\icons\\arr_right.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\bun.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\bun.png",
       "PackagePath": "staticwebassets\\icons\\bun.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\cheese.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\cheese.png",
       "PackagePath": "staticwebassets\\icons\\cheese.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\cross.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\cross.png",
       "PackagePath": "staticwebassets\\icons\\cross.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\green.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\green.png",
       "PackagePath": "staticwebassets\\icons\\green.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\ic_sharp-eco.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\ic_sharp-eco.png",
       "PackagePath": "staticwebassets\\icons\\ic_sharp-eco.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\mdi_food-steak.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\mdi_food-steak.png",
       "PackagePath": "staticwebassets\\icons\\mdi_food-steak.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\ph_hamburger-fill.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\ph_hamburger-fill.png",
       "PackagePath": "staticwebassets\\icons\\ph_hamburger-fill.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\settings.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\settings.png",
       "PackagePath": "staticwebassets\\icons\\settings.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\souce.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\souce.png",
       "PackagePath": "staticwebassets\\icons\\souce.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\icons\\steak.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\icons\\steak.png",
       "PackagePath": "staticwebassets\\icons\\steak.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\img\\1670364312_51-kartinkin-net-p-burger-kartinka-vkontakte-52.jpg",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\img\\1670364312_51-kartinkin-net-p-burger-kartinka-vkontakte-52.jpg",
       "PackagePath": "staticwebassets\\img\\1670364312_51-kartinkin-net-p-burger-kartinka-vkontakte-52.jpg"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\img\\Black_Classic.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\img\\Black_Classic.png",
       "PackagePath": "staticwebassets\\img\\Black_Classic.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\img\\Eco_Burger.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\img\\Eco_Burger.png",
       "PackagePath": "staticwebassets\\img\\Eco_Burger.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\img\\Example.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\img\\Example.png",
       "PackagePath": "staticwebassets\\img\\Example.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\img\\Example2.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\img\\Example2.png",
       "PackagePath": "staticwebassets\\img\\Example2.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\img\\Gurmyau.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\img\\Gurmyau.png",
       "PackagePath": "staticwebassets\\img\\Gurmyau.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\img\\Miton.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\img\\Miton.png",
       "PackagePath": "staticwebassets\\img\\Miton.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\img\\base_avatar.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\img\\base_avatar.png",
       "PackagePath": "staticwebassets\\img\\base_avatar.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\img\\map.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\img\\map.png",
       "PackagePath": "staticwebassets\\img\\map.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\img\\vaves.png",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\img\\vaves.png",
       "PackagePath": "staticwebassets\\img\\vaves.png"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\js\\index_burger_blocks.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\js\\index_burger_blocks.js",
       "PackagePath": "staticwebassets\\js\\index_burger_blocks.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\js\\profile.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\js\\profile.js",
       "PackagePath": "staticwebassets\\js\\profile.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\js\\requests.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\js\\requests.js",
       "PackagePath": "staticwebassets\\js\\requests.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\js\\site.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Василий\\Source\\Repos\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "E:\\OOP\\BurgerHUB_site\\test3\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

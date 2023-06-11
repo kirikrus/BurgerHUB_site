@@ -1,10 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
 namespace BurgerHUB.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,16 +13,16 @@ namespace BurgerHUB.Migrations
                 name: "Clients",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Avatar = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Raiting = table.Column<int>(type: "int", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Name = table.Column<string>(type: "text", nullable: false),
+                    Avatar = table.Column<string>(type: "text", nullable: false),
+                    LastName = table.Column<string>(type: "text", nullable: false),
+                    Raiting = table.Column<int>(type: "integer", nullable: false),
+                    Email = table.Column<string>(type: "text", nullable: false),
                     PhoneNumber = table.Column<long>(type: "bigint", nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ClientAdress = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Password = table.Column<string>(type: "text", nullable: false),
+                    ClientAdress = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -32,10 +33,10 @@ namespace BurgerHUB.Migrations
                 name: "DeliveryMen",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ID = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Name = table.Column<string>(type: "text", nullable: false),
+                    LastName = table.Column<string>(type: "text", nullable: false),
                     PhoneNumber = table.Column<long>(type: "bigint", nullable: false)
                 },
                 constraints: table =>
@@ -47,12 +48,12 @@ namespace BurgerHUB.Migrations
                 name: "Payments",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    CardNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Validity = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    CardNumber = table.Column<string>(type: "text", nullable: false),
+                    Validity = table.Column<string>(type: "text", nullable: false),
+                    Name = table.Column<string>(type: "text", nullable: false),
+                    LastName = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -63,12 +64,12 @@ namespace BurgerHUB.Migrations
                 name: "Supplements",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    proteins = table.Column<int>(type: "int", nullable: false),
-                    fasts = table.Column<int>(type: "int", nullable: false),
-                    carbohydrates = table.Column<int>(type: "int", nullable: false),
-                    calories = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    proteins = table.Column<int>(type: "integer", nullable: false),
+                    fasts = table.Column<int>(type: "integer", nullable: false),
+                    carbohydrates = table.Column<int>(type: "integer", nullable: false),
+                    calories = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -79,14 +80,14 @@ namespace BurgerHUB.Migrations
                 name: "Orders",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Date = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Time = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IsActive = table.Column<int>(type: "int", nullable: false),
-                    ClientId = table.Column<int>(type: "int", nullable: false),
-                    DeliveryManID = table.Column<int>(type: "int", nullable: false),
-                    PaymentId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Date = table.Column<string>(type: "text", nullable: false),
+                    Time = table.Column<string>(type: "text", nullable: false),
+                    IsActive = table.Column<int>(type: "integer", nullable: false),
+                    ClientId = table.Column<int>(type: "integer", nullable: false),
+                    DeliveryManID = table.Column<int>(type: "integer", nullable: false),
+                    PaymentId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -113,13 +114,13 @@ namespace BurgerHUB.Migrations
                 name: "BurgerCons",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(20,0)", nullable: false),
-                    Weight_gram = table.Column<int>(type: "int", nullable: false),
-                    SupplementId = table.Column<int>(type: "int", nullable: false),
-                    ClientId = table.Column<int>(type: "int", nullable: true)
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Name = table.Column<string>(type: "text", nullable: false),
+                    Price = table.Column<decimal>(type: "numeric(20,0)", nullable: false),
+                    Weight_gram = table.Column<int>(type: "integer", nullable: false),
+                    SupplementId = table.Column<int>(type: "integer", nullable: false),
+                    ClientId = table.Column<int>(type: "integer", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -141,18 +142,18 @@ namespace BurgerHUB.Migrations
                 name: "BurgerMenus",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Composition = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IMG = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(20,0)", nullable: false),
-                    IsEco = table.Column<int>(type: "int", nullable: false),
-                    IsHit = table.Column<int>(type: "int", nullable: false),
-                    CookTime_min = table.Column<int>(type: "int", nullable: false),
-                    Weight_gram = table.Column<int>(type: "int", nullable: false),
-                    SupplementId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Name = table.Column<string>(type: "text", nullable: false),
+                    Description = table.Column<string>(type: "text", nullable: false),
+                    Composition = table.Column<string>(type: "text", nullable: false),
+                    IMG = table.Column<string>(type: "text", nullable: false),
+                    Price = table.Column<decimal>(type: "numeric(20,0)", nullable: false),
+                    IsEco = table.Column<int>(type: "integer", nullable: false),
+                    IsHit = table.Column<int>(type: "integer", nullable: false),
+                    CookTime_min = table.Column<int>(type: "integer", nullable: false),
+                    Weight_gram = table.Column<int>(type: "integer", nullable: false),
+                    SupplementId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -169,15 +170,15 @@ namespace BurgerHUB.Migrations
                 name: "Ingridients",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Price = table.Column<int>(type: "int", nullable: false),
-                    Weight_gram = table.Column<int>(type: "int", nullable: false),
-                    IMG_top = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IMG_side = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    SupplementId = table.Column<int>(type: "int", nullable: false),
-                    BurgerConsId = table.Column<int>(type: "int", nullable: true)
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Name = table.Column<string>(type: "text", nullable: false),
+                    Price = table.Column<int>(type: "integer", nullable: false),
+                    Weight_gram = table.Column<int>(type: "integer", nullable: false),
+                    IMG_top = table.Column<string>(type: "text", nullable: false),
+                    IMG_side = table.Column<string>(type: "text", nullable: false),
+                    SupplementId = table.Column<int>(type: "integer", nullable: false),
+                    BurgerConsId = table.Column<int>(type: "integer", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -199,15 +200,15 @@ namespace BurgerHUB.Migrations
                 name: "Positions",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    BM = table.Column<int>(type: "int", nullable: false),
-                    BC = table.Column<int>(type: "int", nullable: false),
-                    AmountBM = table.Column<int>(type: "int", nullable: false),
-                    AmountBC = table.Column<int>(type: "int", nullable: false),
-                    OrderId = table.Column<int>(type: "int", nullable: false),
-                    BurgerMenuId = table.Column<int>(type: "int", nullable: false),
-                    BurgerConsId = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    BM = table.Column<int>(type: "integer", nullable: false),
+                    BC = table.Column<int>(type: "integer", nullable: false),
+                    AmountBM = table.Column<int>(type: "integer", nullable: false),
+                    AmountBC = table.Column<int>(type: "integer", nullable: false),
+                    OrderId = table.Column<int>(type: "integer", nullable: false),
+                    BurgerMenuId = table.Column<int>(type: "integer", nullable: false),
+                    BurgerConsId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
