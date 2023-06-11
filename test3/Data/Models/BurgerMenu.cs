@@ -15,8 +15,9 @@ namespace BurgerHUB.Models
         public int IsHit { get; set; }
         public int CookTime_min { get; set; }
         public int Weight_gram { get; set; }
-        public int IDSupplement { get; set; }
-        public int IdPosition { get; set; }
+        //public int IDSupplement { get; set; }
+        //public int IdPosition { get; set; }
         public virtual Supplement Supplement { get; set; } // кбжу
+        public virtual List<Position> Positions { get; set; }
     }
 }

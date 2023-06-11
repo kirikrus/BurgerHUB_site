@@ -13,7 +13,8 @@ builder.Services.AddMvc();
 builder.Services.AddControllers().AddNewtonsoftJson();
 builder.Services.AddDbContext<DataContext>(options =>
 {
-    options.UseNpgsql(builder.Configuration.GetConnectionString("Myserver"));
+    //options.UseNpgsql(builder.Configuration.GetConnectionString("Myserver"));
+    options.UseSqlServer("Server=localhost;Database=BurgerHubData2;Trusted_Connection=True; TrustServerCertificate=true");
 });
 
 

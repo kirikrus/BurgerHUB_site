@@ -3,8 +3,8 @@ using System;
 using BurgerHUB.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
@@ -18,49 +18,37 @@ namespace BurgerHUB.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "6.0.16")
-                .HasAnnotation("Relational:MaxIdentifierLength", 63);
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
             modelBuilder.Entity("BurgerHUB.Data.Models.Order", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int>("ClientId")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<string>("Date")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("DeliveryManID")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IdClient")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IdDeliveryMan")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IdPayment")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IdPosition")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<int>("IsActive")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<int>("PaymentId")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<string>("Time")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -77,28 +65,25 @@ namespace BurgerHUB.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("CardNumber")
                         .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("IdOrder")
-                        .HasColumnType("integer");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Validity")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -109,39 +94,30 @@ namespace BurgerHUB.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int>("AmountBC")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<int>("AmountBM")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<int>("BC")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<int>("BM")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<int>("BurgerConsId")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<int>("BurgerMenuId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IdBurgerCons")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IdBurgerMenu")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IdOrder")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<int>("OrderId")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -158,30 +134,21 @@ namespace BurgerHUB.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("IdBurgerCons")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IdBurgerMenu")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IdIngridient")
-                        .HasColumnType("integer");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int>("calories")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<int>("carbohydrates")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<int>("fasts")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<int>("proteins")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -192,31 +159,25 @@ namespace BurgerHUB.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int?>("ClientId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IDSupplement")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("IdPosition")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("numeric(20,0)");
+                        .HasColumnType("decimal(20,0)");
 
                     b.Property<int>("SupplementId")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<int>("Weight_gram")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -231,49 +192,43 @@ namespace BurgerHUB.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Composition")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("CookTime_min")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("IDSupplement")
-                        .HasColumnType("integer");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("IMG")
                         .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("IdPosition")
-                        .HasColumnType("integer");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("IsEco")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<int>("IsHit")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("numeric(20,0)");
+                        .HasColumnType("decimal(20,0)");
 
                     b.Property<int>("SupplementId")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<int>("Weight_gram")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -286,39 +241,39 @@ namespace BurgerHUB.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Avatar")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ClientAdress")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<long>("PhoneNumber")
                         .HasColumnType("bigint");
 
                     b.Property<int>("Raiting")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -329,20 +284,17 @@ namespace BurgerHUB.Migrations
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
-
-                    b.Property<int>("IdOrder")
-                        .HasColumnType("integer");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<long>("PhoneNumber")
                         .HasColumnType("bigint");
@@ -356,36 +308,33 @@ namespace BurgerHUB.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("BurgerConsId")
-                        .HasColumnType("integer");
+                    b.Property<int?>("BurgerConsId")
+                        .HasColumnType("int");
 
                     b.Property<string>("IMG_side")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("IMG_top")
                         .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("IdSupplement")
-                        .HasColumnType("integer");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Price")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<int>("SupplementId")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.Property<int>("Weight_gram")
-                        .HasColumnType("integer");
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -401,13 +350,13 @@ namespace BurgerHUB.Migrations
                     b.HasOne("BurgerHUB.Models.Client", "Client")
                         .WithMany("OrderHistory")
                         .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("BurgerHUB.Models.DeliveryMan", "DeliveryMan")
                         .WithMany("Order")
                         .HasForeignKey("DeliveryManID")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("BurgerHUB.Data.Models.Payment", "Payment")
@@ -426,21 +375,21 @@ namespace BurgerHUB.Migrations
             modelBuilder.Entity("BurgerHUB.Data.Models.Position", b =>
                 {
                     b.HasOne("BurgerHUB.Models.BurgerCons", "BurgerCons")
-                        .WithMany()
+                        .WithMany("Positions")
                         .HasForeignKey("BurgerConsId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("BurgerHUB.Models.BurgerMenu", "BurgerMenu")
-                        .WithMany()
+                        .WithMany("Positions")
                         .HasForeignKey("BurgerMenuId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("BurgerHUB.Data.Models.Order", "Order")
                         .WithMany("Positions")
                         .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("BurgerCons");
@@ -478,19 +427,15 @@ namespace BurgerHUB.Migrations
 
             modelBuilder.Entity("BurgerHUB.Models.Ingridient", b =>
                 {
-                    b.HasOne("BurgerHUB.Models.BurgerCons", "BurgerCons")
+                    b.HasOne("BurgerHUB.Models.BurgerCons", null)
                         .WithMany("Ingridients")
-                        .HasForeignKey("BurgerConsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("BurgerConsId");
 
                     b.HasOne("BurgerHUB.Data.Models.Supplement", "Supplement")
                         .WithMany()
                         .HasForeignKey("SupplementId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("BurgerCons");
 
                     b.Navigation("Supplement");
                 });
@@ -503,6 +448,13 @@ namespace BurgerHUB.Migrations
             modelBuilder.Entity("BurgerHUB.Models.BurgerCons", b =>
                 {
                     b.Navigation("Ingridients");
+
+                    b.Navigation("Positions");
+                });
+
+            modelBuilder.Entity("BurgerHUB.Models.BurgerMenu", b =>
+                {
+                    b.Navigation("Positions");
                 });
 
             modelBuilder.Entity("BurgerHUB.Models.Client", b =>

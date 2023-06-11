@@ -16,9 +16,9 @@ namespace BurgerHUB.Data.Models
         public int fasts { get; set; }
         public int carbohydrates { get; set; }
         public int calories { get; set; }
-        public int IdBurgerMenu { get; set; }
-        public int IdBurgerCons { get; set; }
-        public int IdIngridient { get; set; }
+        //public int IdBurgerMenu { get; set; }
+        //public int IdBurgerCons { get; set; }
+        //public int IdIngridient { get; set; }
         //public virtual BurgerMenu BurgerMenu { get; set; }
         //public virtual BurgerCons BurgerCons { get; set; }
         //public virtual Ingridient Ingridient { get; set; }
