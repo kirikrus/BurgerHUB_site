@@ -8,12 +8,45 @@ namespace BurgerHUB.Data
     {
         public static void SeedData(DataContext context)
         {
-            if (context.BurgerMenus.Any())
-            {
-                // База данных уже заполнена данными, поэтому нет необходимости в дополнительном заполнении.
-                return;
-            }
+            //if (context.BurgerMenus.Any())
+            //{
+            //    // База данных уже заполнена данными, поэтому нет необходимости в дополнительном заполнении.
+            //    return;
+            //}
             context.Database.EnsureCreated();
+            var deliveryMan = new DeliveryMan
+            {
+                ID = 1,
+                Name = "Василий",
+                LastName = "Иванов",
+                PhoneNumber = 89926562311
+            };
+            var payment1 = new Payment
+            {
+                Id = 1,
+                CardNumber = "4377 7278 1972 3649",
+                Name = "Влад",
+                LastName = "Хомс",
+                Validity = "10/28",
+            };
+            var payment2 = new Payment()
+            {
+                Id = 2,
+                CardNumber = "4237 7128 1972 1149",
+                Name = "Максим",
+                LastName = "Ханов",
+                Validity = "9/28",
+            };
+            var payment3 = new Payment
+            {
+                Id = 3,
+                CardNumber = "4237 7128 1972 1149",
+                Name = "Николай",
+                LastName = "Абрамов",
+                Validity = "9/28",
+
+            };
+
             var Clients = new List<Client>
             {
                 new Client
@@ -27,32 +60,66 @@ namespace BurgerHUB.Data
                     PhoneNumber = 89167374222,
                     Password = "adsfe3244",
                     ClientAdress = "Улица Ленина, дом 28, квартира 23",
-                    //OrderHistory=new List<Order>()
-                    //{
-                    //    new Order
-                    //    {
-                    //        Id=1,
-                    //        IsActive=1,
-                    //        Payment=new Payment()
-                    //        {
-                    //            Id=1,
-                    //            CardNumber="4377 7278 1972 3649",
-                    //            Name="Влад",
-                    //            LastName="Хомс",
-                    //            Validity="10/28"
-                    //        },
-                    //    //    Positions = new List<Position?> ()
-                    //    //        {
-                    //    //           new Position
-                    //    //           {
-                    //    //               BC = 0,
-                    //    //               BM = 1,
-                    //    //               AmountBC = 0,
-                    //    //               AmountBM = 20,
-                    //    //           },
-                    //    //},
-                    //}
-                    //},
+                    OrderHistory = new List<Order>
+                    {
+                        new Order
+                        {
+                            Id = 1,
+                            Date = "",
+                            Time = "",
+                            IsActive = 1,
+                            DeliveryMan = deliveryMan,
+                            Payment=payment1,
+
+                        },
+
+                        new Order
+                            {
+                            Id = 2,
+                            Date = "10.05.22",
+                            Time = "15:33",
+                            IsActive = 0,
+                            DeliveryMan = deliveryMan,
+                            Payment=payment1,
+                            },
+                            new Order
+                            {
+                                Id = 3,
+                                IsActive = 0,
+                                Date = "8.04.22",
+                                Time="19:03",
+                                DeliveryMan = deliveryMan,
+                                Payment=payment1,
+                            },
+                            new Order
+                            {
+                                Id = 4,
+                                IsActive = 0,
+                                Date = "01.01.22",
+                                Time="11:11",
+                                DeliveryMan = deliveryMan,
+                                Payment=payment1,
+                            },
+                            new Order
+                            {
+                                Id = 5,
+                                IsActive = 0,
+                                Date = "29.12.21",
+                                Time="11:05",
+                                DeliveryMan = deliveryMan,
+                                Payment=payment1,
+                            },
+                            new Order
+                            {
+                                Id = 6,
+                                IsActive = 0,
+                                Date = "14.12.21",
+                                Time="21:11",
+                                DeliveryMan = deliveryMan,
+                                Payment=payment1,
+                            },
+
+                    }
                 },
                 new Client
                 {
@@ -65,25 +132,28 @@ namespace BurgerHUB.Data
                     PhoneNumber = 89127374222,
                     Password = "ad23542345",
                     ClientAdress = "Нижня парковая, дом 24, квартира 2",
-                //    OrderHistory = new List<Order> ()
-                //        {
-                //            new Order
-                //            {
-                //                Id = 1,
-                //                IsActive = 1,
-                //                //Positions = new List<Position?> ()
-                //                //{
-                //                //   new Position
-                //                //   {
-                //                //       BC = 0,
-                //                //       BM = 2,
-                //                //       AmountBC = 0,
-                //                //       AmountBM = 2,
-                //                //   }
-                //                //},
-                //},
-                //    },
-                },
+                    OrderHistory = new List<Order> ()
+                       {
+                            new Order
+                            {
+                                Id = 7,
+                                Date="",
+                                Time="",
+                                IsActive = 1,
+                                DeliveryMan = deliveryMan,
+                                Payment = payment2,
+                            },
+                            new Order
+                            {
+                                Id = 8,
+                                IsActive = 0,
+                                Date = "15.12.19",
+                                Time="11:11",
+                                DeliveryMan = deliveryMan,
+                                Payment = payment2,
+                            },
+                        },
+                    },
                 new Client
                 {
                     Id=3,
@@ -95,11 +165,43 @@ namespace BurgerHUB.Data
                     PhoneNumber = 89127374112,
                     Password = "ad4as5",
                     ClientAdress = "Верхняя парковая, дом 2, квартира 8",
+                     OrderHistory = new List<Order>
+                    {
+                        new Order
+                        {
+                            Id = 9,
+                            Date = "",
+                            Time = "",
+                            IsActive = 1,
+                            DeliveryMan = deliveryMan,
+                            Payment = payment3,
+                        },
+                        new Order
+                            {
+                                Id = 10,
+                                IsActive = 0,
+                                Date = "15.5.23",
+                                Time="15:11",
+                                DeliveryMan = deliveryMan,
+                                Payment = payment3,
+                            },
+                            new Order
+                            {
+                                Id = 11,
+                                IsActive = 0,
+                                Date = "14.12.22",
+                                Time="11:11",
+                            DeliveryMan = deliveryMan,
+                            Payment = payment3,
+                        },
+                    }
                 },
             };
 
             context.Clients.AddRange(Clients);
             context.SaveChanges();
+            
+
             var BurgerMenus = new List<BurgerMenu>
         {
              new BurgerMenu

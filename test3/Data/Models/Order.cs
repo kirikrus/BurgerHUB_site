@@ -5,6 +5,7 @@ namespace BurgerHUB.Data.Models
 {
     public class Order
     {
+        
         public int Id { get; set; }
         public string Date { get; set; }
         public string Time { get; set; }
