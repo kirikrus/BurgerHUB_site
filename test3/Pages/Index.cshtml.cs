@@ -1,4 +1,5 @@
 ﻿using BurgerHUB.Data.Interfaces;
+using BurgerHUB.Data.Models;
 using BurgerHUB.Models;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -7,16 +8,17 @@ namespace BurgerHUB.Pages
     public class IndexModel : PageModel
     {
         public string obj = "Сработало";
+		private readonly DataContext _context;
 
-        public readonly IMenu _Menu;
-        public IndexModel(IMenu menu)
+		public IndexModel(DataContext context)
         {
-            _Menu = menu;
-        }
+			this._context = context;
+		}
         public IEnumerable<BurgerMenu> Menu;
-        public PageResult OnGet()
+		public IEnumerable<Supplement> Supplements;
+		public PageResult OnGet()
         {
-            Menu = _Menu.BurgersMenu;
+            Menu = _context.BurgerMenus.ToList();
             return Page();
         }
     }
