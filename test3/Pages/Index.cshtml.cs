@@ -9,13 +9,11 @@ namespace BurgerHUB.Pages
     {
         public string obj = "Сработало";
 		private readonly DataContext _context;
-
 		public IndexModel(DataContext context)
         {
-			this._context = context;
+			_context = context;
 		}
         public IEnumerable<BurgerMenu> Menu;
-		public IEnumerable<Supplement> Supplements;
 		public PageResult OnGet()
         {
             Menu = _context.BurgerMenus.ToList();

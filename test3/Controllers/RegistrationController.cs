@@ -11,7 +11,7 @@ public class Get
 {
 	public string Surname { get; set; }
 	public string Name { get; set; }
-	public string Patronymic { get; set; }
+	public string Password { get; set; }
 	public string Email{ get; set; }
 	public string Tel { get; set; }
 	public string Adres { get; set; }
@@ -22,25 +22,25 @@ namespace BurgerHUB.Controllers
 	[Route("[Controller]")]
 	public class RegistrationController : Controller
 	{
-		private readonly IClients List;
-		private ListClass _Active;
-		public RegistrationController(IClients list)
+        private readonly DataContext _context;
+		public RegistrationController(DataContext context)
 		{
-			List = list;
-		}
+            _context = context;
+        }
 		[HttpPost]
 		[Route("ProcessRegistrationForm")]
 		public IActionResult ProcessRegistrationForm([FromBody] Get model)
 		{
 			string _Email = model.Email;
-			string _Password = model.Patronymic;
+			string _Password = model.Password;
 			string _SurName = model.Surname;
 			string _Adress = model.Adres;
 			string _Name = model.Name;
 			int _PhoneNumber;
 			{ try { _PhoneNumber = Convert.ToInt32(model.Tel);} catch { return Json(new { success = false });} }
+
 			List<Client> AllClients;
-			AllClients = List.Clients.ToList();
+			AllClients = _context.Clients.ToList();
 			while (true)
 			{
 				foreach (var Client in AllClients)
@@ -62,19 +62,40 @@ namespace BurgerHUB.Controllers
 				Email = _Email,
 				Password = _Password,
 				ClientAdress = _Adress,
+				Avatar = "фотка",
 				OrderHistory = new List<Order>()
 				{
 					new Order
 					{
+						Id = _context.Orders.ToList().Count + 1,
+						Date = "",
+						Time = "",
 						IsActive = -1,
-						Positions = new List<Position?> ()
+						DeliveryMan = _context.DeliveryMen.ToList().FirstOrDefault(),
+						Payment = new Payment()
 						{
-							new Position{}
+							 Id = _context.Payments.ToList().Count + 1,
+							 CardNumber = "",
+							 Name = "",
+							 LastName = "",
+							 Validity = "",
+						},
+						Positions = new List<Position> ()
+						{
+							new Position
+							{
+								Id = _context.Positions.ToList().Count + 1,
+                                BM = 0,
+                                BC = 0,
+                                AmountBC = 0,
+                                AmountBM = 0,
+                            }
 						}
 					}
 				}
 			};
-			ListClass.Base.Add(ActiveClient);
+			_context.Clients.Add(ActiveClient);
+			_context.SaveChanges();
 			return Json(new { success = true, client = ActiveClient.Id });
 		}
 	}

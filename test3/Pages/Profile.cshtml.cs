@@ -11,13 +11,12 @@ namespace BurgerHUB.Pages
 {
 	public class ProfileModel : PageModel
 	{
-		public readonly IClients _Client;
-		public readonly IMenu _Menu;
-		public ProfileModel(IClients client, IMenu menu)
+        private readonly DataContext _context;
+
+        public ProfileModel(DataContext context)
 		{
-			_Client = client;
-			_Menu = menu;
-		}
+            _context = context;
+        }
 
 		public static int activeID;
 		public Client ActiveClient;
@@ -26,8 +25,11 @@ namespace BurgerHUB.Pages
 		public void UpdatePositions(int burgerId)
 		{
 			Position NewPosition = new();
-			ActiveClient = ListClass.Base.FirstOrDefault(x => x.Id == activeID);
-			Order ActiveOrder = ActiveClient.OrderHistory.First();
+            Position OldPosition = new();
+            //ActiveClient = ListClass.Base.FirstOrDefault(x => x.Id == activeID);
+            ActiveClient = _context.Clients.FirstOrDefault(x => x.Id == activeID);
+
+            Order ActiveOrder = ActiveClient.OrderHistory.First();
 			if (ActiveOrder.IsActive == -1) 
 			{
 				ActiveOrder.Positions.Clear();
@@ -37,15 +39,19 @@ namespace BurgerHUB.Pages
 			{
 				ActiveOrder = ActiveClient.OrderHistory.FirstOrDefault(x => x.IsActive == 1);
 			}
-			if(burgerId > 0 && burgerId <= _Menu.BurgersMenu.Count())
+			if(burgerId > 0 && burgerId <= _context.BurgerMenus.Count())
 			{
 				int flag = 0;
 				foreach (var x in ActiveOrder.Positions)
 				{
 					if(burgerId == x.BM)
 					{
+						//OldPosition = x;
 						x.AmountBM += 1;
 						flag += 1;
+						NewPosition = x;
+						_context.SaveChanges();
+						//OldPosition.AmountBM -= 1;
 						break;
 					}
 				}
@@ -53,8 +59,10 @@ namespace BurgerHUB.Pages
 				{
 					NewPosition.BM = burgerId;
 					NewPosition.AmountBM = 1;
+					NewPosition.Id = _context.Positions.Count() + 1;
 					ActiveOrder.Positions.Add(NewPosition);
-				}
+                    _context.SaveChanges();
+                }
 			}
 			else
 			{
@@ -75,20 +83,31 @@ namespace BurgerHUB.Pages
 					ActiveOrder.Positions.Add(NewPosition);
 				}
 			}
-			ActiveClient.OrderHistory.RemoveAll(x => x.IsActive == 1);
-			ActiveClient.OrderHistory.Add(ActiveOrder);
-			ListClass.Base.RemoveAll(x => x.Id == activeID);
-			ListClass.Base.Add(ActiveClient);
+			//ActiveClient.OrderHistory.RemoveAll(x => x.IsActive == 1);
+			//ActiveClient.OrderHistory.Add(ActiveOrder);
+			//if(OldPosition != null)
+			//{
+   //             _context.Positions.Remove(OldPosition);
+   //             _context.Positions.Add(NewPosition);
+   //         }
+			//else
+   //             _context.Positions.Add(NewPosition);
+			//_context.SaveChanges();
+			//ListClass.Base.RemoveAll(x => x.Id == activeID);
+			//ListClass.Base.Add(ActiveClient);
 		}
 
 		public PageResult OnGet(int ID)
 		{
 			activeID = ID;
-			if(ListClass.Base.Count == 0) 
-				ListClass.Base = _Client.Clients.ToList();
-			ActiveClient = ListClass.Base.FirstOrDefault(x => x.Id == ID);
-			Menu = _Menu.BurgersMenu;
-			return Page();
+			ActiveClient = _context.Clients.ToList().FirstOrDefault(x => x.Id == ID);
+			Menu = _context.BurgerMenus.ToList();
+            //if(ListClass.Base.Count == 0) 
+            //	ListClass.Base = _Client.Clients.ToList();
+
+            //ActiveClient = ListClass.Base.FirstOrDefault(x => x.Id == ID);
+            //Menu = _Menu.BurgersMenu;
+            return Page();
 		}
 	}
 }

@@ -1,5 +1,6 @@
 ﻿using BurgerHUB.Data.Interfaces;
 using BurgerHUB.Data.Mocks;
+using BurgerHUB.Data.Models;
 using BurgerHUB.Models;
 using BurgerHUB.Pages;
 using Microsoft.AspNetCore.Mvc;
@@ -14,17 +15,18 @@ namespace BurgerHUB.Controllers
 	{
 		private readonly IClients _profileModel;
 		private readonly IMenu _M;
-		public ShopBasketController(IClients profileModel, IMenu M)
+        private readonly DataContext _context;
+
+        public ShopBasketController(DataContext context)
 		{
-			_profileModel = profileModel;
-			_M = M;
-		}
+            _context = context;
+        }
 		[HttpPost]
 		[Route("GetPositionOrder")]
 		public IActionResult GetPositionOrder([FromBody] GetBurgerID model)
 		{
 			int ID = model.BurgerID;
-			ProfileModel test = new(_profileModel, _M);
+			ProfileModel test = new(_context);
 			test.UpdatePositions(ID);
 			return Json(new { success = true });
 		}

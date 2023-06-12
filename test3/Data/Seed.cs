@@ -8,7 +8,10 @@ namespace BurgerHUB.Data
     {
         public static void SeedData(DataContext context)
         {
-            context.Database.EnsureCreated();
+            if (context.BurgerMenus.Any() || context.Clients.Any() || context.Orders.Any() || context.Positions.Any() || context.Supplements.Any() || context.DeliveryMen.Any() || context.Payments.Any())
+            {
+                return;
+            }
             var BurgerMenus = new List<BurgerMenu>
         {
              new BurgerMenu

@@ -17,9 +17,10 @@ namespace BurgerHUB.Data.Models
         public DbSet<Payment> Payments { get; set; }
         public DbSet<Position> Positions { get; set; }
         public DbSet<Supplement> Supplements { get; set; }
-        public DataContext(DbContextOptions<DataContext> options)
-            : base(options)
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
+            //Database.EnsureDeleted();
+            //Database.EnsureCreated();
             //AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
             //AppContext.SetSwitch("Npgsql.DisableDateTimeInfinityConversation", true);
             //if (Database.ProviderName != "Microsoft.EntityFrameworkCore.InMemory")
