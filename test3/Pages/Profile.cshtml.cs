@@ -25,7 +25,7 @@ namespace BurgerHUB.Pages
 		public void UpdatePositions(int burgerId)
 		{
 			Position NewPosition = new();
-            Position OldPosition = new();
+            //Position OldPosition = new();
             //ActiveClient = ListClass.Base.FirstOrDefault(x => x.Id == activeID);
             ActiveClient = _context.Clients.FirstOrDefault(x => x.Id == activeID);
 
@@ -60,7 +60,9 @@ namespace BurgerHUB.Pages
 					NewPosition.BM = burgerId;
 					NewPosition.AmountBM = 1;
 					NewPosition.Id = _context.Positions.Count() + 1;
-					ActiveOrder.Positions.Add(NewPosition);
+					NewPosition.Order = ActiveOrder;
+					_context.Positions.Add(NewPosition);
+					//ActiveOrder.Positions.Add(NewPosition);
                     _context.SaveChanges();
                 }
 			}

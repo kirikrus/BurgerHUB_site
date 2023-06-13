@@ -189,8 +189,8 @@ namespace BurgerHUB.Data
                         new Order
                         {
                             Id = 1,
-                            Date = "",
-                            Time = "",
+                            Date = "10.05.23",
+                            Time = "17:09",
                             IsActive = 1,
                             DeliveryMan = deliveryMan,
                             Payment=payment1,
@@ -390,8 +390,8 @@ namespace BurgerHUB.Data
                             new Order
                             {
                                 Id = 7,
-                                Date="",
-                                Time="",
+                                Date="13.06.23",
+                                Time="18:56",
                                 IsActive = 1,
                                 DeliveryMan = deliveryMan,
                                 Payment = payment2,
@@ -445,8 +445,8 @@ namespace BurgerHUB.Data
                         new Order
                         {
                             Id = 9,
-                            Date = "",
-                            Time = "",
+                            Date = "23.05.23",
+                            Time = "14:23",
                             IsActive = 1,
                             DeliveryMan = deliveryMan,
                             Payment = payment3,
